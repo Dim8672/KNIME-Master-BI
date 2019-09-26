@@ -1,0 +1,90 @@
+2019-09-20 15:03:32,737 : WARN  : main :  : Node : Excel Reader (XLS) : 2:1 : No file location specified
+2019-09-20 15:14:29,476 : WARN  : main :  : Node : Date&Time Difference : 2:2 : Node must be configured!
+2019-09-20 15:30:43,849 : WARN  : main :  : Node : Math Formula : 2:4 : No configuration available
+2019-09-20 15:40:20,880 : WARN  : main :  : Node : Column Rename : 2:6 : No configuration available
+2019-09-20 15:42:49,884 : WARN  : main :  : Node : GroupBy : 2:7 : No grouping column included. Aggregate complete table.
+2019-09-20 15:42:49,884 : WARN  : main :  : Node : GroupBy : 2:7 : No aggregation column defined
+2019-09-20 15:42:49,885 : WARN  : main :  : Node : GroupBy : 2:7 : No aggregation column defined
+2019-09-20 15:42:50,018 : WARN  : main :  : Node : GroupBy : 2:7 : Please select at least one group or aggregation column
+2019-09-20 15:43:25,377 : WARN  : main :  : Node : GroupBy : 2:7 : No grouping column included. Aggregate complete table.
+2019-09-20 15:43:25,377 : WARN  : main :  : Node : GroupBy : 2:7 : No aggregation column defined
+2019-09-20 15:43:25,377 : WARN  : main :  : Node : GroupBy : 2:7 : No aggregation column defined
+2019-09-20 15:43:25,377 : WARN  : main :  : Node : GroupBy : 2:7 : Please select at least one group or aggregation column
+2019-09-20 15:49:06,471 : WARN  : main :  : Node : String Manipulation : 2:9 : No expression has been set.
+2019-09-20 15:52:50,380 : WARN  : main :  : WrappedNodeDialog : String Manipulation : 2:9 : failed to apply settings: Unable to compile expression
+ERROR at line 64
+Syntax error, insert ";" to complete BlockStatements
+  Line : 63    public java.lang.String internalEvaluate() throws Abort {
+  Line : 64  return replace(__col34,"[" ,"(") 
+org.knime.core.node.InvalidSettingsException: Unable to compile expression
+ERROR at line 64
+Syntax error, insert ";" to complete BlockStatements
+  Line : 63    public java.lang.String internalEvaluate() throws Abort {
+  Line : 64  return replace(__col34,"[" ,"(") 
+	at org.knime.base.node.preproc.stringmanipulation.StringManipulationNodeDialog.saveSettingsTo(StringManipulationNodeDialog.java:419)
+	at org.knime.core.node.NodeDialogPane.internalSaveSettingsTo(NodeDialogPane.java:485)
+	at org.knime.core.node.NodeDialogPane$5.run(NodeDialogPane.java:722)
+	at org.knime.core.node.util.ViewUtils$3.run(ViewUtils.java:353)
+	at org.knime.core.node.util.ViewUtils$2.run(ViewUtils.java:155)
+	at java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:311)
+	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:758)
+	at java.awt.EventQueue.access$500(EventQueue.java:97)
+	at java.awt.EventQueue$3.run(EventQueue.java:709)
+	at java.awt.EventQueue$3.run(EventQueue.java:703)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:74)
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:728)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:205)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:116)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:105)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:93)
+	at java.awt.EventDispatchThread.run(EventDispatchThread.java:82)
+Caused by: org.knime.ext.sun.nodes.script.compile.CompilationFailedException: Unable to compile expression
+ERROR at line 64
+Syntax error, insert ";" to complete BlockStatements
+  Line : 63    public java.lang.String internalEvaluate() throws Abort {
+  Line : 64  return replace(__col34,"[" ,"(") 
+	at org.knime.ext.sun.nodes.script.compile.JavaCodeCompiler.compile(JavaCodeCompiler.java:330)
+	at org.knime.ext.sun.nodes.script.expression.Expression.<init>(Expression.java:217)
+	at org.knime.ext.sun.nodes.script.expression.Expression.compile(Expression.java:619)
+	at org.knime.base.node.preproc.stringmanipulation.StringManipulationNodeDialog.saveSettingsTo(StringManipulationNodeDialog.java:417)
+	... 18 more
+2019-09-20 16:01:17,471 : WARN  : main :  : Node : Excel Writer (XLS) : 2:11 : No destination location provided! Please enter a valid location.
+2019-09-20 16:03:21,071 : WARN  : main :  : Node : Excel Writer (XLS) : 2:11 : Output file 'C:\Users\dimit\Desktop\outputZalaxus.xlsx' exists and must not be overwritten due to user settings
+2019-09-20 16:03:29,535 : WARN  : main :  : Node : Excel Writer (XLS) : 2:11 : Output file 'C:\Users\dimit\Desktop\outputZalaxus.xlsx' exists and will be overwritten
+2019-09-20 16:08:15,796 : WARN  : main :  : Node : Excel Writer (XLS) : 2:11 : Output file 'C:\Users\dimit\Desktop\outputZalaxus.xlsx' exists and will be overwritten
+2019-09-20 16:08:15,801 : WARN  : main :  : Node : Excel Writer (XLS) : 2:11 : Output file 'C:\Users\dimit\Desktop\outputZalaxus.xlsx' exists and will be overwritten
+2019-09-20 16:08:15,807 : WARN  : main :  : Node : Excel Writer (XLS) : 2:11 : Output file 'C:\Users\dimit\Desktop\outputZalaxus.xlsx' exists and will be overwritten
+2019-09-20 16:08:15,815 : WARN  : main :  : Node : Excel Writer (XLS) : 2:11 : Output file 'C:\Users\dimit\Desktop\outputZalaxus.xlsx' exists and will be overwritten
+2019-09-20 16:08:15,827 : WARN  : main :  : Node : Excel Writer (XLS) : 2:11 : Output file 'C:\Users\dimit\Desktop\outputZalaxus.xlsx' exists and will be overwritten
+2019-09-20 16:08:15,834 : WARN  : main :  : Node : Excel Writer (XLS) : 2:11 : Output file 'C:\Users\dimit\Desktop\outputZalaxus.xlsx' exists and will be overwritten
+2019-09-20 16:08:15,934 : WARN  : main :  : Node : Excel Writer (XLS) : 2:11 : Output file 'C:\Users\dimit\Desktop\outputZalaxus.xlsx' exists and will be overwritten
+2019-09-20 16:08:19,255 : WARN  : KNIME-Worker-22 :  : Node : Excel Writer (XLS) : 2:11 : Output file 'C:\Users\dimit\Desktop\outputZalaxus.xlsx' exists and will be overwritten
+2019-09-20 16:08:19,732 : WARN  : KNIME-Worker-22 :  : Node : Excel Writer (XLS) : 2:11 : Output file 'C:\Users\dimit\Desktop\outputZalaxus.xlsx' exists and will be overwritten
+2019-09-20 16:08:19,736 : ERROR : KNIME-Worker-21 :  : Node : Excel Writer (XLS) : 2:11 : Execute failed: C:\Users\dimit\Desktop\outputZalaxus.xlsx: Le processus ne peut pas accéder au fichier car ce fichier est utilisé par un autre processus.
+
+java.nio.file.FileSystemException: C:\Users\dimit\Desktop\outputZalaxus.xlsx: Le processus ne peut pas accéder au fichier car ce fichier est utilisé par un autre processus.
+
+	at sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:86)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:97)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:102)
+	at sun.nio.fs.WindowsFileSystemProvider.implDelete(WindowsFileSystemProvider.java:269)
+	at sun.nio.fs.AbstractFileSystemProvider.deleteIfExists(AbstractFileSystemProvider.java:108)
+	at java.nio.file.Files.deleteIfExists(Files.java:1165)
+	at org.knime.ext.poi2.node.write2.XLSWriter2NodeModel.execute(XLSWriter2NodeModel.java:160)
+	at org.knime.core.node.NodeModel.execute(NodeModel.java:733)
+	at org.knime.core.node.NodeModel.executeModel(NodeModel.java:567)
+	at org.knime.core.node.Node.invokeFullyNodeModelExecute(Node.java:1192)
+	at org.knime.core.node.Node.execute(Node.java:979)
+	at org.knime.core.node.workflow.NativeNodeContainer.performExecuteNode(NativeNodeContainer.java:559)
+	at org.knime.core.node.exec.LocalNodeExecutionJob.mainExecute(LocalNodeExecutionJob.java:95)
+	at org.knime.core.node.workflow.NodeExecutionJob.internalRun(NodeExecutionJob.java:179)
+	at org.knime.core.node.workflow.NodeExecutionJob.run(NodeExecutionJob.java:110)
+	at org.knime.core.util.ThreadUtils$RunnableWithContextImpl.runWithContext(ThreadUtils.java:328)
+	at org.knime.core.util.ThreadUtils$RunnableWithContext.run(ThreadUtils.java:204)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at org.knime.core.util.ThreadPool$MyFuture.run(ThreadPool.java:123)
+	at org.knime.core.util.ThreadPool$Worker.run(ThreadPool.java:246)
+2019-09-20 16:08:19,740 : WARN  : KNIME-Worker-21 :  : Node : Excel Writer (XLS) : 2:11 : Output file 'C:\Users\dimit\Desktop\outputZalaxus.xlsx' exists and will be overwritten
