@@ -6,41 +6,41 @@
         "nodes":[
             {
                 "id":"org.knime.ext.poi2.node.read3.XLSReaderNodeFactory#Excel Reader (XLS)",
-                "nrexecs":1,
+                "nrexecs":2,
                 "nrfails":0,
-                "exectime":11656,
+                "exectime":20671,
                 "nrcreated":1,
                 "successor":"org.knime.time.node.calculate.datetimedifference.DateTimeDifferenceNodeFactory#Date&Time Difference"
             },
             {
                 "id":"org.knime.time.node.calculate.datetimedifference.DateTimeDifferenceNodeFactory#Date&Time Difference",
-                "nrexecs":2,
+                "nrexecs":3,
                 "nrfails":0,
-                "exectime":369,
+                "exectime":496,
                 "nrcreated":1,
                 "successor":"org.knime.base.node.preproc.colconvert.stringtonumber2.StringToNumber2NodeFactory#String To Number"
             },
             {
                 "id":"org.knime.base.node.preproc.colconvert.stringtonumber2.StringToNumber2NodeFactory#String To Number",
-                "nrexecs":2,
+                "nrexecs":3,
                 "nrfails":0,
-                "exectime":510,
+                "exectime":750,
                 "nrcreated":1,
                 "successor":"org.knime.ext.jep.JEPNodeFactory#Math Formula"
             },
             {
                 "id":"org.knime.ext.jep.JEPNodeFactory#Math Formula",
-                "nrexecs":2,
+                "nrexecs":3,
                 "nrfails":0,
-                "exectime":634,
+                "exectime":841,
                 "nrcreated":1,
                 "successor":"org.knime.base.node.preproc.autobinner3.AutoBinnerLearnNodeFactory#Auto-Binner"
             },
             {
                 "id":"org.knime.base.node.preproc.autobinner3.AutoBinnerLearnNodeFactory#Auto-Binner",
-                "nrexecs":2,
+                "nrexecs":3,
                 "nrfails":0,
-                "exectime":201,
+                "exectime":297,
                 "nrcreated":1,
                 "successor":"org.knime.base.node.preproc.rename.RenameNodeFactory#Column Rename"
             },
@@ -54,7 +54,7 @@
             },
             {
                 "id":"org.knime.base.node.preproc.rename.RenameNodeFactory#Column Rename",
-                "nrexecs":2,
+                "nrexecs":3,
                 "nrfails":0,
                 "exectime":2,
                 "nrcreated":1,
@@ -62,41 +62,41 @@
             },
             {
                 "id":"org.knime.base.node.preproc.groupby.GroupByNodeFactory#GroupBy",
-                "nrexecs":4,
+                "nrexecs":5,
                 "nrfails":0,
-                "exectime":1474,
+                "exectime":1721,
                 "nrcreated":2,
                 "successor":"org.knime.dynamic.js.v30.DynamicJSNodeFactory#Pie/Donut Chart"
             },
             {
                 "id":"org.knime.dynamic.js.v30.DynamicJSNodeFactory#Bar Chart",
-                "nrexecs":5,
+                "nrexecs":6,
                 "nrfails":0,
-                "exectime":55570,
+                "exectime":64268,
                 "nrcreated":1,
                 "successor":"n/a"
             },
             {
                 "id":"org.knime.base.node.preproc.stringmanipulation.StringManipulationNodeFactory#String Manipulation",
-                "nrexecs":2,
+                "nrexecs":3,
                 "nrfails":0,
-                "exectime":860,
+                "exectime":1227,
                 "nrcreated":1,
                 "successor":"org.knime.base.node.preproc.groupby.GroupByNodeFactory#GroupBy"
             },
             {
                 "id":"org.knime.dynamic.js.v30.DynamicJSNodeFactory#Pie/Donut Chart",
-                "nrexecs":3,
+                "nrexecs":4,
                 "nrfails":0,
-                "exectime":21431,
+                "exectime":30121,
                 "nrcreated":1,
                 "successor":"n/a"
             },
             {
                 "id":"org.knime.ext.poi2.node.write2.XLSWriter2NodeFactory#Excel Writer (XLS)",
-                "nrexecs":3,
+                "nrexecs":4,
                 "nrfails":1,
-                "exectime":21576,
+                "exectime":27217,
                 "nrcreated":1,
                 "successor":"n/a"
             }
@@ -106,14 +106,14 @@
         "wrappedNodes":{
         }
     },
-    "uptime":11039523,
-    "workflowsOpened":0,
+    "uptime":9705191,
+    "workflowsOpened":2,
     "remoteWorkflowsOpened":0,
     "workflowsImported":0,
     "workflowsExported":0,
-    "launches":1,
+    "launches":2,
     "lastApplicationID":"org.knime.product.KNIME_APPLICATION",
-    "timeSinceLastStart":11039523,
+    "timeSinceLastStart":8370859,
     "crashes":0,
     "properlyShutDown":true
 }

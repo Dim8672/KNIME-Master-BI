@@ -88,3 +88,10 @@ java.nio.file.FileSystemException: C:\Users\dimit\Desktop\outputZalaxus.xlsx: Le
 	at org.knime.core.util.ThreadPool$MyFuture.run(ThreadPool.java:123)
 	at org.knime.core.util.ThreadPool$Worker.run(ThreadPool.java:246)
 2019-09-20 16:08:19,740 : WARN  : KNIME-Worker-21 :  : Node : Excel Writer (XLS) : 2:11 : Output file 'C:\Users\dimit\Desktop\outputZalaxus.xlsx' exists and will be overwritten
+2019-09-26 20:08:12,158 : WARN  : ModalContext :  : Node : Excel Reader (XLS) : 0:1 : The file 'C:\Users\dimit\Downloads\zalaxus.xlsx' can't be accessed anymore!
+2019-09-26 20:10:23,428 : WARN  : main :  : Node : Excel Writer (XLS) : 0:11 : Directory 'C:\Users\dimit\Desktop' of output file does not exist
+2019-09-26 20:10:35,230 : WARN  : KNIME-Worker-2 :  : Node : Excel Writer (XLS) : 0:11 : Directory 'C:\Users\dimit\Desktop' of output file does not exist
+2019-09-26 20:10:35,809 : WARN  : KNIME-Worker-3 :  : Node : Excel Writer (XLS) : 0:11 : Directory 'C:\Users\dimit\Desktop' of output file does not exist
+2019-09-26 20:10:36,276 : WARN  : KNIME-Worker-2 :  : Node : Excel Writer (XLS) : 0:11 : Directory 'C:\Users\dimit\Desktop' of output file does not exist
+2019-09-26 20:11:58,444 : WARN  : main :  : ExplorerFileSystemUtils :  :  : At least one of the workflows affected by the operation is still open in the editor and has to be saved first.
+2019-09-26 20:11:58,444 : WARN  : main :  : PasteFromClipboardAction :  :  : Can't paste from clipboard: At least one of the workflows affected by the operation is still open in the editor and has to be saved first.

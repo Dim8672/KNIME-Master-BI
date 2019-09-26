@@ -21,7 +21,7 @@
                 <path d="M149 9 L375 9 L375 26 L149 26 L149 9 Z"/>
             </clipPath>
             <clipPath clipPathUnits="userSpaceOnUse" id="clipPath3">
-                <path d="M2 278 L118 278 L118 295 L2 295 L2 278 Z"/>
+                <path d="M3 278 L116 278 L116 295 L3 295 L3 278 Z"/>
             </clipPath>
             <clipPath clipPathUnits="userSpaceOnUse" id="clipPath4">
                 <path d="M298 278 L394 278 L394 295 L298 295 L298 278 Z"/>
@@ -105,7 +105,7 @@
                 <path d="M-2 -2 L31 -2 L31 9 L-2 9 L-2 -2 Z"/>
             </clipPath>
             <clipPath clipPathUnits="userSpaceOnUse" id="clipPath31">
-                <path d="M-1 -1 L1190 -1 L1190 719 L-1 719 L-1 -1 Z"/>
+                <path d="M-1 -1 L1256 -1 L1256 607 L-1 607 L-1 -1 Z"/>
             </clipPath>
         </defs>
         <g fill="white" font-family="&apos;Segoe UI&apos;"
@@ -121,7 +121,7 @@
            stroke="rgb(255,216,0)">
             <rect x="145" y="5" clip-path="url(#clipPath1)" fill="none"
                   width="331" height="451"/>
-            <text x="3" y="290" clip-path="url(#clipPath3)" fill="black"
+            <text x="4" y="290" clip-path="url(#clipPath3)" fill="black"
                   font-family="&apos;Arial&apos;" stroke="none"
                   xml:space="preserve">Import fichier Ventes</text><text x="299"
                   y="290" clip-path="url(#clipPath4)" fill="black"
@@ -406,7 +406,7 @@ dCBLgACIDxJnAhnFgAWAxJlAdmCTBIkzgSwH2YEsAeKDxBnRXMsJ1PEd5loAQkA1
            stroke-width="10">
             <rect x="145" y="5" clip-path="url(#clipPath1)" fill="none"
                   width="331" height="451"/>
-            <text x="3" y="290" clip-path="url(#clipPath3)" fill="black"
+            <text x="4" y="290" clip-path="url(#clipPath3)" fill="black"
                   font-family="&apos;Arial&apos;" stroke="none"
                   xml:space="preserve">Import fichier Ventes</text><text x="299"
                   y="290" clip-path="url(#clipPath4)" fill="black"
@@ -669,36 +669,36 @@ AElFTkSuQmCC" xlink:actuate="onLoad"/>
 6ZZlTMwM6ezsjBw/f/7/8e8vw8yazONdjCAJSQnGei3tf1wMUHDtKtO35y/+NzKB
 dCBLgACIDxJnAhnFgAWAxJlAdmCTBIkzgSwH2YEsAeKDxBnRXMsJ1PEd5loAQkA1
 1ualk9wAAAAASUVORK5CYII=" xlink:actuate="onLoad"/>
-            <line clip-path="url(#clipPath31)" fill="none" x1="245" x2="253"
-                  y1="238" y2="238" stroke="rgb(150,150,150)"/>
-            <line clip-path="url(#clipPath31)" fill="none" x1="253" x2="306"
-                  y1="238" y2="238" stroke="rgb(150,150,150)"/>
-            <line clip-path="url(#clipPath31)" fill="none" x1="306" x2="314"
-                  y1="238" y2="238" stroke="rgb(150,150,150)"/>
-            <line clip-path="url(#clipPath31)" fill="none" x1="245" x2="253"
-                  y1="238" y2="238" stroke="rgb(150,150,150)"/>
-            <line clip-path="url(#clipPath31)" fill="none" x1="253" x2="251"
-                  y1="238" y2="83" stroke="rgb(150,150,150)"/>
-            <line clip-path="url(#clipPath31)" fill="none" x1="251" x2="259"
-                  y1="83" y2="83" stroke="rgb(150,150,150)"/>
-            <line clip-path="url(#clipPath31)" fill="none" x1="365" x2="373"
-                  y1="238" y2="238" stroke="rgb(150,150,150)"/>
-            <line clip-path="url(#clipPath31)" fill="none" x1="373" x2="366"
-                  y1="238" y2="68" stroke="rgb(150,150,150)"/>
-            <line clip-path="url(#clipPath31)" fill="none" x1="366" x2="374"
-                  y1="68" y2="68" stroke="rgb(150,150,150)"/>
-            <line clip-path="url(#clipPath31)" fill="none" x1="84" x2="92"
-                  y1="238" y2="238" stroke="rgb(150,150,150)"/>
-            <line clip-path="url(#clipPath31)" fill="none" x1="92" x2="186"
-                  y1="238" y2="238" stroke="rgb(150,150,150)"/>
-            <line clip-path="url(#clipPath31)" fill="none" x1="186" x2="194"
-                  y1="238" y2="238" stroke="rgb(150,150,150)"/>
             <line clip-path="url(#clipPath31)" fill="none" x1="365" x2="373"
                   y1="238" y2="238" stroke="rgb(150,150,150)"/>
             <line clip-path="url(#clipPath31)" fill="none" x1="373" x2="366"
                   y1="238" y2="378" stroke="rgb(150,150,150)"/>
             <line clip-path="url(#clipPath31)" fill="none" x1="366" x2="374"
                   y1="378" y2="378" stroke="rgb(150,150,150)"/>
+            <line clip-path="url(#clipPath31)" fill="none" x1="84" x2="92"
+                  y1="238" y2="238" stroke="rgb(150,150,150)"/>
+            <line clip-path="url(#clipPath31)" fill="none" x1="92" x2="186"
+                  y1="238" y2="238" stroke="rgb(150,150,150)"/>
+            <line clip-path="url(#clipPath31)" fill="none" x1="186" x2="194"
+                  y1="238" y2="238" stroke="rgb(150,150,150)"/>
+            <line clip-path="url(#clipPath31)" fill="none" x1="245" x2="253"
+                  y1="238" y2="238" stroke="rgb(150,150,150)"/>
+            <line clip-path="url(#clipPath31)" fill="none" x1="253" x2="306"
+                  y1="238" y2="238" stroke="rgb(150,150,150)"/>
+            <line clip-path="url(#clipPath31)" fill="none" x1="306" x2="314"
+                  y1="238" y2="238" stroke="rgb(150,150,150)"/>
+            <line clip-path="url(#clipPath31)" fill="none" x1="365" x2="373"
+                  y1="238" y2="238" stroke="rgb(150,150,150)"/>
+            <line clip-path="url(#clipPath31)" fill="none" x1="373" x2="366"
+                  y1="238" y2="68" stroke="rgb(150,150,150)"/>
+            <line clip-path="url(#clipPath31)" fill="none" x1="366" x2="374"
+                  y1="68" y2="68" stroke="rgb(150,150,150)"/>
+            <line clip-path="url(#clipPath31)" fill="none" x1="245" x2="253"
+                  y1="238" y2="238" stroke="rgb(150,150,150)"/>
+            <line clip-path="url(#clipPath31)" fill="none" x1="253" x2="251"
+                  y1="238" y2="83" stroke="rgb(150,150,150)"/>
+            <line clip-path="url(#clipPath31)" fill="none" x1="251" x2="259"
+                  y1="83" y2="83" stroke="rgb(150,150,150)"/>
         </g>
     </g>
 </svg>
