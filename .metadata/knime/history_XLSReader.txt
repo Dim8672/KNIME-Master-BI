@@ -1,2 +1,3 @@
+O:\Master\BI\KNIME\KNIME-Master-BI\Data\ZalaxusSizeSplit.xlsx
 O:\Master\BI\KNIME\KNIME-Master-BI\Data\zalaxus.xlsx
 C:\Users\dimit\Downloads\zalaxus.xlsx
