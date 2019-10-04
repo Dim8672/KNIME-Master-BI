@@ -6,9 +6,9 @@
         "nodes":[
             {
                 "id":"org.knime.ext.poi2.node.read3.XLSReaderNodeFactory#Excel Reader (XLS)",
-                "nrexecs":3,
+                "nrexecs":4,
                 "nrfails":0,
-                "exectime":20715,
+                "exectime":20988,
                 "nrcreated":3,
                 "successor":"org.knime.base.node.preproc.constantvalue.ConstantValueColumnNodeFactory#Constant Value Column"
             },
@@ -118,31 +118,31 @@
             },
             {
                 "id":"org.knime.base.node.preproc.constantvalue.ConstantValueColumnNodeFactory#Constant Value Column",
-                "nrexecs":31,
+                "nrexecs":38,
                 "nrfails":0,
-                "exectime":129,
+                "exectime":277,
                 "nrcreated":6,
                 "successor":"org.knime.base.node.preproc.constantvalue.ConstantValueColumnNodeFactory#Constant Value Column"
             },
             {
                 "id":"org.knime.base.node.preproc.columnresorter.ColumnResorterNodeFactory#Column Resorter",
-                "nrexecs":6,
+                "nrexecs":7,
                 "nrfails":0,
-                "exectime":3,
+                "exectime":4,
                 "nrcreated":1,
                 "successor":"org.knime.base.node.preproc.columnaggregator.ColumnAggregatorNodeFactory#Column Aggregator"
             },
             {
                 "id":"org.knime.base.node.preproc.columnaggregator.ColumnAggregatorNodeFactory#Column Aggregator",
-                "nrexecs":7,
+                "nrexecs":8,
                 "nrfails":0,
-                "exectime":27,
+                "exectime":34,
                 "nrcreated":1,
                 "successor":"org.knime.base.node.preproc.filter.column.DataColumnSpecFilterNodeFactory#Column Filter"
             },
             {
                 "id":"org.knime.base.node.preproc.filter.column.DataColumnSpecFilterNodeFactory#Column Filter",
-                "nrexecs":3,
+                "nrexecs":4,
                 "nrfails":0,
                 "exectime":0,
                 "nrcreated":1,
@@ -150,9 +150,9 @@
             },
             {
                 "id":"org.knime.base.node.rules.engine.twoports.RuleEngine2PortsNodeFactory#Rule Engine (Dictionary)",
-                "nrexecs":3,
+                "nrexecs":4,
                 "nrfails":0,
-                "exectime":2112,
+                "exectime":7067,
                 "nrcreated":1,
                 "successor":"n/a"
             }
@@ -166,14 +166,14 @@
         "wrappedNodes":{
         }
     },
-    "uptime":13631166,
-    "workflowsOpened":4,
+    "uptime":16701789,
+    "workflowsOpened":5,
     "remoteWorkflowsOpened":0,
     "workflowsImported":0,
     "workflowsExported":0,
-    "launches":3,
+    "launches":4,
     "lastApplicationID":"org.knime.product.KNIME_APPLICATION",
-    "timeSinceLastStart":21483118,
+    "timeSinceLastStart":25913659,
     "crashes":0,
     "properlyShutDown":true
 }

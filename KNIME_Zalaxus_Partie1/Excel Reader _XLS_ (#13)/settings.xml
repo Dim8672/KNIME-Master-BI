@@ -6,7 +6,7 @@
 <entry key="memory_policy" type="xstring" value="CacheSmallInMemory"/>
 </config>
 <config key="model">
-<entry key="XLS_LOCATION" type="xstring" value="O:\Master\BI\KNIME\KNIME-Master-BI\Data\ZalaxusSizeSplit.xlsx"/>
+<entry key="XLS_LOCATION" type="xstring" value="C:\Users\dimit\knime-workspace\Data\ZalaxusSizeSplit.xlsx"/>
 <entry key="SHEET_NAME" type="xstring" isnull="true" value=""/>
 <entry key="READ_ALL_DATA" type="xboolean" value="true"/>
 <entry key="FIRST_ROW" type="xint" value="1"/>
@@ -30,7 +30,7 @@
 <entry key="REEVALUATE_FORMULAE" type="xboolean" value="false"/>
 <entry key="TIMEOUT_IN_SECONDS" type="xint" value="1"/>
 <entry key="NO_PREVIEW" type="xboolean" value="false"/>
-<entry key="XLS_SettingsForSpecID" type="xstring" value="SettingsID:O:\Master\BI\KNIME\KNIME-Master-BI\Data\ZalaxusSizeSplit.xlsx-110101101-111001#XL_EVAL_ERROR#010"/>
+<entry key="XLS_SettingsForSpecID" type="xstring" value="SettingsID:C:\Users\dimit\knime-workspace\Data\ZalaxusSizeSplit.xlsx-110101101-111001#XL_EVAL_ERROR#010"/>
 <config key="XLS_DataTableSpec">
 <entry key="spec_name" type="xstring" value="ZalaxusSizeSplit.xlsx [Feuil1]"/>
 <entry key="number_columns" type="xint" value="6"/>
@@ -143,6 +143,6 @@
 </config>
 <config key="filestores">
 <entry key="file_store_location" type="xstring" isnull="true" value=""/>
-<entry key="file_store_id" type="xstring" value="98704871-8c8f-47fc-b270-8e8657a07323"/>
+<entry key="file_store_id" type="xstring" value="2758707d-49c3-4c67-881d-d8e6e87dc00d"/>
 </config>
 </config>

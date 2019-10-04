@@ -48,26 +48,26 @@
 </config>
 </config>
 </config>
-<config key="removeAggregationColumns_Internals">
-<entry key="SettingsModelID" type="xstring" value="SMID_boolean"/>
-<entry key="EnabledStatus" type="xboolean" value="true"/>
-</config>
-<entry key="removeAggregationColumns" type="xboolean" value="false"/>
 <config key="removeRetainedColumns_Internals">
 <entry key="SettingsModelID" type="xstring" value="SMID_boolean"/>
 <entry key="EnabledStatus" type="xboolean" value="true"/>
 </config>
 <entry key="removeRetainedColumns" type="xboolean" value="false"/>
-<config key="maxNoneNumericalVals_Internals">
-<entry key="SettingsModelID" type="xstring" value="SMID_integer"/>
+<config key="removeAggregationColumns_Internals">
+<entry key="SettingsModelID" type="xstring" value="SMID_boolean"/>
 <entry key="EnabledStatus" type="xboolean" value="true"/>
 </config>
-<entry key="maxNoneNumericalVals" type="xint" value="10000"/>
+<entry key="removeAggregationColumns" type="xboolean" value="false"/>
 <config key="valueDelimiter_Internals">
 <entry key="SettingsModelID" type="xstring" value="SMID_string"/>
 <entry key="EnabledStatus" type="xboolean" value="true"/>
 </config>
 <entry key="valueDelimiter" type="xstring" value=""/>
+<config key="maxNoneNumericalVals_Internals">
+<entry key="SettingsModelID" type="xstring" value="SMID_integer"/>
+<entry key="EnabledStatus" type="xboolean" value="true"/>
+</config>
+<entry key="maxNoneNumericalVals" type="xint" value="10000"/>
 <config key="aggregationMethods">
 <config key="resultColName">
 <entry key="array-size" type="xint" value="1"/>
@@ -115,6 +115,6 @@
 </config>
 <config key="filestores">
 <entry key="file_store_location" type="xstring" isnull="true" value=""/>
-<entry key="file_store_id" type="xstring" value="4b1daf9d-8acd-434a-9458-44caf1751236"/>
+<entry key="file_store_id" type="xstring" value="26f2987f-cb1f-4aa8-bbe4-14f697fa097f"/>
 </config>
 </config>

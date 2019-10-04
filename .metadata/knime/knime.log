@@ -162,3 +162,5 @@ org.knime.core.node.InvalidSettingsException: Please select at least one aggrega
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1499)
 2019-10-03 23:25:53,587 : WARN  : main :  : Node : Rule Engine (Dictionary) : 0:24 : Guessing target column: "Classe Age".
 2019-10-03 23:27:00,304 : WARN  : main :  : Node : Rule Engine (Dictionary) : 0:24 : Rule column "Classe Age" not found or incompatible
+2019-10-04 08:38:27,285 : WARN  : ModalContext :  : Node : Excel Reader (XLS) : 0:1 : The file 'O:\Master\BI\KNIME\KNIME-Master-BI\Data\zalaxus.xlsx' can't be accessed anymore!
+2019-10-04 08:38:27,330 : WARN  : ModalContext :  : Node : Excel Reader (XLS) : 0:13 : The file 'O:\Master\BI\KNIME\KNIME-Master-BI\Data\ZalaxusSizeSplit.xlsx' can't be accessed anymore!
