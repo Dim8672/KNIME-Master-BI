@@ -164,3 +164,471 @@ org.knime.core.node.InvalidSettingsException: Please select at least one aggrega
 2019-10-03 23:27:00,304 : WARN  : main :  : Node : Rule Engine (Dictionary) : 0:24 : Rule column "Classe Age" not found or incompatible
 2019-10-04 08:38:27,285 : WARN  : ModalContext :  : Node : Excel Reader (XLS) : 0:1 : The file 'O:\Master\BI\KNIME\KNIME-Master-BI\Data\zalaxus.xlsx' can't be accessed anymore!
 2019-10-04 08:38:27,330 : WARN  : ModalContext :  : Node : Excel Reader (XLS) : 0:13 : The file 'O:\Master\BI\KNIME\KNIME-Master-BI\Data\ZalaxusSizeSplit.xlsx' can't be accessed anymore!
+2019-10-17 09:03:55,194 : WARN  : ModalContext :  : Node : Excel Reader (XLS) : 0:1 : The file 'O:\Master\BI\KNIME\KNIME-Master-BI\Data\zalaxus.xlsx' can't be accessed anymore!
+2019-10-17 11:38:53,154 : WARN  : main :  : Node : Excel Writer (XLS) : 0:11 : Directory 'C:\Users\Dimitri\Desktop' of output file does not exist
+2019-10-17 11:39:05,083 : WARN  : KNIME-Worker-10 :  : Node : Excel Writer (XLS) : 0:11 : Directory 'C:\Users\Dimitri\Desktop' of output file does not exist
+2019-10-17 11:39:05,697 : WARN  : KNIME-Worker-11 :  : Node : Excel Writer (XLS) : 0:11 : Directory 'C:\Users\Dimitri\Desktop' of output file does not exist
+2019-10-17 11:39:06,390 : WARN  : KNIME-Worker-10 :  : Node : Excel Writer (XLS) : 0:11 : Directory 'C:\Users\Dimitri\Desktop' of output file does not exist
+2019-10-17 11:47:25,163 : WARN  : main :  : Node : Row Filter : 0:27 : No row filter specified
+2019-10-17 11:47:26,810 : WARN  : main :  : Node : Row Filter : 0:28 : No row filter specified
+2019-10-17 11:53:18,895 : ERROR : KNIME-Worker-24 :  : Node : Rule Engine (Dictionary) : 0:24 : Execute failed: Wrong rule in line: Row0
+Line: 1: Expected a number, string, column, a table property or flow variable reference.
+(The operator AND is not supported.)
+$Gender$="M" AND ($Weight$>= AND $Weight$<=61) AND ($Height$>= AND $Height$<=164)00 => "XS"
+                             ^
+org.knime.core.node.InvalidSettingsException: Wrong rule in line: Row0
+Line: 1: Expected a number, string, column, a table property or flow variable reference.
+(The operator AND is not supported.)
+$Gender$="M" AND ($Weight$>= AND $Weight$<=61) AND ($Height$>= AND $Height$<=164)00 => "XS"
+                             ^
+	at org.knime.base.node.rules.engine.twoports.RuleEngine2PortsNodeModel.computeRearrangerWithoutPMML(RuleEngine2PortsNodeModel.java:309)
+	at org.knime.base.node.rules.engine.twoports.RuleEngine2PortsNodeModel.createColumnRearranger(RuleEngine2PortsNodeModel.java:257)
+	at org.knime.base.node.rules.engine.twoports.RuleEngine2PortsNodeModel.execute(RuleEngine2PortsNodeModel.java:122)
+	at org.knime.core.node.NodeModel.executeModel(NodeModel.java:567)
+	at org.knime.core.node.Node.invokeFullyNodeModelExecute(Node.java:1192)
+	at org.knime.core.node.Node.execute(Node.java:979)
+	at org.knime.core.node.workflow.NativeNodeContainer.performExecuteNode(NativeNodeContainer.java:559)
+	at org.knime.core.node.exec.LocalNodeExecutionJob.mainExecute(LocalNodeExecutionJob.java:95)
+	at org.knime.core.node.workflow.NodeExecutionJob.internalRun(NodeExecutionJob.java:179)
+	at org.knime.core.node.workflow.NodeExecutionJob.run(NodeExecutionJob.java:110)
+	at org.knime.core.util.ThreadUtils$RunnableWithContextImpl.runWithContext(ThreadUtils.java:328)
+	at org.knime.core.util.ThreadUtils$RunnableWithContext.run(ThreadUtils.java:204)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at org.knime.core.util.ThreadPool$MyFuture.run(ThreadPool.java:123)
+	at org.knime.core.util.ThreadPool$Worker.run(ThreadPool.java:246)
+Caused by: java.text.ParseException: Line: 1: Expected a number, string, column, a table property or flow variable reference.
+(The operator AND is not supported.)
+$Gender$="M" AND ($Weight$>= AND $Weight$<=61) AND ($Height$>= AND $Height$<=164)00 => "XS"
+                             ^
+	at org.knime.base.node.rules.engine.BaseRuleParser.parseOperand(BaseRuleParser.java:1063)
+	at org.knime.base.node.rules.engine.BaseRuleParser.handleRelationRightOperand(BaseRuleParser.java:920)
+	at org.knime.base.node.rules.engine.BaseRuleParser.parseRelation(BaseRuleParser.java:857)
+	at org.knime.base.node.rules.engine.BaseRuleParser.parseRootBooleanExpression(BaseRuleParser.java:757)
+	at org.knime.base.node.rules.engine.BaseRuleParser.parseAndExpression(BaseRuleParser.java:712)
+	at org.knime.base.node.rules.engine.BaseRuleParser.parseXorExpression(BaseRuleParser.java:689)
+	at org.knime.base.node.rules.engine.BaseRuleParser.parseOrExpression(BaseRuleParser.java:666)
+	at org.knime.base.node.rules.engine.BaseRuleParser.parseBooleanExpression(BaseRuleParser.java:654)
+	at org.knime.base.node.rules.engine.BaseRuleParser.parseRootBooleanExpression(BaseRuleParser.java:739)
+	at org.knime.base.node.rules.engine.BaseRuleParser.parseAndExpression(BaseRuleParser.java:717)
+	at org.knime.base.node.rules.engine.BaseRuleParser.parseXorExpression(BaseRuleParser.java:689)
+	at org.knime.base.node.rules.engine.BaseRuleParser.parseOrExpression(BaseRuleParser.java:666)
+	at org.knime.base.node.rules.engine.BaseRuleParser.parseBooleanExpression(BaseRuleParser.java:654)
+	at org.knime.base.node.rules.engine.SimpleRuleParser.parseCondition(SimpleRuleParser.java:278)
+	at org.knime.base.node.rules.engine.SimpleRuleParser.parse(SimpleRuleParser.java:230)
+	at org.knime.base.node.rules.engine.RuleFactory.parse(RuleFactory.java:191)
+	at org.knime.base.node.rules.engine.twoports.RuleEngine2PortsNodeModel.computeRearrangerWithoutPMML(RuleEngine2PortsNodeModel.java:303)
+	... 15 more
+2019-10-17 11:57:17,820 : ERROR : KNIME-Worker-28 :  : Node : Rule Engine (Dictionary) : 0:24 : Execute failed: Wrong rule in line: Row0
+Line: 1: Expected a number, string, column, a table property or flow variable reference.
+(The operator AND is not supported.)
+$Gender$="M" AND ($Weight$>= AND $Weight$<=61) AND ($Height$>= AND $Height$<=164)00 => "XS"
+                             ^
+org.knime.core.node.InvalidSettingsException: Wrong rule in line: Row0
+Line: 1: Expected a number, string, column, a table property or flow variable reference.
+(The operator AND is not supported.)
+$Gender$="M" AND ($Weight$>= AND $Weight$<=61) AND ($Height$>= AND $Height$<=164)00 => "XS"
+                             ^
+	at org.knime.base.node.rules.engine.twoports.RuleEngine2PortsNodeModel.computeRearrangerWithoutPMML(RuleEngine2PortsNodeModel.java:309)
+	at org.knime.base.node.rules.engine.twoports.RuleEngine2PortsNodeModel.createColumnRearranger(RuleEngine2PortsNodeModel.java:257)
+	at org.knime.base.node.rules.engine.twoports.RuleEngine2PortsNodeModel.execute(RuleEngine2PortsNodeModel.java:122)
+	at org.knime.core.node.NodeModel.executeModel(NodeModel.java:567)
+	at org.knime.core.node.Node.invokeFullyNodeModelExecute(Node.java:1192)
+	at org.knime.core.node.Node.execute(Node.java:979)
+	at org.knime.core.node.workflow.NativeNodeContainer.performExecuteNode(NativeNodeContainer.java:559)
+	at org.knime.core.node.exec.LocalNodeExecutionJob.mainExecute(LocalNodeExecutionJob.java:95)
+	at org.knime.core.node.workflow.NodeExecutionJob.internalRun(NodeExecutionJob.java:179)
+	at org.knime.core.node.workflow.NodeExecutionJob.run(NodeExecutionJob.java:110)
+	at org.knime.core.util.ThreadUtils$RunnableWithContextImpl.runWithContext(ThreadUtils.java:328)
+	at org.knime.core.util.ThreadUtils$RunnableWithContext.run(ThreadUtils.java:204)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at org.knime.core.util.ThreadPool$MyFuture.run(ThreadPool.java:123)
+	at org.knime.core.util.ThreadPool$Worker.run(ThreadPool.java:246)
+Caused by: java.text.ParseException: Line: 1: Expected a number, string, column, a table property or flow variable reference.
+(The operator AND is not supported.)
+$Gender$="M" AND ($Weight$>= AND $Weight$<=61) AND ($Height$>= AND $Height$<=164)00 => "XS"
+                             ^
+	at org.knime.base.node.rules.engine.BaseRuleParser.parseOperand(BaseRuleParser.java:1063)
+	at org.knime.base.node.rules.engine.BaseRuleParser.handleRelationRightOperand(BaseRuleParser.java:920)
+	at org.knime.base.node.rules.engine.BaseRuleParser.parseRelation(BaseRuleParser.java:857)
+	at org.knime.base.node.rules.engine.BaseRuleParser.parseRootBooleanExpression(BaseRuleParser.java:757)
+	at org.knime.base.node.rules.engine.BaseRuleParser.parseAndExpression(BaseRuleParser.java:712)
+	at org.knime.base.node.rules.engine.BaseRuleParser.parseXorExpression(BaseRuleParser.java:689)
+	at org.knime.base.node.rules.engine.BaseRuleParser.parseOrExpression(BaseRuleParser.java:666)
+	at org.knime.base.node.rules.engine.BaseRuleParser.parseBooleanExpression(BaseRuleParser.java:654)
+	at org.knime.base.node.rules.engine.BaseRuleParser.parseRootBooleanExpression(BaseRuleParser.java:739)
+	at org.knime.base.node.rules.engine.BaseRuleParser.parseAndExpression(BaseRuleParser.java:717)
+	at org.knime.base.node.rules.engine.BaseRuleParser.parseXorExpression(BaseRuleParser.java:689)
+	at org.knime.base.node.rules.engine.BaseRuleParser.parseOrExpression(BaseRuleParser.java:666)
+	at org.knime.base.node.rules.engine.BaseRuleParser.parseBooleanExpression(BaseRuleParser.java:654)
+	at org.knime.base.node.rules.engine.SimpleRuleParser.parseCondition(SimpleRuleParser.java:278)
+	at org.knime.base.node.rules.engine.SimpleRuleParser.parse(SimpleRuleParser.java:230)
+	at org.knime.base.node.rules.engine.RuleFactory.parse(RuleFactory.java:191)
+	at org.knime.base.node.rules.engine.twoports.RuleEngine2PortsNodeModel.computeRearrangerWithoutPMML(RuleEngine2PortsNodeModel.java:303)
+	... 15 more
+2019-10-17 11:57:28,068 : ERROR : KNIME-Worker-25 :  : Node : Excel Reader (XLS) : 0:13 : DataSpec generated by configure does not match spec after execution.
+2019-10-17 11:57:28,144 : ERROR : KNIME-Worker-28 :  : Node : Rule Engine (Dictionary) : 0:24 : Execute failed: Wrong rule in line: Row0
+Line: 1: Expected a number, string, column, a table property or flow variable reference.
+(The operator AND is not supported.)
+$Gender$="M" AND ($Weight$>= AND $Weight$<=61) AND ($Height$>= AND $Height$<=164)00 => "XS"
+                             ^
+org.knime.core.node.InvalidSettingsException: Wrong rule in line: Row0
+Line: 1: Expected a number, string, column, a table property or flow variable reference.
+(The operator AND is not supported.)
+$Gender$="M" AND ($Weight$>= AND $Weight$<=61) AND ($Height$>= AND $Height$<=164)00 => "XS"
+                             ^
+	at org.knime.base.node.rules.engine.twoports.RuleEngine2PortsNodeModel.computeRearrangerWithoutPMML(RuleEngine2PortsNodeModel.java:309)
+	at org.knime.base.node.rules.engine.twoports.RuleEngine2PortsNodeModel.createColumnRearranger(RuleEngine2PortsNodeModel.java:257)
+	at org.knime.base.node.rules.engine.twoports.RuleEngine2PortsNodeModel.execute(RuleEngine2PortsNodeModel.java:122)
+	at org.knime.core.node.NodeModel.executeModel(NodeModel.java:567)
+	at org.knime.core.node.Node.invokeFullyNodeModelExecute(Node.java:1192)
+	at org.knime.core.node.Node.execute(Node.java:979)
+	at org.knime.core.node.workflow.NativeNodeContainer.performExecuteNode(NativeNodeContainer.java:559)
+	at org.knime.core.node.exec.LocalNodeExecutionJob.mainExecute(LocalNodeExecutionJob.java:95)
+	at org.knime.core.node.workflow.NodeExecutionJob.internalRun(NodeExecutionJob.java:179)
+	at org.knime.core.node.workflow.NodeExecutionJob.run(NodeExecutionJob.java:110)
+	at org.knime.core.util.ThreadUtils$RunnableWithContextImpl.runWithContext(ThreadUtils.java:328)
+	at org.knime.core.util.ThreadUtils$RunnableWithContext.run(ThreadUtils.java:204)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at org.knime.core.util.ThreadPool$MyFuture.run(ThreadPool.java:123)
+	at org.knime.core.util.ThreadPool$Worker.run(ThreadPool.java:246)
+Caused by: java.text.ParseException: Line: 1: Expected a number, string, column, a table property or flow variable reference.
+(The operator AND is not supported.)
+$Gender$="M" AND ($Weight$>= AND $Weight$<=61) AND ($Height$>= AND $Height$<=164)00 => "XS"
+                             ^
+	at org.knime.base.node.rules.engine.BaseRuleParser.parseOperand(BaseRuleParser.java:1063)
+	at org.knime.base.node.rules.engine.BaseRuleParser.handleRelationRightOperand(BaseRuleParser.java:920)
+	at org.knime.base.node.rules.engine.BaseRuleParser.parseRelation(BaseRuleParser.java:857)
+	at org.knime.base.node.rules.engine.BaseRuleParser.parseRootBooleanExpression(BaseRuleParser.java:757)
+	at org.knime.base.node.rules.engine.BaseRuleParser.parseAndExpression(BaseRuleParser.java:712)
+	at org.knime.base.node.rules.engine.BaseRuleParser.parseXorExpression(BaseRuleParser.java:689)
+	at org.knime.base.node.rules.engine.BaseRuleParser.parseOrExpression(BaseRuleParser.java:666)
+	at org.knime.base.node.rules.engine.BaseRuleParser.parseBooleanExpression(BaseRuleParser.java:654)
+	at org.knime.base.node.rules.engine.BaseRuleParser.parseRootBooleanExpression(BaseRuleParser.java:739)
+	at org.knime.base.node.rules.engine.BaseRuleParser.parseAndExpression(BaseRuleParser.java:717)
+	at org.knime.base.node.rules.engine.BaseRuleParser.parseXorExpression(BaseRuleParser.java:689)
+	at org.knime.base.node.rules.engine.BaseRuleParser.parseOrExpression(BaseRuleParser.java:666)
+	at org.knime.base.node.rules.engine.BaseRuleParser.parseBooleanExpression(BaseRuleParser.java:654)
+	at org.knime.base.node.rules.engine.SimpleRuleParser.parseCondition(SimpleRuleParser.java:278)
+	at org.knime.base.node.rules.engine.SimpleRuleParser.parse(SimpleRuleParser.java:230)
+	at org.knime.base.node.rules.engine.RuleFactory.parse(RuleFactory.java:191)
+	at org.knime.base.node.rules.engine.twoports.RuleEngine2PortsNodeModel.computeRearrangerWithoutPMML(RuleEngine2PortsNodeModel.java:303)
+	... 15 more
+2019-10-17 11:58:02,711 : ERROR : KNIME-Worker-28 :  : Node : Rule Engine (Dictionary) : 0:24 : Execute failed: Wrong rule in line: Row0
+Line: 1: Expected a number, string, column, a table property or flow variable reference.
+(The operator AND is not supported.)
+$Gender$="M" AND ($Weight$>= AND $Weight$<=61) AND ($Height$>= AND $Height$<=164)00 => "XS"
+                             ^
+org.knime.core.node.InvalidSettingsException: Wrong rule in line: Row0
+Line: 1: Expected a number, string, column, a table property or flow variable reference.
+(The operator AND is not supported.)
+$Gender$="M" AND ($Weight$>= AND $Weight$<=61) AND ($Height$>= AND $Height$<=164)00 => "XS"
+                             ^
+	at org.knime.base.node.rules.engine.twoports.RuleEngine2PortsNodeModel.computeRearrangerWithoutPMML(RuleEngine2PortsNodeModel.java:309)
+	at org.knime.base.node.rules.engine.twoports.RuleEngine2PortsNodeModel.createColumnRearranger(RuleEngine2PortsNodeModel.java:257)
+	at org.knime.base.node.rules.engine.twoports.RuleEngine2PortsNodeModel.execute(RuleEngine2PortsNodeModel.java:122)
+	at org.knime.core.node.NodeModel.executeModel(NodeModel.java:567)
+	at org.knime.core.node.Node.invokeFullyNodeModelExecute(Node.java:1192)
+	at org.knime.core.node.Node.execute(Node.java:979)
+	at org.knime.core.node.workflow.NativeNodeContainer.performExecuteNode(NativeNodeContainer.java:559)
+	at org.knime.core.node.exec.LocalNodeExecutionJob.mainExecute(LocalNodeExecutionJob.java:95)
+	at org.knime.core.node.workflow.NodeExecutionJob.internalRun(NodeExecutionJob.java:179)
+	at org.knime.core.node.workflow.NodeExecutionJob.run(NodeExecutionJob.java:110)
+	at org.knime.core.util.ThreadUtils$RunnableWithContextImpl.runWithContext(ThreadUtils.java:328)
+	at org.knime.core.util.ThreadUtils$RunnableWithContext.run(ThreadUtils.java:204)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at org.knime.core.util.ThreadPool$MyFuture.run(ThreadPool.java:123)
+	at org.knime.core.util.ThreadPool$Worker.run(ThreadPool.java:246)
+Caused by: java.text.ParseException: Line: 1: Expected a number, string, column, a table property or flow variable reference.
+(The operator AND is not supported.)
+$Gender$="M" AND ($Weight$>= AND $Weight$<=61) AND ($Height$>= AND $Height$<=164)00 => "XS"
+                             ^
+	at org.knime.base.node.rules.engine.BaseRuleParser.parseOperand(BaseRuleParser.java:1063)
+	at org.knime.base.node.rules.engine.BaseRuleParser.handleRelationRightOperand(BaseRuleParser.java:920)
+	at org.knime.base.node.rules.engine.BaseRuleParser.parseRelation(BaseRuleParser.java:857)
+	at org.knime.base.node.rules.engine.BaseRuleParser.parseRootBooleanExpression(BaseRuleParser.java:757)
+	at org.knime.base.node.rules.engine.BaseRuleParser.parseAndExpression(BaseRuleParser.java:712)
+	at org.knime.base.node.rules.engine.BaseRuleParser.parseXorExpression(BaseRuleParser.java:689)
+	at org.knime.base.node.rules.engine.BaseRuleParser.parseOrExpression(BaseRuleParser.java:666)
+	at org.knime.base.node.rules.engine.BaseRuleParser.parseBooleanExpression(BaseRuleParser.java:654)
+	at org.knime.base.node.rules.engine.BaseRuleParser.parseRootBooleanExpression(BaseRuleParser.java:739)
+	at org.knime.base.node.rules.engine.BaseRuleParser.parseAndExpression(BaseRuleParser.java:717)
+	at org.knime.base.node.rules.engine.BaseRuleParser.parseXorExpression(BaseRuleParser.java:689)
+	at org.knime.base.node.rules.engine.BaseRuleParser.parseOrExpression(BaseRuleParser.java:666)
+	at org.knime.base.node.rules.engine.BaseRuleParser.parseBooleanExpression(BaseRuleParser.java:654)
+	at org.knime.base.node.rules.engine.SimpleRuleParser.parseCondition(SimpleRuleParser.java:278)
+	at org.knime.base.node.rules.engine.SimpleRuleParser.parse(SimpleRuleParser.java:230)
+	at org.knime.base.node.rules.engine.RuleFactory.parse(RuleFactory.java:191)
+	at org.knime.base.node.rules.engine.twoports.RuleEngine2PortsNodeModel.computeRearrangerWithoutPMML(RuleEngine2PortsNodeModel.java:303)
+	... 15 more
+2019-10-17 14:04:26,566 : ERROR : ModalContext :  : FileSubNodeContainerPersistor : Deployment_workflow : 2 : Could not load input port information: Unable to restore port type, can't load class "org.knime.bigdata.spark.core.port.data.SparkDataPortObject"
+org.knime.core.node.InvalidSettingsException: Unable to restore port type, can't load class "org.knime.bigdata.spark.core.port.data.SparkDataPortObject"
+	at org.knime.core.node.port.PortType.load(PortType.java:268)
+	at org.knime.core.node.port.PortType.load(PortType.java:249)
+	at org.knime.core.node.workflow.FileSubNodeContainerPersistor.loadPort(FileSubNodeContainerPersistor.java:359)
+	at org.knime.core.node.workflow.FileSubNodeContainerPersistor.preLoadNodeContainer(FileSubNodeContainerPersistor.java:273)
+	at org.knime.core.node.workflow.FileWorkflowPersistor.loadNodeContainer(FileWorkflowPersistor.java:943)
+	at org.knime.core.node.workflow.WorkflowManager.postLoad(WorkflowManager.java:7865)
+	at org.knime.core.node.workflow.WorkflowManager.loadContent(WorkflowManager.java:7756)
+	at org.knime.core.node.workflow.WorkflowManager.load(WorkflowManager.java:7710)
+	at org.knime.core.node.workflow.WorkflowManager.load(WorkflowManager.java:7631)
+	at org.knime.core.node.workflow.WorkflowManager.load(WorkflowManager.java:7604)
+	at org.knime.core.node.workflow.WorkflowManager.loadProject(WorkflowManager.java:7449)
+	at org.knime.workbench.editor2.LoadWorkflowRunnable.run(LoadWorkflowRunnable.java:175)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:119)
+2019-10-17 14:04:26,609 : ERROR : ModalContext :  : FileSubNodeContainerPersistor : Deployment_workflow : 2 : Could not load output port information: Unable to restore port type, can't load class "org.knime.bigdata.spark.core.port.data.SparkDataPortObject"
+org.knime.core.node.InvalidSettingsException: Unable to restore port type, can't load class "org.knime.bigdata.spark.core.port.data.SparkDataPortObject"
+	at org.knime.core.node.port.PortType.load(PortType.java:268)
+	at org.knime.core.node.port.PortType.load(PortType.java:249)
+	at org.knime.core.node.workflow.FileSubNodeContainerPersistor.loadPort(FileSubNodeContainerPersistor.java:359)
+	at org.knime.core.node.workflow.FileSubNodeContainerPersistor.preLoadNodeContainer(FileSubNodeContainerPersistor.java:333)
+	at org.knime.core.node.workflow.FileWorkflowPersistor.loadNodeContainer(FileWorkflowPersistor.java:943)
+	at org.knime.core.node.workflow.WorkflowManager.postLoad(WorkflowManager.java:7865)
+	at org.knime.core.node.workflow.WorkflowManager.loadContent(WorkflowManager.java:7756)
+	at org.knime.core.node.workflow.WorkflowManager.load(WorkflowManager.java:7710)
+	at org.knime.core.node.workflow.WorkflowManager.load(WorkflowManager.java:7631)
+	at org.knime.core.node.workflow.WorkflowManager.load(WorkflowManager.java:7604)
+	at org.knime.core.node.workflow.WorkflowManager.loadProject(WorkflowManager.java:7449)
+	at org.knime.workbench.editor2.LoadWorkflowRunnable.run(LoadWorkflowRunnable.java:175)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:119)
+2019-10-17 14:04:26,706 : ERROR : ModalContext :  : FileSubNodeContainerPersistor : Deployment_workflow : 2 : Could not load input port information: Unable to restore port type, can't load class "org.knime.bigdata.spark.core.port.data.SparkDataPortObject"
+org.knime.core.node.InvalidSettingsException: Unable to restore port type, can't load class "org.knime.bigdata.spark.core.port.data.SparkDataPortObject"
+	at org.knime.core.node.port.PortType.load(PortType.java:268)
+	at org.knime.core.node.port.PortType.load(PortType.java:249)
+	at org.knime.core.node.workflow.FileSubNodeContainerPersistor.loadPort(FileSubNodeContainerPersistor.java:359)
+	at org.knime.core.node.workflow.FileSubNodeContainerPersistor.preLoadNodeContainer(FileSubNodeContainerPersistor.java:273)
+	at org.knime.core.node.workflow.FileWorkflowPersistor.loadNodeContainer(FileWorkflowPersistor.java:943)
+	at org.knime.core.node.workflow.WorkflowManager.postLoad(WorkflowManager.java:7865)
+	at org.knime.core.node.workflow.WorkflowManager.loadContent(WorkflowManager.java:7756)
+	at org.knime.core.node.workflow.WorkflowManager.load(WorkflowManager.java:7710)
+	at org.knime.core.node.workflow.WorkflowManager.load(WorkflowManager.java:7631)
+	at org.knime.core.node.workflow.WorkflowManager.load(WorkflowManager.java:7604)
+	at org.knime.core.node.workflow.WorkflowManager.loadProject(WorkflowManager.java:7449)
+	at org.knime.workbench.editor2.LoadWorkflowRunnable.run(LoadWorkflowRunnable.java:175)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:119)
+2019-10-17 14:04:26,750 : ERROR : ModalContext :  : FileSubNodeContainerPersistor : Deployment_workflow : 2 : Could not load output port information: Unable to restore port type, can't load class "org.knime.bigdata.spark.core.port.data.SparkDataPortObject"
+org.knime.core.node.InvalidSettingsException: Unable to restore port type, can't load class "org.knime.bigdata.spark.core.port.data.SparkDataPortObject"
+	at org.knime.core.node.port.PortType.load(PortType.java:268)
+	at org.knime.core.node.port.PortType.load(PortType.java:249)
+	at org.knime.core.node.workflow.FileSubNodeContainerPersistor.loadPort(FileSubNodeContainerPersistor.java:359)
+	at org.knime.core.node.workflow.FileSubNodeContainerPersistor.preLoadNodeContainer(FileSubNodeContainerPersistor.java:333)
+	at org.knime.core.node.workflow.FileWorkflowPersistor.loadNodeContainer(FileWorkflowPersistor.java:943)
+	at org.knime.core.node.workflow.WorkflowManager.postLoad(WorkflowManager.java:7865)
+	at org.knime.core.node.workflow.WorkflowManager.loadContent(WorkflowManager.java:7756)
+	at org.knime.core.node.workflow.WorkflowManager.load(WorkflowManager.java:7710)
+	at org.knime.core.node.workflow.WorkflowManager.load(WorkflowManager.java:7631)
+	at org.knime.core.node.workflow.WorkflowManager.load(WorkflowManager.java:7604)
+	at org.knime.core.node.workflow.WorkflowManager.loadProject(WorkflowManager.java:7449)
+	at org.knime.workbench.editor2.LoadWorkflowRunnable.run(LoadWorkflowRunnable.java:175)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:119)
+2019-10-17 14:04:26,794 : ERROR : ModalContext :  : FileSubNodeContainerPersistor : Deployment_workflow : 2 : Could not load input port information: Unable to restore port type, can't load class "org.knime.bigdata.spark.core.port.data.SparkDataPortObject"
+org.knime.core.node.InvalidSettingsException: Unable to restore port type, can't load class "org.knime.bigdata.spark.core.port.data.SparkDataPortObject"
+	at org.knime.core.node.port.PortType.load(PortType.java:268)
+	at org.knime.core.node.port.PortType.load(PortType.java:249)
+	at org.knime.core.node.workflow.FileSubNodeContainerPersistor.loadPort(FileSubNodeContainerPersistor.java:359)
+	at org.knime.core.node.workflow.FileSubNodeContainerPersistor.preLoadNodeContainer(FileSubNodeContainerPersistor.java:273)
+	at org.knime.core.node.workflow.FileWorkflowPersistor.loadNodeContainer(FileWorkflowPersistor.java:943)
+	at org.knime.core.node.workflow.WorkflowManager.postLoad(WorkflowManager.java:7865)
+	at org.knime.core.node.workflow.WorkflowManager.loadContent(WorkflowManager.java:7756)
+	at org.knime.core.node.workflow.WorkflowManager.load(WorkflowManager.java:7710)
+	at org.knime.core.node.workflow.WorkflowManager.load(WorkflowManager.java:7631)
+	at org.knime.core.node.workflow.WorkflowManager.load(WorkflowManager.java:7604)
+	at org.knime.core.node.workflow.WorkflowManager.loadProject(WorkflowManager.java:7449)
+	at org.knime.workbench.editor2.LoadWorkflowRunnable.run(LoadWorkflowRunnable.java:175)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:119)
+2019-10-17 14:04:26,828 : ERROR : ModalContext :  : FileSubNodeContainerPersistor : Deployment_workflow : 2 : Could not load output port information: Unable to restore port type, can't load class "org.knime.bigdata.spark.core.port.data.SparkDataPortObject"
+org.knime.core.node.InvalidSettingsException: Unable to restore port type, can't load class "org.knime.bigdata.spark.core.port.data.SparkDataPortObject"
+	at org.knime.core.node.port.PortType.load(PortType.java:268)
+	at org.knime.core.node.port.PortType.load(PortType.java:249)
+	at org.knime.core.node.workflow.FileSubNodeContainerPersistor.loadPort(FileSubNodeContainerPersistor.java:359)
+	at org.knime.core.node.workflow.FileSubNodeContainerPersistor.preLoadNodeContainer(FileSubNodeContainerPersistor.java:333)
+	at org.knime.core.node.workflow.FileWorkflowPersistor.loadNodeContainer(FileWorkflowPersistor.java:943)
+	at org.knime.core.node.workflow.WorkflowManager.postLoad(WorkflowManager.java:7865)
+	at org.knime.core.node.workflow.WorkflowManager.loadContent(WorkflowManager.java:7756)
+	at org.knime.core.node.workflow.WorkflowManager.load(WorkflowManager.java:7710)
+	at org.knime.core.node.workflow.WorkflowManager.load(WorkflowManager.java:7631)
+	at org.knime.core.node.workflow.WorkflowManager.load(WorkflowManager.java:7604)
+	at org.knime.core.node.workflow.WorkflowManager.loadProject(WorkflowManager.java:7449)
+	at org.knime.workbench.editor2.LoadWorkflowRunnable.run(LoadWorkflowRunnable.java:175)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:119)
+2019-10-17 14:04:26,904 : ERROR : ModalContext :  : FileSubNodeContainerPersistor : Deployment_workflow : 2 : Could not load input port information: Unable to restore port type, can't load class "org.knime.bigdata.spark.core.port.data.SparkDataPortObject"
+org.knime.core.node.InvalidSettingsException: Unable to restore port type, can't load class "org.knime.bigdata.spark.core.port.data.SparkDataPortObject"
+	at org.knime.core.node.port.PortType.load(PortType.java:268)
+	at org.knime.core.node.port.PortType.load(PortType.java:249)
+	at org.knime.core.node.workflow.FileSubNodeContainerPersistor.loadPort(FileSubNodeContainerPersistor.java:359)
+	at org.knime.core.node.workflow.FileSubNodeContainerPersistor.preLoadNodeContainer(FileSubNodeContainerPersistor.java:273)
+	at org.knime.core.node.workflow.FileWorkflowPersistor.loadNodeContainer(FileWorkflowPersistor.java:943)
+	at org.knime.core.node.workflow.WorkflowManager.postLoad(WorkflowManager.java:7865)
+	at org.knime.core.node.workflow.WorkflowManager.loadContent(WorkflowManager.java:7756)
+	at org.knime.core.node.workflow.WorkflowManager.load(WorkflowManager.java:7710)
+	at org.knime.core.node.workflow.WorkflowManager.load(WorkflowManager.java:7631)
+	at org.knime.core.node.workflow.WorkflowManager.load(WorkflowManager.java:7604)
+	at org.knime.core.node.workflow.WorkflowManager.loadProject(WorkflowManager.java:7449)
+	at org.knime.workbench.editor2.LoadWorkflowRunnable.run(LoadWorkflowRunnable.java:175)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:119)
+2019-10-17 14:04:27,031 : WARN  : ModalContext :  : Node : MISSING Create Local Big Data Environment : 2:988 : Node can't be executed - Node "Create Local Big Data Environment" not available from extension "KNIME Extension for Local Big Data Environments"
+2019-10-17 14:04:27,157 : WARN  : ModalContext :  : Node : Model Reader : 2:1166 : Failed to extract specification from "knime://knime.workflow/data/RFmodel": Can't load class "org.knime.bigdata.spark.core.port.model.SparkModelPortObjectSpec"
+2019-10-17 14:04:27,578 : ERROR : ModalContext :  : FileNativeNodeContainerPersistor : Preprocessing : 2:1180 : Unable to load additional factory settings into node factory (node "class "Optional[org.knime.core.node.workflow.virtual.subnode.VirtualSubNodeInputNodeFactory]" [node name: "WrappedNode Input", bundle-symbolic-name: org.knime.core, bundle-name: KNIME Core API, bundle-vendor: KNIME AG, Zurich, Switzerland, feature-symbolic-name: org.knime.features.base.feature.group, feature-name: KNIME Core,feature-vendor: KNIME AG, Zurich, Switzerland, feature-version: 3.7.1.v201901291053]")
+2019-10-17 14:04:27,640 : ERROR : ModalContext :  : FileNativeNodeContainerPersistor : Preprocessing : 2:1180 : Unable to load additional factory settings into node factory (node "class "Optional[org.knime.core.node.workflow.virtual.subnode.VirtualSubNodeOutputNodeFactory]" [node name: "WrappedNode Output", bundle-symbolic-name: org.knime.core, bundle-name: KNIME Core API, bundle-vendor: KNIME AG, Zurich, Switzerland, feature-symbolic-name: org.knime.features.base.feature.group, feature-name: KNIME Core,feature-vendor: KNIME AG, Zurich, Switzerland, feature-version: 3.7.1.v201901291053]")
+2019-10-17 14:04:27,646 : ERROR : ModalContext :  : FileSubNodeContainerPersistor : Preprocessing : 2:1180 : Post-load error (ClassCastException): org.knime.core.node.missing.MissingNodeModel cannot be cast to org.knime.core.node.workflow.virtual.subnode.VirtualSubNodeInputNodeModel
+java.lang.ClassCastException: org.knime.core.node.missing.MissingNodeModel cannot be cast to org.knime.core.node.workflow.virtual.subnode.VirtualSubNodeInputNodeModel
+	at org.knime.core.node.workflow.SubNodeContainer.getVirtualInNodeModel(SubNodeContainer.java:528)
+	at org.knime.core.node.workflow.SubNodeContainer.postLoadWFM(SubNodeContainer.java:1652)
+	at org.knime.core.node.workflow.FileSubNodeContainerPersistor$1.postLoad(FileSubNodeContainerPersistor.java:132)
+	at org.knime.core.node.workflow.WorkflowManager.loadContent(WorkflowManager.java:7754)
+	at org.knime.core.node.workflow.SubNodeContainer.performLoadContent(SubNodeContainer.java:1664)
+	at org.knime.core.node.workflow.SingleNodeContainer.loadContent(SingleNodeContainer.java:783)
+	at org.knime.core.node.workflow.WorkflowManager.postLoad(WorkflowManager.java:7881)
+	at org.knime.core.node.workflow.WorkflowManager.loadContent(WorkflowManager.java:7756)
+	at org.knime.core.node.workflow.WorkflowManager.postLoad(WorkflowManager.java:7881)
+	at org.knime.core.node.workflow.WorkflowManager.loadContent(WorkflowManager.java:7756)
+	at org.knime.core.node.workflow.WorkflowManager.load(WorkflowManager.java:7710)
+	at org.knime.core.node.workflow.WorkflowManager.load(WorkflowManager.java:7631)
+	at org.knime.core.node.workflow.WorkflowManager.load(WorkflowManager.java:7604)
+	at org.knime.core.node.workflow.WorkflowManager.loadProject(WorkflowManager.java:7449)
+	at org.knime.workbench.editor2.LoadWorkflowRunnable.run(LoadWorkflowRunnable.java:175)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:119)
+2019-10-17 14:04:27,872 : ERROR : ModalContext :  : FileNativeNodeContainerPersistor : Spark Lag Column : 2:1093 : Unable to load additional factory settings into node factory (node "class "Optional[org.knime.core.node.workflow.virtual.subnode.VirtualSubNodeInputNodeFactory]" [node name: "WrappedNode Input", bundle-symbolic-name: org.knime.core, bundle-name: KNIME Core API, bundle-vendor: KNIME AG, Zurich, Switzerland, feature-symbolic-name: org.knime.features.base.feature.group, feature-name: KNIME Core,feature-vendor: KNIME AG, Zurich, Switzerland, feature-version: 3.7.1.v201901291053]")
+2019-10-17 14:04:27,912 : ERROR : ModalContext :  : FileNativeNodeContainerPersistor : Spark Lag Column : 2:1093 : Unable to load additional factory settings into node factory (node "class "Optional[org.knime.core.node.workflow.virtual.subnode.VirtualSubNodeOutputNodeFactory]" [node name: "WrappedNode Output", bundle-symbolic-name: org.knime.core, bundle-name: KNIME Core API, bundle-vendor: KNIME AG, Zurich, Switzerland, feature-symbolic-name: org.knime.features.base.feature.group, feature-name: KNIME Core,feature-vendor: KNIME AG, Zurich, Switzerland, feature-version: 3.7.1.v201901291053]")
+2019-10-17 14:04:28,087 : ERROR : ModalContext :  : FileSubNodeContainerPersistor : Spark Lag Column : 2:1093 : Post-load error (ClassCastException): org.knime.core.node.missing.MissingNodeModel cannot be cast to org.knime.core.node.workflow.virtual.subnode.VirtualSubNodeInputNodeModel
+java.lang.ClassCastException: org.knime.core.node.missing.MissingNodeModel cannot be cast to org.knime.core.node.workflow.virtual.subnode.VirtualSubNodeInputNodeModel
+	at org.knime.core.node.workflow.SubNodeContainer.getVirtualInNodeModel(SubNodeContainer.java:528)
+	at org.knime.core.node.workflow.SubNodeContainer.postLoadWFM(SubNodeContainer.java:1652)
+	at org.knime.core.node.workflow.FileSubNodeContainerPersistor$1.postLoad(FileSubNodeContainerPersistor.java:132)
+	at org.knime.core.node.workflow.WorkflowManager.loadContent(WorkflowManager.java:7754)
+	at org.knime.core.node.workflow.SubNodeContainer.performLoadContent(SubNodeContainer.java:1664)
+	at org.knime.core.node.workflow.SingleNodeContainer.loadContent(SingleNodeContainer.java:783)
+	at org.knime.core.node.workflow.WorkflowManager.postLoad(WorkflowManager.java:7881)
+	at org.knime.core.node.workflow.WorkflowManager.loadContent(WorkflowManager.java:7756)
+	at org.knime.core.node.workflow.WorkflowManager.postLoad(WorkflowManager.java:7881)
+	at org.knime.core.node.workflow.WorkflowManager.loadContent(WorkflowManager.java:7756)
+	at org.knime.core.node.workflow.WorkflowManager.load(WorkflowManager.java:7710)
+	at org.knime.core.node.workflow.WorkflowManager.load(WorkflowManager.java:7631)
+	at org.knime.core.node.workflow.WorkflowManager.load(WorkflowManager.java:7604)
+	at org.knime.core.node.workflow.WorkflowManager.loadProject(WorkflowManager.java:7449)
+	at org.knime.workbench.editor2.LoadWorkflowRunnable.run(LoadWorkflowRunnable.java:175)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:119)
+2019-10-17 14:04:28,099 : WARN  : ModalContext :  : FileNodePersistor : MISSING Spark Missing Value : 2:1093:0:628 : Unable to load port content for node "MISSING Spark Missing Value": Invalid outport index in settings: 2
+org.knime.core.node.InvalidSettingsException: Invalid outport index in settings: 2
+	at org.knime.core.node.FileNodePersistor.loadPorts(FileNodePersistor.java:323)
+	at org.knime.core.node.FileNodePersistor.load(FileNodePersistor.java:994)
+	at org.knime.core.node.workflow.FileNativeNodeContainerPersistor.loadNCAndWashModelSettings(FileNativeNodeContainerPersistor.java:265)
+	at org.knime.core.node.workflow.FileSingleNodeContainerPersistor.loadNodeContainer(FileSingleNodeContainerPersistor.java:259)
+	at org.knime.core.node.workflow.WorkflowManager.postLoad(WorkflowManager.java:7865)
+	at org.knime.core.node.workflow.WorkflowManager.loadContent(WorkflowManager.java:7756)
+	at org.knime.core.node.workflow.SubNodeContainer.performLoadContent(SubNodeContainer.java:1664)
+	at org.knime.core.node.workflow.SingleNodeContainer.loadContent(SingleNodeContainer.java:783)
+	at org.knime.core.node.workflow.WorkflowManager.postLoad(WorkflowManager.java:7881)
+	at org.knime.core.node.workflow.WorkflowManager.loadContent(WorkflowManager.java:7756)
+	at org.knime.core.node.workflow.WorkflowManager.postLoad(WorkflowManager.java:7881)
+	at org.knime.core.node.workflow.WorkflowManager.loadContent(WorkflowManager.java:7756)
+	at org.knime.core.node.workflow.WorkflowManager.load(WorkflowManager.java:7710)
+	at org.knime.core.node.workflow.WorkflowManager.load(WorkflowManager.java:7631)
+	at org.knime.core.node.workflow.WorkflowManager.load(WorkflowManager.java:7604)
+	at org.knime.core.node.workflow.WorkflowManager.loadProject(WorkflowManager.java:7449)
+	at org.knime.workbench.editor2.LoadWorkflowRunnable.run(LoadWorkflowRunnable.java:175)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:119)
+2019-10-17 14:04:28,479 : ERROR : ModalContext :  : FileNativeNodeContainerPersistor : Update time : 2:1181 : Unable to load additional factory settings into node factory (node "class "Optional[org.knime.core.node.workflow.virtual.subnode.VirtualSubNodeInputNodeFactory]" [node name: "WrappedNode Input", bundle-symbolic-name: org.knime.core, bundle-name: KNIME Core API, bundle-vendor: KNIME AG, Zurich, Switzerland, feature-symbolic-name: org.knime.features.base.feature.group, feature-name: KNIME Core,feature-vendor: KNIME AG, Zurich, Switzerland, feature-version: 3.7.1.v201901291053]")
+2019-10-17 14:04:28,515 : ERROR : ModalContext :  : FileNativeNodeContainerPersistor : Update time : 2:1181 : Unable to load additional factory settings into node factory (node "class "Optional[org.knime.core.node.workflow.virtual.subnode.VirtualSubNodeOutputNodeFactory]" [node name: "WrappedNode Output", bundle-symbolic-name: org.knime.core, bundle-name: KNIME Core API, bundle-vendor: KNIME AG, Zurich, Switzerland, feature-symbolic-name: org.knime.features.base.feature.group, feature-name: KNIME Core,feature-vendor: KNIME AG, Zurich, Switzerland, feature-version: 3.7.1.v201901291053]")
+2019-10-17 14:04:28,522 : ERROR : ModalContext :  : FileSubNodeContainerPersistor : Update time : 2:1181 : Post-load error (ClassCastException): org.knime.core.node.missing.MissingNodeModel cannot be cast to org.knime.core.node.workflow.virtual.subnode.VirtualSubNodeInputNodeModel
+java.lang.ClassCastException: org.knime.core.node.missing.MissingNodeModel cannot be cast to org.knime.core.node.workflow.virtual.subnode.VirtualSubNodeInputNodeModel
+	at org.knime.core.node.workflow.SubNodeContainer.getVirtualInNodeModel(SubNodeContainer.java:528)
+	at org.knime.core.node.workflow.SubNodeContainer.postLoadWFM(SubNodeContainer.java:1652)
+	at org.knime.core.node.workflow.FileSubNodeContainerPersistor$1.postLoad(FileSubNodeContainerPersistor.java:132)
+	at org.knime.core.node.workflow.WorkflowManager.loadContent(WorkflowManager.java:7754)
+	at org.knime.core.node.workflow.SubNodeContainer.performLoadContent(SubNodeContainer.java:1664)
+	at org.knime.core.node.workflow.SingleNodeContainer.loadContent(SingleNodeContainer.java:783)
+	at org.knime.core.node.workflow.WorkflowManager.postLoad(WorkflowManager.java:7881)
+	at org.knime.core.node.workflow.WorkflowManager.loadContent(WorkflowManager.java:7756)
+	at org.knime.core.node.workflow.WorkflowManager.postLoad(WorkflowManager.java:7881)
+	at org.knime.core.node.workflow.WorkflowManager.loadContent(WorkflowManager.java:7756)
+	at org.knime.core.node.workflow.WorkflowManager.load(WorkflowManager.java:7710)
+	at org.knime.core.node.workflow.WorkflowManager.load(WorkflowManager.java:7631)
+	at org.knime.core.node.workflow.WorkflowManager.load(WorkflowManager.java:7604)
+	at org.knime.core.node.workflow.WorkflowManager.loadProject(WorkflowManager.java:7449)
+	at org.knime.workbench.editor2.LoadWorkflowRunnable.run(LoadWorkflowRunnable.java:175)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:119)
+2019-10-17 14:04:28,813 : ERROR : ModalContext :  : FileNativeNodeContainerPersistor : Table view : 2:1185 : Unable to load additional factory settings into node factory (node "class "Optional[org.knime.core.node.workflow.virtual.subnode.VirtualSubNodeInputNodeFactory]" [node name: "WrappedNode Input", bundle-symbolic-name: org.knime.core, bundle-name: KNIME Core API, bundle-vendor: KNIME AG, Zurich, Switzerland, feature-symbolic-name: org.knime.features.base.feature.group, feature-name: KNIME Core,feature-vendor: KNIME AG, Zurich, Switzerland, feature-version: 3.7.1.v201901291053]")
+2019-10-17 14:04:28,826 : ERROR : ModalContext :  : FileSubNodeContainerPersistor : Table view : 2:1185 : Post-load error (ClassCastException): org.knime.core.node.missing.MissingNodeModel cannot be cast to org.knime.core.node.workflow.virtual.subnode.VirtualSubNodeInputNodeModel
+java.lang.ClassCastException: org.knime.core.node.missing.MissingNodeModel cannot be cast to org.knime.core.node.workflow.virtual.subnode.VirtualSubNodeInputNodeModel
+	at org.knime.core.node.workflow.SubNodeContainer.getVirtualInNodeModel(SubNodeContainer.java:528)
+	at org.knime.core.node.workflow.SubNodeContainer.postLoadWFM(SubNodeContainer.java:1652)
+	at org.knime.core.node.workflow.FileSubNodeContainerPersistor$1.postLoad(FileSubNodeContainerPersistor.java:132)
+	at org.knime.core.node.workflow.WorkflowManager.loadContent(WorkflowManager.java:7754)
+	at org.knime.core.node.workflow.SubNodeContainer.performLoadContent(SubNodeContainer.java:1664)
+	at org.knime.core.node.workflow.SingleNodeContainer.loadContent(SingleNodeContainer.java:783)
+	at org.knime.core.node.workflow.WorkflowManager.postLoad(WorkflowManager.java:7881)
+	at org.knime.core.node.workflow.WorkflowManager.loadContent(WorkflowManager.java:7756)
+	at org.knime.core.node.workflow.WorkflowManager.postLoad(WorkflowManager.java:7881)
+	at org.knime.core.node.workflow.WorkflowManager.loadContent(WorkflowManager.java:7756)
+	at org.knime.core.node.workflow.WorkflowManager.load(WorkflowManager.java:7710)
+	at org.knime.core.node.workflow.WorkflowManager.load(WorkflowManager.java:7631)
+	at org.knime.core.node.workflow.WorkflowManager.load(WorkflowManager.java:7604)
+	at org.knime.core.node.workflow.WorkflowManager.loadProject(WorkflowManager.java:7449)
+	at org.knime.workbench.editor2.LoadWorkflowRunnable.run(LoadWorkflowRunnable.java:175)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:119)
+2019-10-17 14:04:28,914 : ERROR : ModalContext :  : LoadWorkflowRunnable :  :  : Errors during load: Status: DataLoadError: Deployment_workflow 2 loaded with error during data load
+2019-10-17 14:04:28,914 : ERROR : ModalContext :  : LoadWorkflowRunnable :  :  :   Status: DataLoadError: Deployment_workflow 2
+2019-10-17 14:04:28,914 : ERROR : ModalContext :  : LoadWorkflowRunnable :  :  :     Status: Error: Node "Create Local Big Data Environment" not available from extension "KNIME Extension for Local Big Data Environments"
+2019-10-17 14:04:28,915 : ERROR : ModalContext :  : LoadWorkflowRunnable :  :  :     Status: Error: Node "Parquet to Spark" not available from extension "KNIME Extension for Apache Spark" (provided by "KNIME AG, Zurich, Switzerland"; plugin "org.knime.bigdata.spark.node" is not installed)
+2019-10-17 14:04:28,915 : ERROR : ModalContext :  : LoadWorkflowRunnable :  :  :     Status: Error: Node "Spark Predictor" not available from extension "KNIME Extension for Apache Spark" (provided by "KNIME AG, Zurich, Switzerland"; plugin "org.knime.bigdata.spark.node" is not installed)
+2019-10-17 14:04:28,915 : ERROR : ModalContext :  : LoadWorkflowRunnable :  :  :     Status: Error: wrapped node with ID suffix 1093
+2019-10-17 14:04:28,915 : ERROR : ModalContext :  : LoadWorkflowRunnable :  :  :       Status: Error: Could not load input port information: Unable to restore port type, can't load class "org.knime.bigdata.spark.core.port.data.SparkDataPortObject"
+2019-10-17 14:04:28,915 : ERROR : ModalContext :  : LoadWorkflowRunnable :  :  :       Status: Error: Could not load output port information: Unable to restore port type, can't load class "org.knime.bigdata.spark.core.port.data.SparkDataPortObject"
+2019-10-17 14:04:28,915 : ERROR : ModalContext :  : LoadWorkflowRunnable :  :  :     Status: Error: wrapped node with ID suffix 1180
+2019-10-17 14:04:28,916 : ERROR : ModalContext :  : LoadWorkflowRunnable :  :  :       Status: Error: Could not load input port information: Unable to restore port type, can't load class "org.knime.bigdata.spark.core.port.data.SparkDataPortObject"
+2019-10-17 14:04:28,916 : ERROR : ModalContext :  : LoadWorkflowRunnable :  :  :       Status: Error: Could not load output port information: Unable to restore port type, can't load class "org.knime.bigdata.spark.core.port.data.SparkDataPortObject"
+2019-10-17 14:04:28,916 : ERROR : ModalContext :  : LoadWorkflowRunnable :  :  :     Status: Error: wrapped node with ID suffix 1181
+2019-10-17 14:04:28,916 : ERROR : ModalContext :  : LoadWorkflowRunnable :  :  :       Status: Error: Could not load input port information: Unable to restore port type, can't load class "org.knime.bigdata.spark.core.port.data.SparkDataPortObject"
+2019-10-17 14:04:28,916 : ERROR : ModalContext :  : LoadWorkflowRunnable :  :  :       Status: Error: Could not load output port information: Unable to restore port type, can't load class "org.knime.bigdata.spark.core.port.data.SparkDataPortObject"
+2019-10-17 14:04:28,917 : ERROR : ModalContext :  : LoadWorkflowRunnable :  :  :     Status: Error: wrapped node with ID suffix 1185
+2019-10-17 14:04:28,917 : ERROR : ModalContext :  : LoadWorkflowRunnable :  :  :       Status: Error: Could not load input port information: Unable to restore port type, can't load class "org.knime.bigdata.spark.core.port.data.SparkDataPortObject"
+2019-10-17 14:04:28,917 : ERROR : ModalContext :  : LoadWorkflowRunnable :  :  :     Status: Warning: MISSING Create Local Big Data Environment 2:988
+2019-10-17 14:04:28,917 : ERROR : ModalContext :  : LoadWorkflowRunnable :  :  :       Status: Warning: State has changed from CONFIGURED to IDLE
+2019-10-17 14:04:28,917 : ERROR : ModalContext :  : LoadWorkflowRunnable :  :  :     Status: Warning: Model Reader 2:1166
+2019-10-17 14:04:28,918 : ERROR : ModalContext :  : LoadWorkflowRunnable :  :  :       Status: Warning: State has changed from CONFIGURED to IDLE
+2019-10-17 14:04:28,918 : ERROR : ModalContext :  : LoadWorkflowRunnable :  :  :     Status: Error: Preprocessing 2:1180
+2019-10-17 14:04:28,919 : ERROR : ModalContext :  : LoadWorkflowRunnable :  :  :       Status: Error: Node "Spark GroupBy" not available from extension "KNIME Extension for Apache Spark" (provided by "KNIME AG, Zurich, Switzerland"; plugin "org.knime.bigdata.spark.node" is not installed)
+2019-10-17 14:04:28,919 : ERROR : ModalContext :  : LoadWorkflowRunnable :  :  :       Status: Error: Node "Spark SQL Query" not available from extension "KNIME Extension for Apache Spark" (provided by "KNIME AG, Zurich, Switzerland"; plugin "org.knime.bigdata.spark.node" is not installed)
+2019-10-17 14:04:28,919 : ERROR : ModalContext :  : LoadWorkflowRunnable :  :  :       Status: Error: Node "Spark SQL Query" not available from extension "KNIME Extension for Apache Spark" (provided by "KNIME AG, Zurich, Switzerland"; plugin "org.knime.bigdata.spark.node" is not installed)
+2019-10-17 14:04:28,919 : ERROR : ModalContext :  : LoadWorkflowRunnable :  :  :       Status: Error: Unable to load additional factory settings into node factory (node "class "Optional[org.knime.core.node.workflow.virtual.subnode.VirtualSubNodeInputNodeFactory]" [node name: "WrappedNode Input", bundle-symbolic-name: org.knime.core, bundle-name: KNIME Core API, bundle-vendor: KNIME AG, Zurich, Switzerland, feature-symbolic-name: org.knime.features.base.feature.group, feature-name: KNIME Core,feature-vendor: KNIME AG, Zurich, Switzerland, feature-version: 3.7.1.v201901291053]")
+2019-10-17 14:04:28,919 : ERROR : ModalContext :  : LoadWorkflowRunnable :  :  :       Status: Error: Unable to load additional factory settings into node factory (node "class "Optional[org.knime.core.node.workflow.virtual.subnode.VirtualSubNodeOutputNodeFactory]" [node name: "WrappedNode Output", bundle-symbolic-name: org.knime.core, bundle-name: KNIME Core API, bundle-vendor: KNIME AG, Zurich, Switzerland, feature-symbolic-name: org.knime.features.base.feature.group, feature-name: KNIME Core,feature-vendor: KNIME AG, Zurich, Switzerland, feature-version: 3.7.1.v201901291053]")
+2019-10-17 14:04:28,920 : ERROR : ModalContext :  : LoadWorkflowRunnable :  :  :       Status: Error: Post-load error (ClassCastException): org.knime.core.node.missing.MissingNodeModel cannot be cast to org.knime.core.node.workflow.virtual.subnode.VirtualSubNodeInputNodeModel
+2019-10-17 14:04:28,920 : ERROR : ModalContext :  : LoadWorkflowRunnable :  :  :       Status: Error: Virtual output node is not of expected type (expected org.knime.core.node.workflow.virtual.subnode.VirtualSubNodeOutputNodeModel, actual org.knime.core.node.missing.MissingNodeModel) - creating new instance (ID 1175)
+2019-10-17 14:04:28,920 : ERROR : ModalContext :  : LoadWorkflowRunnable :  :  :       Status: Error: Virtual input node is not of expected type (expected org.knime.core.node.workflow.virtual.subnode.VirtualSubNodeInputNodeModel, actual org.knime.core.node.missing.MissingNodeModel) - creating new instance (ID 1176)
+2019-10-17 14:04:28,920 : ERROR : ModalContext :  : LoadWorkflowRunnable :  :  :     Status: DataLoadError: Spark Lag Column 2:1093
+2019-10-17 14:04:28,921 : ERROR : ModalContext :  : LoadWorkflowRunnable :  :  :       Status: Error: Node "Spark SQL Query" not available from extension "KNIME Extension for Apache Spark" (provided by "KNIME AG, Zurich, Switzerland"; plugin "org.knime.bigdata.spark.node" is not installed)
+2019-10-17 14:04:28,921 : ERROR : ModalContext :  : LoadWorkflowRunnable :  :  :       Status: Error: Node "Empty Table Creator" not available from extension "KNIME Data Generation" (provided by "KNIME AG, Zurich, Switzerland"; plugin "org.knime.datageneration" is not installed)
+2019-10-17 14:04:28,921 : ERROR : ModalContext :  : LoadWorkflowRunnable :  :  :       Status: Error: Unable to load additional factory settings into node factory (node "class "Optional[org.knime.core.node.workflow.virtual.subnode.VirtualSubNodeInputNodeFactory]" [node name: "WrappedNode Input", bundle-symbolic-name: org.knime.core, bundle-name: KNIME Core API, bundle-vendor: KNIME AG, Zurich, Switzerland, feature-symbolic-name: org.knime.features.base.feature.group, feature-name: KNIME Core,feature-vendor: KNIME AG, Zurich, Switzerland, feature-version: 3.7.1.v201901291053]")
+2019-10-17 14:04:28,921 : ERROR : ModalContext :  : LoadWorkflowRunnable :  :  :       Status: Error: Unable to load additional factory settings into node factory (node "class "Optional[org.knime.core.node.workflow.virtual.subnode.VirtualSubNodeOutputNodeFactory]" [node name: "WrappedNode Output", bundle-symbolic-name: org.knime.core, bundle-name: KNIME Core API, bundle-vendor: KNIME AG, Zurich, Switzerland, feature-symbolic-name: org.knime.features.base.feature.group, feature-name: KNIME Core,feature-vendor: KNIME AG, Zurich, Switzerland, feature-version: 3.7.1.v201901291053]")
+2019-10-17 14:04:28,922 : ERROR : ModalContext :  : LoadWorkflowRunnable :  :  :       Status: Error: Node "Spark to Table" not available from extension "KNIME Extension for Apache Spark" (provided by "KNIME AG, Zurich, Switzerland"; plugin "org.knime.bigdata.spark.node" is not installed)
+2019-10-17 14:04:28,922 : ERROR : ModalContext :  : LoadWorkflowRunnable :  :  :       Status: Error: Node "Spark Missing Value" not available from extension "KNIME Extension for Apache Spark" (provided by "KNIME AG, Zurich, Switzerland"; plugin "org.knime.bigdata.spark.node" is not installed)
+2019-10-17 14:04:28,922 : ERROR : ModalContext :  : LoadWorkflowRunnable :  :  :       Status: Error: Post-load error (ClassCastException): org.knime.core.node.missing.MissingNodeModel cannot be cast to org.knime.core.node.workflow.virtual.subnode.VirtualSubNodeInputNodeModel
+2019-10-17 14:04:28,922 : ERROR : ModalContext :  : LoadWorkflowRunnable :  :  :       Status: DataLoadError: MISSING Spark Missing Value 2:1093:0:628
+2019-10-17 14:04:28,923 : ERROR : ModalContext :  : LoadWorkflowRunnable :  :  :         Status: DataLoadError: Unable to load port content for node "MISSING Spark Missing Value": Invalid outport index in settings: 2
+2019-10-17 14:04:28,923 : ERROR : ModalContext :  : LoadWorkflowRunnable :  :  :       Status: Error: Virtual output node is not of expected type (expected org.knime.core.node.workflow.virtual.subnode.VirtualSubNodeOutputNodeModel, actual org.knime.core.node.missing.MissingNodeModel) - creating new instance (ID 629)
+2019-10-17 14:04:28,923 : ERROR : ModalContext :  : LoadWorkflowRunnable :  :  :       Status: Error: Virtual input node is not of expected type (expected org.knime.core.node.workflow.virtual.subnode.VirtualSubNodeInputNodeModel, actual org.knime.core.node.missing.MissingNodeModel) - creating new instance (ID 630)
+2019-10-17 14:04:28,923 : ERROR : ModalContext :  : LoadWorkflowRunnable :  :  :     Status: Error: Update time 2:1181
+2019-10-17 14:04:28,923 : ERROR : ModalContext :  : LoadWorkflowRunnable :  :  :       Status: Error: Node "Spark Column Rename" not available from extension "KNIME Extension for Apache Spark" (provided by "KNIME AG, Zurich, Switzerland"; plugin "org.knime.bigdata.spark.node" is not installed)
+2019-10-17 14:04:28,925 : ERROR : ModalContext :  : LoadWorkflowRunnable :  :  :       Status: Error: Node "Spark Column Filter" not available from extension "KNIME Extension for Apache Spark" (provided by "KNIME AG, Zurich, Switzerland"; plugin "org.knime.bigdata.spark.node" is not installed)
+2019-10-17 14:04:28,925 : ERROR : ModalContext :  : LoadWorkflowRunnable :  :  :       Status: Error: Node "Spark SQL Query" not available from extension "KNIME Extension for Apache Spark" (provided by "KNIME AG, Zurich, Switzerland"; plugin "org.knime.bigdata.spark.node" is not installed)
+2019-10-17 14:04:28,926 : ERROR : ModalContext :  : LoadWorkflowRunnable :  :  :       Status: Error: Node "Spark SQL Query" not available from extension "KNIME Extension for Apache Spark" (provided by "KNIME AG, Zurich, Switzerland"; plugin "org.knime.bigdata.spark.node" is not installed)
+2019-10-17 14:04:28,926 : ERROR : ModalContext :  : LoadWorkflowRunnable :  :  :       Status: Error: Node "Spark SQL Query" not available from extension "KNIME Extension for Apache Spark" (provided by "KNIME AG, Zurich, Switzerland"; plugin "org.knime.bigdata.spark.node" is not installed)
+2019-10-17 14:04:28,926 : ERROR : ModalContext :  : LoadWorkflowRunnable :  :  :       Status: Error: Node "Spark SQL Query" not available from extension "KNIME Extension for Apache Spark" (provided by "KNIME AG, Zurich, Switzerland"; plugin "org.knime.bigdata.spark.node" is not installed)
+2019-10-17 14:04:28,926 : ERROR : ModalContext :  : LoadWorkflowRunnable :  :  :       Status: Error: Node "Spark Column Filter" not available from extension "KNIME Extension for Apache Spark" (provided by "KNIME AG, Zurich, Switzerland"; plugin "org.knime.bigdata.spark.node" is not installed)
+2019-10-17 14:04:28,926 : ERROR : ModalContext :  : LoadWorkflowRunnable :  :  :       Status: Error: Node "Spark Column Filter" not available from extension "KNIME Extension for Apache Spark" (provided by "KNIME AG, Zurich, Switzerland"; plugin "org.knime.bigdata.spark.node" is not installed)
+2019-10-17 14:04:28,926 : ERROR : ModalContext :  : LoadWorkflowRunnable :  :  :       Status: Error: Node "Spark Column Rename (Regex)" not available from extension "KNIME Extension for Apache Spark" (provided by "KNIME AG, Zurich, Switzerland"; plugin "org.knime.bigdata.spark.node" is not installed)
+2019-10-17 14:04:28,926 : ERROR : ModalContext :  : LoadWorkflowRunnable :  :  :       Status: Error: Unable to load additional factory settings into node factory (node "class "Optional[org.knime.core.node.workflow.virtual.subnode.VirtualSubNodeInputNodeFactory]" [node name: "WrappedNode Input", bundle-symbolic-name: org.knime.core, bundle-name: KNIME Core API, bundle-vendor: KNIME AG, Zurich, Switzerland, feature-symbolic-name: org.knime.features.base.feature.group, feature-name: KNIME Core,feature-vendor: KNIME AG, Zurich, Switzerland, feature-version: 3.7.1.v201901291053]")
+2019-10-17 14:04:28,927 : ERROR : ModalContext :  : LoadWorkflowRunnable :  :  :       Status: Error: Unable to load additional factory settings into node factory (node "class "Optional[org.knime.core.node.workflow.virtual.subnode.VirtualSubNodeOutputNodeFactory]" [node name: "WrappedNode Output", bundle-symbolic-name: org.knime.core, bundle-name: KNIME Core API, bundle-vendor: KNIME AG, Zurich, Switzerland, feature-symbolic-name: org.knime.features.base.feature.group, feature-name: KNIME Core,feature-vendor: KNIME AG, Zurich, Switzerland, feature-version: 3.7.1.v201901291053]")
+2019-10-17 14:04:28,927 : ERROR : ModalContext :  : LoadWorkflowRunnable :  :  :       Status: Error: Post-load error (ClassCastException): org.knime.core.node.missing.MissingNodeModel cannot be cast to org.knime.core.node.workflow.virtual.subnode.VirtualSubNodeInputNodeModel
+2019-10-17 14:04:28,927 : ERROR : ModalContext :  : LoadWorkflowRunnable :  :  :       Status: Error: Virtual output node is not of expected type (expected org.knime.core.node.workflow.virtual.subnode.VirtualSubNodeOutputNodeModel, actual org.knime.core.node.missing.MissingNodeModel) - creating new instance (ID 1182)
+2019-10-17 14:04:28,927 : ERROR : ModalContext :  : LoadWorkflowRunnable :  :  :       Status: Error: Virtual input node is not of expected type (expected org.knime.core.node.workflow.virtual.subnode.VirtualSubNodeInputNodeModel, actual org.knime.core.node.missing.MissingNodeModel) - creating new instance (ID 1183)
+2019-10-17 14:04:28,927 : ERROR : ModalContext :  : LoadWorkflowRunnable :  :  :     Status: Error: Table view 2:1185
+2019-10-17 14:04:28,928 : ERROR : ModalContext :  : LoadWorkflowRunnable :  :  :       Status: Error: Node "Spark to Table" not available from extension "KNIME Extension for Apache Spark" (provided by "KNIME AG, Zurich, Switzerland"; plugin "org.knime.bigdata.spark.node" is not installed)
+2019-10-17 14:04:28,928 : ERROR : ModalContext :  : LoadWorkflowRunnable :  :  :       Status: Error: Node "Spark Column Filter" not available from extension "KNIME Extension for Apache Spark" (provided by "KNIME AG, Zurich, Switzerland"; plugin "org.knime.bigdata.spark.node" is not installed)
+2019-10-17 14:04:28,928 : ERROR : ModalContext :  : LoadWorkflowRunnable :  :  :       Status: Error: Unable to load additional factory settings into node factory (node "class "Optional[org.knime.core.node.workflow.virtual.subnode.VirtualSubNodeInputNodeFactory]" [node name: "WrappedNode Input", bundle-symbolic-name: org.knime.core, bundle-name: KNIME Core API, bundle-vendor: KNIME AG, Zurich, Switzerland, feature-symbolic-name: org.knime.features.base.feature.group, feature-name: KNIME Core,feature-vendor: KNIME AG, Zurich, Switzerland, feature-version: 3.7.1.v201901291053]")
+2019-10-17 14:04:28,928 : ERROR : ModalContext :  : LoadWorkflowRunnable :  :  :       Status: Error: Post-load error (ClassCastException): org.knime.core.node.missing.MissingNodeModel cannot be cast to org.knime.core.node.workflow.virtual.subnode.VirtualSubNodeInputNodeModel
+2019-10-17 14:04:28,928 : ERROR : ModalContext :  : LoadWorkflowRunnable :  :  :       Status: Error: Virtual input node is not of expected type (expected org.knime.core.node.workflow.virtual.subnode.VirtualSubNodeInputNodeModel, actual org.knime.core.node.missing.MissingNodeModel) - creating new instance (ID 1187)

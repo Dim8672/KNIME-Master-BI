@@ -6,41 +6,41 @@
         "nodes":[
             {
                 "id":"org.knime.ext.poi2.node.read3.XLSReaderNodeFactory#Excel Reader (XLS)",
-                "nrexecs":4,
+                "nrexecs":16,
                 "nrfails":0,
-                "exectime":20988,
+                "exectime":32891,
                 "nrcreated":3,
                 "successor":"org.knime.base.node.preproc.constantvalue.ConstantValueColumnNodeFactory#Constant Value Column"
             },
             {
                 "id":"org.knime.time.node.calculate.datetimedifference.DateTimeDifferenceNodeFactory#Date&Time Difference",
-                "nrexecs":3,
+                "nrexecs":4,
                 "nrfails":0,
-                "exectime":496,
+                "exectime":599,
                 "nrcreated":1,
                 "successor":"org.knime.base.node.preproc.colconvert.stringtonumber2.StringToNumber2NodeFactory#String To Number"
             },
             {
                 "id":"org.knime.base.node.preproc.colconvert.stringtonumber2.StringToNumber2NodeFactory#String To Number",
-                "nrexecs":3,
+                "nrexecs":4,
                 "nrfails":0,
-                "exectime":750,
+                "exectime":967,
                 "nrcreated":1,
                 "successor":"org.knime.ext.jep.JEPNodeFactory#Math Formula"
             },
             {
                 "id":"org.knime.ext.jep.JEPNodeFactory#Math Formula",
-                "nrexecs":3,
+                "nrexecs":4,
                 "nrfails":0,
-                "exectime":841,
+                "exectime":1127,
                 "nrcreated":1,
                 "successor":"org.knime.base.node.preproc.autobinner3.AutoBinnerLearnNodeFactory#Auto-Binner"
             },
             {
                 "id":"org.knime.base.node.preproc.autobinner3.AutoBinnerLearnNodeFactory#Auto-Binner",
-                "nrexecs":3,
+                "nrexecs":4,
                 "nrfails":0,
-                "exectime":297,
+                "exectime":394,
                 "nrcreated":1,
                 "successor":"org.knime.base.node.preproc.rename.RenameNodeFactory#Column Rename"
             },
@@ -54,42 +54,42 @@
             },
             {
                 "id":"org.knime.base.node.preproc.rename.RenameNodeFactory#Column Rename",
-                "nrexecs":3,
+                "nrexecs":4,
                 "nrfails":0,
-                "exectime":2,
+                "exectime":3,
                 "nrcreated":1,
                 "successor":"org.knime.base.node.preproc.stringmanipulation.StringManipulationNodeFactory#String Manipulation"
             },
             {
                 "id":"org.knime.base.node.preproc.groupby.GroupByNodeFactory#GroupBy",
-                "nrexecs":5,
+                "nrexecs":6,
                 "nrfails":0,
-                "exectime":1721,
+                "exectime":2834,
                 "nrcreated":2,
                 "successor":"org.knime.dynamic.js.v30.DynamicJSNodeFactory#Pie/Donut Chart"
             },
             {
                 "id":"org.knime.dynamic.js.v30.DynamicJSNodeFactory#Bar Chart",
-                "nrexecs":6,
+                "nrexecs":7,
                 "nrfails":0,
-                "exectime":64268,
+                "exectime":99589,
                 "nrcreated":1,
                 "successor":"n/a"
             },
             {
                 "id":"org.knime.base.node.preproc.stringmanipulation.StringManipulationNodeFactory#String Manipulation",
-                "nrexecs":3,
+                "nrexecs":4,
                 "nrfails":0,
-                "exectime":1227,
+                "exectime":1788,
                 "nrcreated":1,
                 "successor":"org.knime.base.node.preproc.groupby.GroupByNodeFactory#GroupBy"
             },
             {
                 "id":"org.knime.dynamic.js.v30.DynamicJSNodeFactory#Pie/Donut Chart",
-                "nrexecs":4,
+                "nrexecs":18,
                 "nrfails":0,
-                "exectime":30121,
-                "nrcreated":1,
+                "exectime":161203,
+                "nrcreated":3,
                 "successor":"n/a"
             },
             {
@@ -118,43 +118,67 @@
             },
             {
                 "id":"org.knime.base.node.preproc.constantvalue.ConstantValueColumnNodeFactory#Constant Value Column",
-                "nrexecs":38,
+                "nrexecs":121,
                 "nrfails":0,
-                "exectime":277,
+                "exectime":590,
                 "nrcreated":6,
                 "successor":"org.knime.base.node.preproc.constantvalue.ConstantValueColumnNodeFactory#Constant Value Column"
             },
             {
                 "id":"org.knime.base.node.preproc.columnresorter.ColumnResorterNodeFactory#Column Resorter",
-                "nrexecs":7,
+                "nrexecs":19,
                 "nrfails":0,
-                "exectime":4,
+                "exectime":9,
                 "nrcreated":1,
                 "successor":"org.knime.base.node.preproc.columnaggregator.ColumnAggregatorNodeFactory#Column Aggregator"
             },
             {
                 "id":"org.knime.base.node.preproc.columnaggregator.ColumnAggregatorNodeFactory#Column Aggregator",
-                "nrexecs":8,
+                "nrexecs":20,
                 "nrfails":0,
-                "exectime":34,
+                "exectime":110,
                 "nrcreated":1,
                 "successor":"org.knime.base.node.preproc.filter.column.DataColumnSpecFilterNodeFactory#Column Filter"
             },
             {
                 "id":"org.knime.base.node.preproc.filter.column.DataColumnSpecFilterNodeFactory#Column Filter",
-                "nrexecs":4,
+                "nrexecs":16,
                 "nrfails":0,
-                "exectime":0,
-                "nrcreated":1,
+                "exectime":5,
+                "nrcreated":3,
                 "successor":"org.knime.base.node.rules.engine.twoports.RuleEngine2PortsNodeFactory#Rule Engine (Dictionary)"
             },
             {
                 "id":"org.knime.base.node.rules.engine.twoports.RuleEngine2PortsNodeFactory#Rule Engine (Dictionary)",
-                "nrexecs":4,
-                "nrfails":0,
-                "exectime":7067,
+                "nrexecs":15,
+                "nrfails":4,
+                "exectime":41801,
                 "nrcreated":1,
+                "successor":"org.knime.base.node.preproc.duplicates.DuplicateRowFilterNodeFactory#Duplicate Row Filter"
+            },
+            {
+                "id":"org.knime.base.node.preproc.duplicates.DuplicateRowFilterNodeFactory#Duplicate Row Filter",
+                "nrexecs":7,
+                "nrfails":0,
+                "exectime":4348,
+                "nrcreated":1,
+                "successor":"org.knime.base.node.preproc.filter.column.DataColumnSpecFilterNodeFactory#Column Filter"
+            },
+            {
+                "id":"org.knime.base.node.preproc.filter.definition.apply.FilterApplyNodeFactory#Filter Apply",
+                "nrexecs":0,
+                "nrfails":0,
+                "exectime":0,
+                "nrcreated":2,
                 "successor":"n/a"
+            },
+            {
+                "id":"org.knime.base.node.preproc.filter.row.RowFilterNodeFactory#Row Filter",
+                "nrexecs":12,
+                "nrfails":0,
+                "exectime":1030,
+                "nrcreated":2,
+                "successor":"org.knime.dynamic.js.v30.DynamicJSNodeFactory#Pie/Donut Chart"
             }
         ],
         "metaNodes":{
@@ -166,14 +190,14 @@
         "wrappedNodes":{
         }
     },
-    "uptime":16701789,
-    "workflowsOpened":5,
+    "uptime":18353851,
+    "workflowsOpened":7,
     "remoteWorkflowsOpened":0,
-    "workflowsImported":0,
+    "workflowsImported":1,
     "workflowsExported":0,
-    "launches":4,
+    "launches":5,
     "lastApplicationID":"org.knime.product.KNIME_APPLICATION",
-    "timeSinceLastStart":25913659,
+    "timeSinceLastStart":24962099,
     "crashes":0,
     "properlyShutDown":true
 }

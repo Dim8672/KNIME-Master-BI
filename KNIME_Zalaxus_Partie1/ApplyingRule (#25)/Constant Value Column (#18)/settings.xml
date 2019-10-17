@@ -7,7 +7,7 @@
 </config>
 <config key="model">
 <entry key="replaced-column" type="xstring" isnull="true" value=""/>
-<entry key="column-value" type="xstring" value=" AND ($Height$&gt;=&quot;"/>
+<entry key="column-value" type="xstring" value=" AND ($Height$&gt;="/>
 <entry key="new-column-name" type="xstring" value="HeightStart"/>
 <entry key="column-type" type="xstring" value="STRING"/>
 <entry key="date-format" type="xstring" value="dd.MM.yyyy"/>
@@ -53,6 +53,6 @@
 </config>
 <config key="filestores">
 <entry key="file_store_location" type="xstring" isnull="true" value=""/>
-<entry key="file_store_id" type="xstring" value="c5f0135f-f3eb-479c-b0dc-7bea53db3b63"/>
+<entry key="file_store_id" type="xstring" value="6bd2a672-c302-4c9b-b69d-998214ced872"/>
 </config>
 </config>
