@@ -1,0 +1,2 @@
+C:\Users\dimit\knime-workspace\Data TripAdvisor\MPQA-OpinionCorpus-PositiveList.csv
+C:\Users\dimit\knime-workspace\Data TripAdvisor\MPQA-OpinionCorpus-NegativeList.csv

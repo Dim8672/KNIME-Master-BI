@@ -2548,3 +2548,28 @@ org.knime.core.node.InvalidSettingsException: No value for the positive class ch
 2019-11-15 08:50:08,700 : ERROR : ModalContext :  : LoadWorkflowRunnable :  :  :   Status: DataLoadError: German_credit_scoring 0
 2019-11-15 08:50:08,700 : ERROR : ModalContext :  : LoadWorkflowRunnable :  :  :     Status: DataLoadError: Interactive Histogram (local) 0:50
 2019-11-15 08:50:08,700 : ERROR : ModalContext :  : LoadWorkflowRunnable :  :  :       Status: DataLoadError: Loading model internals failed: Binning column not found
+2019-11-15 09:05:19,554 : WARN  : main :  : Node : Strings To Document : 2:14 : Name of selected title column can't be empty.
+2019-11-15 09:07:51,783 : WARN  : main :  : Node : Row Filter : 2:16 : No row filter specified
+2019-11-15 09:09:18,429 : WARN  : main :  : Node : CSV Reader : 2:18 : No settings available
+2019-11-15 09:10:21,323 : WARN  : main :  : Node : Dictionary Tagger : 2:17 : Auto guessing: Using column 'Document' as DocumentValue column.
+2019-11-15 09:10:21,325 : WARN  : main :  : Node : Dictionary Tagger : 2:17 : Auto guessing: Using column 'Word' as StringValue column.
+2019-11-15 09:10:21,326 : WARN  : main :  : Node : Dictionary Tagger : 2:17 : Auto select: Using  'OpenNLP English WordTokenizer' as word tokenizer based on incoming documents.
+2019-11-15 09:19:10,481 : WARN  : main :  : Node : Bag Of Words Creator : 2:23 : Auto guessing: Using column 'Document' as DocumentValue column.
+2019-11-15 09:21:59,484 : WARN  : main :  : Node : TF : 2:24 : Auto guessing: Using column 'Document' as DocumentValue column.
+2019-11-15 09:23:39,508 : WARN  : main :  : Node : Tags To String : 2:25 : Auto guessing: Using column 'Term' as TermValue column.
+2019-11-15 09:26:31,043 : WARN  : main :  : Node : Pivoting : 2:26 : No pivot columns selected.
+2019-11-15 09:30:34,242 : WARN  : main :  : Node : GroupBy : 2:28 : No grouping column included. Aggregate complete table.
+2019-11-15 09:30:34,242 : WARN  : main :  : Node : GroupBy : 2:28 : No aggregation column defined
+2019-11-15 09:30:34,243 : WARN  : main :  : Node : GroupBy : 2:28 : No aggregation column defined
+2019-11-15 09:30:34,244 : WARN  : main :  : Node : GroupBy : 2:28 : Please select at least one group or aggregation column
+2019-11-15 09:33:27,703 : WARN  : main :  : Node : Joiner : 2:29 : Please define at least one joining column pair.
+2019-11-15 09:35:02,652 : WARN  : main :  : Node : Column Rename : 2:30 : No configuration available
+2019-11-15 09:36:27,228 : WARN  : main :  : Node : Math Formula : 2:31 : No configuration available
+2019-11-15 09:40:39,587 : WARN  : main :  : Node : GroupBy : 2:32 : No grouping column included. Aggregate complete table.
+2019-11-15 09:40:39,588 : WARN  : main :  : Node : GroupBy : 2:32 : No aggregation column defined
+2019-11-15 09:40:39,588 : WARN  : main :  : Node : GroupBy : 2:32 : No aggregation column defined
+2019-11-15 09:40:39,588 : WARN  : main :  : Node : GroupBy : 2:32 : Please select at least one group or aggregation column
+2019-11-15 09:43:50,474 : WARN  : main :  : Node : GroupBy : 2:32 : No grouping column included. Aggregate complete table.
+2019-11-15 09:44:58,819 : WARN  : main :  : Node : GroupBy : 2:32 : No grouping column included. Aggregate complete table.
+2019-11-15 09:45:00,728 : WARN  : KNIME-Worker-35 :  : Node : GroupBy : 2:32 : No grouping column included. Aggregate complete table.
+2019-11-15 10:02:30,105 : WARN  : main :  : WorkflowEditorDropTargetListener :  :  : No node factory is registered for handling  "/C:/Users/dimit/Downloads/BI1920-Tripadvisor%20reviews.knwf"

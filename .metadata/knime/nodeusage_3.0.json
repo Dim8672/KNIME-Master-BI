@@ -30,10 +30,10 @@
             },
             {
                 "id":"org.knime.ext.jep.JEPNodeFactory#Math Formula",
-                "nrexecs":17,
+                "nrexecs":19,
                 "nrfails":0,
-                "exectime":1155,
-                "nrcreated":1,
+                "exectime":1223,
+                "nrcreated":2,
                 "successor":"org.knime.base.node.preproc.autobinner3.AutoBinnerLearnNodeFactory#Auto-Binner"
             },
             {
@@ -54,18 +54,18 @@
             },
             {
                 "id":"org.knime.base.node.preproc.rename.RenameNodeFactory#Column Rename",
-                "nrexecs":10,
+                "nrexecs":13,
                 "nrfails":0,
-                "exectime":204,
-                "nrcreated":2,
-                "successor":"org.knime.base.node.preproc.stringmanipulation.StringManipulationNodeFactory#String Manipulation"
+                "exectime":206,
+                "nrcreated":3,
+                "successor":"org.knime.ext.jep.JEPNodeFactory#Math Formula"
             },
             {
                 "id":"org.knime.base.node.preproc.groupby.GroupByNodeFactory#GroupBy",
-                "nrexecs":23,
+                "nrexecs":28,
                 "nrfails":0,
-                "exectime":3551,
-                "nrcreated":4,
+                "exectime":3866,
+                "nrcreated":6,
                 "successor":"org.knime.dynamic.js.v30.DynamicJSNodeFactory#Pie/Donut Chart"
             },
             {
@@ -102,10 +102,10 @@
             },
             {
                 "id":"org.knime.base.node.preproc.joiner.Joiner2NodeFactory#Joiner",
-                "nrexecs":71,
+                "nrexecs":74,
                 "nrfails":0,
-                "exectime":1345,
-                "nrcreated":10,
+                "exectime":1835,
+                "nrcreated":11,
                 "successor":"org.knime.base.node.preproc.joiner.Joiner2NodeFactory#Joiner"
             },
             {
@@ -142,11 +142,11 @@
             },
             {
                 "id":"org.knime.base.node.preproc.filter.column.DataColumnSpecFilterNodeFactory#Column Filter",
-                "nrexecs":18,
+                "nrexecs":19,
                 "nrfails":0,
-                "exectime":6,
-                "nrcreated":4,
-                "successor":"org.knime.base.node.rules.engine.twoports.RuleEngine2PortsNodeFactory#Rule Engine (Dictionary)"
+                "exectime":7,
+                "nrcreated":5,
+                "successor":"org.knime.ext.textprocessing.nodes.tagging.dict.inport.DictionaryTaggerNodeFactory2#Dictionary Tagger"
             },
             {
                 "id":"org.knime.base.node.rules.engine.twoports.RuleEngine2PortsNodeFactory#Rule Engine (Dictionary)",
@@ -177,7 +177,7 @@
                 "nrexecs":21,
                 "nrfails":0,
                 "exectime":1373,
-                "nrcreated":5,
+                "nrcreated":6,
                 "successor":"org.knime.base.node.image.tablerowtoimage.TableRowToImageNodeFactory#Table To Image"
             },
             {
@@ -470,11 +470,11 @@
             },
             {
                 "id":"org.knime.base.node.preproc.pmml.missingval.compute.MissingValueHandlerNodeFactory#Missing Value",
-                "nrexecs":4,
+                "nrexecs":5,
                 "nrfails":0,
-                "exectime":398,
-                "nrcreated":1,
-                "successor":"n/a"
+                "exectime":620,
+                "nrcreated":2,
+                "successor":"org.knime.base.node.preproc.joiner.Joiner2NodeFactory#Joiner"
             },
             {
                 "id":"org.knime.ext.sun.nodes.script.JavaScriptingNodeFactory#Java Snippet (simple)",
@@ -574,10 +574,10 @@
             },
             {
                 "id":"org.knime.base.node.rules.engine.RuleEngineNodeFactory#Rule Engine",
-                "nrexecs":12,
+                "nrexecs":13,
                 "nrfails":0,
-                "exectime":32,
-                "nrcreated":0,
+                "exectime":62,
+                "nrcreated":1,
                 "successor":"org.knime.base.node.preproc.joiner.Joiner2NodeFactory#Joiner"
             },
             {
@@ -635,6 +635,78 @@
                 "exectime":198,
                 "nrcreated":1,
                 "successor":"n/a"
+            },
+            {
+                "id":"org.knime.ext.textprocessing.nodes.transformation.stringstodocument.StringsToDocumentNodeFactory2#Strings To Document",
+                "nrexecs":1,
+                "nrfails":0,
+                "exectime":1498,
+                "nrcreated":1,
+                "successor":"org.knime.base.node.preproc.filter.column.DataColumnSpecFilterNodeFactory#Column Filter"
+            },
+            {
+                "id":"org.knime.ext.textprocessing.nodes.tagging.dict.inport.DictionaryTaggerNodeFactory2#Dictionary Tagger",
+                "nrexecs":2,
+                "nrfails":0,
+                "exectime":2585,
+                "nrcreated":1,
+                "successor":"org.knime.js.base.node.viz.documentViewer.DocumentViewerNodeFactory#Tagged Document Viewer"
+            },
+            {
+                "id":"org.knime.base.node.io.csvreader.CSVReaderNodeFactory#CSV Reader",
+                "nrexecs":2,
+                "nrfails":0,
+                "exectime":260,
+                "nrcreated":1,
+                "successor":"org.knime.ext.textprocessing.nodes.tagging.dict.inport.DictionaryTaggerNodeFactory2#Dictionary Tagger"
+            },
+            {
+                "id":"org.knime.js.base.node.viz.documentViewer.DocumentViewerNodeFactory#Tagged Document Viewer",
+                "nrexecs":2,
+                "nrfails":0,
+                "exectime":405,
+                "nrcreated":1,
+                "successor":"n/a"
+            },
+            {
+                "id":"org.knime.ext.textprocessing.nodes.transformation.bow.BagOfWordsNodeFactory2#Bag Of Words Creator",
+                "nrexecs":1,
+                "nrfails":0,
+                "exectime":195,
+                "nrcreated":2,
+                "successor":"org.knime.ext.textprocessing.nodes.frequencies.tf.TfNodeFactory#TF"
+            },
+            {
+                "id":"org.knime.ext.textprocessing.nodes.frequencies.tf.TfNodeFactory#TF",
+                "nrexecs":1,
+                "nrfails":0,
+                "exectime":360,
+                "nrcreated":1,
+                "successor":"org.knime.base.node.preproc.groupby.GroupByNodeFactory#GroupBy"
+            },
+            {
+                "id":"org.knime.ext.textprocessing.nodes.transformation.tagtoString.TagToStringNodeFactory#Tags To String",
+                "nrexecs":1,
+                "nrfails":0,
+                "exectime":95,
+                "nrcreated":1,
+                "successor":"org.knime.base.node.preproc.groupby.GroupByNodeFactory#GroupBy"
+            },
+            {
+                "id":"org.knime.base.node.preproc.pivot.Pivot2NodeFactory#Pivoting",
+                "nrexecs":1,
+                "nrfails":0,
+                "exectime":689,
+                "nrcreated":1,
+                "successor":"org.knime.base.node.preproc.pmml.missingval.compute.MissingValueHandlerNodeFactory#Missing Value"
+            },
+            {
+                "id":"org.knime.base.node.flowvariable.tablerowtovariable.TableToVariableNodeFactory#Table Row to Variable",
+                "nrexecs":2,
+                "nrfails":0,
+                "exectime":1,
+                "nrcreated":1,
+                "successor":"org.knime.base.node.rules.engine.RuleEngineNodeFactory#Rule Engine"
             }
         ],
         "metaNodes":{
@@ -646,14 +718,14 @@
         "wrappedNodes":{
         }
     },
-    "uptime":32279545,
-    "workflowsOpened":20,
+    "uptime":31308284,
+    "workflowsOpened":23,
     "remoteWorkflowsOpened":0,
     "workflowsImported":1,
     "workflowsExported":0,
-    "launches":26,
+    "launches":27,
     "lastApplicationID":"org.knime.product.KNIME_APPLICATION",
-    "timeSinceLastStart":500987212,
+    "timeSinceLastStart":6055511,
     "crashes":0,
     "properlyShutDown":true
 }
