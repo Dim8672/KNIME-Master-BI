@@ -1118,3 +1118,1433 @@ org.knime.core.node.workflow.IllegalFlowObjectStackException: Loop start and end
 2019-11-01 14:19:27,911 : WARN  : KNIME-Worker-108 :  : Node : RProp MLP Learner : 4:41:14 : Input data not normalized. Please consider using the Normalizer Node first.
 2019-11-01 14:19:27,911 : WARN  : KNIME-Worker-108 :  : Node : RProp MLP Learner : 4:41:14 : Input data not normalized. Please consider using the Normalizer Node first.
 2019-11-01 14:25:17,913 : WARN  : main :  : Node : Scorer : 3:36:36 : No columns selected yet.
+2019-11-08 09:30:05,627 : WARN  : main :  : Node : File Reader : 2:1 : Missing settings. Please configure the node.
+2019-11-08 09:34:46,084 : WARN  : ModalContext :  : Node : Decision Tree Predictor : 3:69 : Internal model could not be loaded.
+2019-11-08 09:36:12,562 : WARN  : KNIME-Worker-7 :  : Node : Scorer : 3:70 : There were missing values in the reference or in the prediction class columns.
+2019-11-08 09:38:02,410 : WARN  : main :  : Node : ROC Curve : 3:71 : Class column 'null ' does not exist
+2019-11-08 09:41:33,902 : WARN  : KNIME-Worker-10 :  : Node : Scorer : 3:70 : There were missing values in the reference or in the prediction class columns.
+2019-11-08 09:44:54,455 : WARN  : main :  : Node : Naive Bayes Learner : 3:72 : Please define the classification column
+2019-11-08 09:45:09,036 : WARN  : main :  : Node : Naive Bayes Learner : 3:72 : Please define the classification column
+2019-11-08 09:45:46,665 : ERROR : main :  : NaiveBayesPredictorNodeDialog3 : Naive Bayes Predictor : 3:73 : Error loading model settings
+java.lang.NullPointerException
+	at org.knime.base.node.mine.bayes.naivebayes.predictor4.NaiveBayesPredictorNodeDialog3.extractTargetColumn(NaiveBayesPredictorNodeDialog3.java:86)
+	at org.knime.base.node.mine.util.PredictorNodeDialog.loadSettingsFrom(PredictorNodeDialog.java:329)
+	at org.knime.core.node.NodeDialogPane.callDerivedLoadSettingsFrom(NodeDialogPane.java:466)
+	at org.knime.core.node.NodeDialogPane$3.run(NodeDialogPane.java:419)
+	at org.knime.core.node.util.ViewUtils$3.run(ViewUtils.java:353)
+	at org.knime.core.node.util.ViewUtils$2.run(ViewUtils.java:155)
+	at java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:311)
+	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:758)
+	at java.awt.EventQueue.access$500(EventQueue.java:97)
+	at java.awt.EventQueue$3.run(EventQueue.java:709)
+	at java.awt.EventQueue$3.run(EventQueue.java:703)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:74)
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:728)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:205)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:116)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:105)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:93)
+	at java.awt.EventDispatchThread.run(EventDispatchThread.java:82)
+2019-11-08 09:45:56,257 : WARN  : main :  : WrappedNodeDialog : Naive Bayes Predictor : 3:73 : failed to apply settings: Please specify a prediction column name.
+org.knime.core.node.InvalidSettingsException: Please specify a prediction column name.
+	at org.knime.base.node.mine.util.PredictorNodeDialog.saveSettingsTo(PredictorNodeDialog.java:313)
+	at org.knime.core.node.NodeDialogPane.internalSaveSettingsTo(NodeDialogPane.java:485)
+	at org.knime.core.node.NodeDialogPane$5.run(NodeDialogPane.java:722)
+	at org.knime.core.node.util.ViewUtils$3.run(ViewUtils.java:353)
+	at org.knime.core.node.util.ViewUtils$2.run(ViewUtils.java:155)
+	at java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:311)
+	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:758)
+	at java.awt.EventQueue.access$500(EventQueue.java:97)
+	at java.awt.EventQueue$3.run(EventQueue.java:709)
+	at java.awt.EventQueue$3.run(EventQueue.java:703)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:74)
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:728)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:205)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:116)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:105)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:93)
+	at java.awt.EventDispatchThread.run(EventDispatchThread.java:82)
+2019-11-08 09:47:05,100 : WARN  : KNIME-Worker-15 :  : Node : Naive Bayes Learner : 3:72 : The following attributes contain missing values: Col0, Col1, Col3, Col4, ...(see View)
+2019-11-08 09:47:05,926 : WARN  : KNIME-Worker-13 :  : Node : Naive Bayes Learner : 3:72 : The following attributes contain missing values: Col0, Col1, Col3, Col4, ...(see View)
+2019-11-08 09:47:06,610 : WARN  : KNIME-Worker-14 :  : Node : Naive Bayes Learner : 3:72 : The following attributes contain missing values: Col0, Col1, Col3, Col4, ...(see View)
+2019-11-08 09:47:06,780 : WARN  : KNIME-Worker-15 :  : Node : Naive Bayes Learner : 3:72 : The following attributes contain missing values: Col0, Col1, Col3, Col4, ...(see View)
+2019-11-08 09:47:06,911 : WARN  : KNIME-Worker-14 :  : Node : Naive Bayes Learner : 3:72 : The following attributes contain missing values: Col0, Col1, Col3, Col4, ...(see View)
+2019-11-08 09:47:07,007 : WARN  : KNIME-Worker-15 :  : Node : Naive Bayes Learner : 3:72 : The following attributes contain missing values: Col0, Col1, Col3, Col4, ...(see View)
+2019-11-08 09:47:07,153 : WARN  : KNIME-Worker-13 :  : Node : Naive Bayes Learner : 3:72 : The following attributes contain missing values: Col0, Col1, Col3, Col4, ...(see View)
+2019-11-08 09:47:07,333 : WARN  : KNIME-Worker-14 :  : Node : Naive Bayes Learner : 3:72 : The following attributes contain missing values: Col0, Col1, Col3, Col4, ...(see View)
+2019-11-08 09:47:07,452 : WARN  : KNIME-Worker-15 :  : Node : Naive Bayes Learner : 3:72 : The following attributes contain missing values: Col0, Col1, Col3, Col4, ...(see View)
+2019-11-08 09:47:07,553 : WARN  : KNIME-Worker-14 :  : Node : Naive Bayes Learner : 3:72 : The following attributes contain missing values: Col0, Col1, Col3, Col4, ...(see View)
+2019-11-08 09:47:07,698 : WARN  : KNIME-Worker-14 :  : Node : Scorer : 3:70 : There were missing values in the reference or in the prediction class columns.
+2019-11-08 09:47:07,832 : WARN  : KNIME-Worker-15 :  : Node : ROC Curve : 3:71 : Table contains missing values.
+2019-11-08 09:56:01,864 : WARN  : main :  : Node : Normalizer : 3:75 : Auto-configure: [0, 1] normalization on all numeric columns: "Col1", "Col2", "Col7",  ... <3 more>
+2019-11-08 09:56:41,815 : WARN  : main :  : Node : RProp MLP Learner : 3:78 : Class column not set
+2019-11-08 09:57:38,518 : WARN  : main :  : Node : RProp MLP Learner : 3:78 : Class column not set
+2019-11-08 09:57:43,185 : WARN  : main :  : Node : RProp MLP Learner : 3:78 : Only double columns for input
+2019-11-08 09:57:56,990 : WARN  : main :  : Node : RProp MLP Learner : 3:78 : Only double columns for input
+2019-11-08 09:58:31,652 : WARN  : main :  : Node : RProp MLP Learner : 3:78 : Only double columns for input
+2019-11-08 09:58:41,481 : WARN  : main :  : Node : RProp MLP Learner : 3:78 : Only double columns for input
+2019-11-08 09:58:43,947 : WARN  : main :  : Node : RProp MLP Learner : 3:78 : Only double columns for input
+2019-11-08 10:00:26,344 : WARN  : main :  : Node : RProp MLP Learner : 3:78 : Only double columns for input
+2019-11-08 10:00:26,346 : WARN  : main :  : Node : Normalizer (Apply) : 3:80 : Some column(s) as specified by the model is not present in the data: [Col0 (to number), Col3 (to number), Col4 (to number), Col5 (to number), Col6 (to number), Col8 (to number), Col9 (to number), Col11 (to number), Col12 (to number), Approval (to number)]
+2019-11-08 10:00:46,155 : WARN  : main :  : Node : RProp MLP Learner : 3:78 : Only double columns for input
+2019-11-08 10:00:59,819 : WARN  : main :  : Node : RProp MLP Learner : 3:78 : Only double columns for input
+2019-11-08 10:03:44,142 : WARN  : main :  : Node : RProp MLP Learner : 3:78 : Only double columns for input
+2019-11-08 10:05:21,907 : WARN  : main :  : Node : RProp MLP Learner : 3:78 : Only double columns for input
+2019-11-08 10:06:24,536 : WARN  : main :  : Node : RProp MLP Learner : 3:78 : Only double columns for input
+2019-11-08 10:06:49,841 : WARN  : KNIME-Worker-17 :  : Node : RProp MLP Learner : 3:78 : Only double columns for input
+2019-11-08 10:06:49,864 : WARN  : KNIME-Worker-19 :  : Node : Naive Bayes Learner : 3:77:72 : The following attributes contain missing values: Col0, Col1, Col3, Col4, ...(see View)
+2019-11-08 10:06:50,099 : WARN  : KNIME-Worker-20 :  : Node : RProp MLP Learner : 3:78 : Only double columns for input
+2019-11-08 10:06:50,261 : WARN  : KNIME-Worker-21 :  : Node : RProp MLP Learner : 3:78 : Only double columns for input
+2019-11-08 10:06:50,717 : WARN  : KNIME-Worker-17 :  : Node : Normalizer (Apply) : 3:80 : Normalized value is out of bounds. Original value: 15.83 Transformed value: -0.0032850241545893666 Lower Bound: 0.0
+2019-11-08 10:06:50,736 : WARN  : KNIME-Worker-19 :  : Node : RProp MLP Learner : 3:78 : Only double columns for input
+2019-11-08 10:06:50,767 : WARN  : KNIME-Worker-21 :  : Node : Naive Bayes Learner : 3:77:72 : The following attributes contain missing values: Col0, Col1, Col3, Col4, ...(see View)
+2019-11-08 10:06:50,788 : WARN  : KNIME-Worker-18 :  : Node : RProp MLP Learner : 3:78 : Only double columns for input
+2019-11-08 10:06:50,803 : WARN  : KNIME-Worker-21 :  : Node : RProp MLP Learner : 3:78 : Only double columns for input
+2019-11-08 10:06:51,584 : WARN  : KNIME-Worker-17 :  : Node : Normalizer (Apply) : 3:80 : Normalized value is out of bounds. Original value: 31285.0 Transformed value: 1.1705829529297314 Upper Bound: 1.0
+2019-11-08 10:06:51,601 : WARN  : KNIME-Worker-19 :  : Node : RProp MLP Learner : 3:78 : Only double columns for input
+2019-11-08 10:06:51,636 : WARN  : KNIME-Worker-21 :  : Node : Naive Bayes Learner : 3:77:72 : The following attributes contain missing values: Col0, Col1, Col3, Col4, ...(see View)
+2019-11-08 10:06:51,714 : WARN  : KNIME-Worker-20 :  : Node : RProp MLP Learner : 3:78 : Only double columns for input
+2019-11-08 10:06:51,746 : WARN  : KNIME-Worker-21 :  : Node : RProp MLP Learner : 3:78 : Only double columns for input
+2019-11-08 10:06:51,805 : WARN  : KNIME-Worker-20 :  : Node : Normalizer (Apply) : 3:80 : Normalized value is out of bounds. Original value: 31285.0 Transformed value: 4.1470042417815485 Upper Bound: 1.0
+2019-11-08 10:06:51,823 : WARN  : KNIME-Worker-19 :  : Node : RProp MLP Learner : 3:78 : Only double columns for input
+2019-11-08 10:06:51,834 : WARN  : KNIME-Worker-17 :  : Node : Naive Bayes Learner : 3:77:72 : The following attributes contain missing values: Col0, Col1, Col3, Col4, ...(see View)
+2019-11-08 10:06:51,854 : WARN  : KNIME-Worker-20 :  : Node : RProp MLP Learner : 3:78 : Only double columns for input
+2019-11-08 10:06:51,871 : WARN  : KNIME-Worker-18 :  : Node : RProp MLP Learner : 3:78 : Only double columns for input
+2019-11-08 10:06:51,944 : WARN  : KNIME-Worker-20 :  : Node : Normalizer (Apply) : 3:80 : Normalized value is out of bounds. Original value: 28.0 Transformed value: 1.3333333333333333 Upper Bound: 1.0
+2019-11-08 10:06:52,499 : WARN  : KNIME-Worker-17 :  : Node : RProp MLP Learner : 3:78 : Only double columns for input
+2019-11-08 10:06:52,511 : WARN  : KNIME-Worker-21 :  : Node : Naive Bayes Learner : 3:77:72 : The following attributes contain missing values: Col0, Col1, Col3, Col4, ...(see View)
+2019-11-08 10:06:52,526 : WARN  : KNIME-Worker-18 :  : Node : RProp MLP Learner : 3:78 : Only double columns for input
+2019-11-08 10:06:52,609 : WARN  : KNIME-Worker-21 :  : Node : RProp MLP Learner : 3:78 : Only double columns for input
+2019-11-08 10:06:52,677 : WARN  : KNIME-Worker-20 :  : Node : Normalizer (Apply) : 3:80 : Normalized value is out of bounds. Original value: 0.0 Transformed value: -0.002109704641350211 Lower Bound: 0.0
+2019-11-08 10:06:52,789 : WARN  : KNIME-Worker-21 :  : Node : RProp MLP Learner : 3:78 : Only double columns for input
+2019-11-08 10:06:52,822 : WARN  : KNIME-Worker-18 :  : Node : Naive Bayes Learner : 3:77:72 : The following attributes contain missing values: Col0, Col1, Col3, Col4, ...(see View)
+2019-11-08 10:06:52,833 : WARN  : KNIME-Worker-17 :  : Node : RProp MLP Learner : 3:78 : Only double columns for input
+2019-11-08 10:06:52,882 : WARN  : KNIME-Worker-18 :  : Node : RProp MLP Learner : 3:78 : Only double columns for input
+2019-11-08 10:06:52,953 : WARN  : KNIME-Worker-18 :  : Node : Normalizer (Apply) : 3:80 : Normalized value is out of bounds. Original value: 15.83 Transformed value: -0.007655933348344968 Lower Bound: 0.0
+2019-11-08 10:06:52,966 : WARN  : KNIME-Worker-21 :  : Node : RProp MLP Learner : 3:78 : Only double columns for input
+2019-11-08 10:06:52,978 : WARN  : KNIME-Worker-17 :  : Node : Naive Bayes Learner : 3:77:72 : The following attributes contain missing values: Col0, Col1, Col3, Col4, ...(see View)
+2019-11-08 10:06:52,998 : WARN  : KNIME-Worker-19 :  : Node : RProp MLP Learner : 3:78 : Only double columns for input
+2019-11-08 10:06:53,026 : WARN  : KNIME-Worker-20 :  : Node : RProp MLP Learner : 3:78 : Only double columns for input
+2019-11-08 10:06:53,045 : WARN  : KNIME-Worker-21 :  : Node : Normalizer (Apply) : 3:80 : Normalized value is out of bounds. Original value: 31285.0 Transformed value: 2.3679231002119283 Upper Bound: 1.0
+2019-11-08 10:06:53,054 : WARN  : KNIME-Worker-18 :  : Node : RProp MLP Learner : 3:78 : Only double columns for input
+2019-11-08 10:06:53,070 : WARN  : KNIME-Worker-19 :  : Node : Naive Bayes Learner : 3:77:72 : The following attributes contain missing values: Col0, Col1, Col3, Col4, ...(see View)
+2019-11-08 10:06:53,080 : WARN  : KNIME-Worker-20 :  : Node : RProp MLP Learner : 3:78 : Only double columns for input
+2019-11-08 10:06:53,122 : WARN  : KNIME-Worker-19 :  : Node : RProp MLP Learner : 3:78 : Only double columns for input
+2019-11-08 10:06:53,158 : WARN  : KNIME-Worker-20 :  : Node : Normalizer (Apply) : 3:80 : Normalized value is out of bounds. Original value: 31285.0 Transformed value: 2.792804856275665 Upper Bound: 1.0
+2019-11-08 10:06:53,183 : WARN  : KNIME-Worker-21 :  : Node : RProp MLP Learner : 3:78 : Only double columns for input
+2019-11-08 10:06:53,194 : WARN  : KNIME-Worker-20 :  : Node : Naive Bayes Learner : 3:77:72 : The following attributes contain missing values: Col0, Col1, Col3, Col4, ...(see View)
+2019-11-08 10:06:53,271 : WARN  : KNIME-Worker-19 :  : Node : RProp MLP Learner : 3:78 : Only double columns for input
+2019-11-08 10:06:53,295 : WARN  : KNIME-Worker-18 :  : Node : RProp MLP Learner : 3:78 : Only double columns for input
+2019-11-08 10:06:53,393 : WARN  : KNIME-Worker-21 :  : Node : Normalizer (Apply) : 3:80 : Normalized value is out of bounds. Original value: 0.0 Transformed value: -0.006622516556291391 Lower Bound: 0.0
+2019-11-08 10:06:53,404 : WARN  : KNIME-Worker-18 :  : Node : RProp MLP Learner : 3:78 : Only double columns for input
+2019-11-08 10:06:53,424 : WARN  : KNIME-Worker-17 :  : Node : Naive Bayes Learner : 3:77:72 : The following attributes contain missing values: Col0, Col1, Col3, Col4, ...(see View)
+2019-11-08 10:06:53,480 : WARN  : KNIME-Worker-20 :  : Node : RProp MLP Learner : 3:78 : Only double columns for input
+2019-11-08 10:06:53,514 : WARN  : KNIME-Worker-19 :  : Node : RProp MLP Learner : 3:78 : Only double columns for input
+2019-11-08 10:06:53,531 : WARN  : KNIME-Worker-20 :  : Node : Normalizer (Apply) : 3:80 : Normalized value is out of bounds. Original value: 17.0 Transformed value: 1.2142857142857142 Upper Bound: 1.0
+2019-11-08 10:06:53,556 : WARN  : KNIME-Worker-17 :  : Node : Scorer : 3:70 : There were missing values in the reference or in the prediction class columns.
+2019-11-08 10:11:02,093 : WARN  : main :  : Node : RProp MLP Learner : 3:78 : Only double columns for input
+2019-11-08 10:11:04,344 : WARN  : KNIME-Worker-22 :  : Node : RProp MLP Learner : 3:78 : Only double columns for input
+2019-11-08 10:11:22,857 : WARN  : main :  : Node : RProp MLP Learner : 3:78 : Only double columns for input
+2019-11-08 10:13:09,387 : WARN  : KNIME-Worker-26 :  : Node : RProp MLP Learner : 3:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:13:09,388 : WARN  : KNIME-Worker-26 :  : Node : RProp MLP Learner : 3:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:13:09,390 : WARN  : KNIME-Worker-26 :  : Node : RProp MLP Learner : 3:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:13:09,391 : WARN  : KNIME-Worker-26 :  : Node : RProp MLP Learner : 3:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:13:09,392 : WARN  : KNIME-Worker-26 :  : Node : RProp MLP Learner : 3:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:13:09,393 : WARN  : KNIME-Worker-26 :  : Node : RProp MLP Learner : 3:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:13:09,394 : WARN  : KNIME-Worker-26 :  : Node : RProp MLP Learner : 3:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:13:09,394 : WARN  : KNIME-Worker-26 :  : Node : RProp MLP Learner : 3:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:13:09,395 : WARN  : KNIME-Worker-26 :  : Node : RProp MLP Learner : 3:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:13:09,397 : WARN  : KNIME-Worker-26 :  : Node : RProp MLP Learner : 3:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:13:09,398 : WARN  : KNIME-Worker-26 :  : Node : RProp MLP Learner : 3:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:13:09,399 : WARN  : KNIME-Worker-26 :  : Node : RProp MLP Learner : 3:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:13:09,400 : WARN  : KNIME-Worker-26 :  : Node : RProp MLP Learner : 3:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:13:09,401 : WARN  : KNIME-Worker-26 :  : Node : RProp MLP Learner : 3:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:13:09,402 : WARN  : KNIME-Worker-26 :  : Node : RProp MLP Learner : 3:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:13:09,502 : ERROR : KNIME-Worker-27 :  : Node : RProp MLP Learner : 3:78 : Execute failed: Missing values in input datatable
+java.lang.Exception: Missing values in input datatable
+	at org.knime.base.node.mine.neural.rprop.RPropNodeModel.execute(RPropNodeModel.java:478)
+	at org.knime.core.node.NodeModel.executeModel(NodeModel.java:567)
+	at org.knime.core.node.Node.invokeFullyNodeModelExecute(Node.java:1192)
+	at org.knime.core.node.Node.execute(Node.java:979)
+	at org.knime.core.node.workflow.NativeNodeContainer.performExecuteNode(NativeNodeContainer.java:559)
+	at org.knime.core.node.exec.LocalNodeExecutionJob.mainExecute(LocalNodeExecutionJob.java:95)
+	at org.knime.core.node.workflow.NodeExecutionJob.internalRun(NodeExecutionJob.java:179)
+	at org.knime.core.node.workflow.NodeExecutionJob.run(NodeExecutionJob.java:110)
+	at org.knime.core.util.ThreadUtils$RunnableWithContextImpl.runWithContext(ThreadUtils.java:328)
+	at org.knime.core.util.ThreadUtils$RunnableWithContext.run(ThreadUtils.java:204)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at org.knime.core.util.ThreadPool$MyFuture.run(ThreadPool.java:123)
+	at org.knime.core.util.ThreadPool$Worker.run(ThreadPool.java:246)
+2019-11-08 10:13:09,505 : WARN  : KNIME-Worker-27 :  : Node : RProp MLP Learner : 3:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:13:09,505 : WARN  : KNIME-Worker-27 :  : Node : RProp MLP Learner : 3:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:13:09,506 : WARN  : KNIME-Worker-27 :  : Node : RProp MLP Learner : 3:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:13:09,506 : WARN  : KNIME-Worker-27 :  : Node : RProp MLP Learner : 3:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:13:09,506 : WARN  : KNIME-Worker-27 :  : Node : RProp MLP Learner : 3:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:13:09,506 : WARN  : KNIME-Worker-27 :  : Node : RProp MLP Learner : 3:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:13:09,506 : WARN  : KNIME-Worker-27 :  : Node : RProp MLP Learner : 3:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:13:09,506 : WARN  : KNIME-Worker-27 :  : Node : RProp MLP Learner : 3:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:13:09,506 : WARN  : KNIME-Worker-27 :  : Node : RProp MLP Learner : 3:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:13:09,507 : WARN  : KNIME-Worker-27 :  : Node : RProp MLP Learner : 3:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:13:09,507 : WARN  : KNIME-Worker-27 :  : Node : RProp MLP Learner : 3:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:13:09,507 : WARN  : KNIME-Worker-27 :  : Node : RProp MLP Learner : 3:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:13:09,507 : WARN  : KNIME-Worker-27 :  : Node : RProp MLP Learner : 3:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:13:09,507 : WARN  : KNIME-Worker-27 :  : Node : RProp MLP Learner : 3:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:13:09,507 : WARN  : KNIME-Worker-27 :  : Node : RProp MLP Learner : 3:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:13:10,076 : WARN  : KNIME-Worker-25 :  : Node : Normalizer (Apply) : 3:80 : Column "Col0" is to be normalized, but is not numeric
+2019-11-08 10:14:13,533 : ERROR : KNIME-Worker-24 :  : Node : RProp MLP Learner : 3:78 : Execute failed: Missing values in input datatable
+java.lang.Exception: Missing values in input datatable
+	at org.knime.base.node.mine.neural.rprop.RPropNodeModel.execute(RPropNodeModel.java:478)
+	at org.knime.core.node.NodeModel.executeModel(NodeModel.java:567)
+	at org.knime.core.node.Node.invokeFullyNodeModelExecute(Node.java:1192)
+	at org.knime.core.node.Node.execute(Node.java:979)
+	at org.knime.core.node.workflow.NativeNodeContainer.performExecuteNode(NativeNodeContainer.java:559)
+	at org.knime.core.node.exec.LocalNodeExecutionJob.mainExecute(LocalNodeExecutionJob.java:95)
+	at org.knime.core.node.workflow.NodeExecutionJob.internalRun(NodeExecutionJob.java:179)
+	at org.knime.core.node.workflow.NodeExecutionJob.run(NodeExecutionJob.java:110)
+	at org.knime.core.util.ThreadUtils$RunnableWithContextImpl.runWithContext(ThreadUtils.java:328)
+	at org.knime.core.util.ThreadUtils$RunnableWithContext.run(ThreadUtils.java:204)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at org.knime.core.util.ThreadPool$MyFuture.run(ThreadPool.java:123)
+	at org.knime.core.util.ThreadPool$Worker.run(ThreadPool.java:246)
+2019-11-08 10:14:13,587 : WARN  : KNIME-Worker-24 :  : Node : RProp MLP Learner : 3:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:14:13,588 : WARN  : KNIME-Worker-24 :  : Node : RProp MLP Learner : 3:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:14:13,588 : WARN  : KNIME-Worker-24 :  : Node : RProp MLP Learner : 3:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:14:13,589 : WARN  : KNIME-Worker-24 :  : Node : RProp MLP Learner : 3:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:14:13,590 : WARN  : KNIME-Worker-24 :  : Node : RProp MLP Learner : 3:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:14:13,590 : WARN  : KNIME-Worker-24 :  : Node : RProp MLP Learner : 3:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:14:13,590 : WARN  : KNIME-Worker-24 :  : Node : RProp MLP Learner : 3:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:14:13,590 : WARN  : KNIME-Worker-24 :  : Node : RProp MLP Learner : 3:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:14:13,590 : WARN  : KNIME-Worker-24 :  : Node : RProp MLP Learner : 3:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:14:13,591 : WARN  : KNIME-Worker-24 :  : Node : RProp MLP Learner : 3:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:14:13,591 : WARN  : KNIME-Worker-24 :  : Node : RProp MLP Learner : 3:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:14:13,591 : WARN  : KNIME-Worker-24 :  : Node : RProp MLP Learner : 3:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:14:13,591 : WARN  : KNIME-Worker-24 :  : Node : RProp MLP Learner : 3:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:14:13,592 : WARN  : KNIME-Worker-24 :  : Node : RProp MLP Learner : 3:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:14:13,592 : WARN  : KNIME-Worker-24 :  : Node : RProp MLP Learner : 3:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:20:01,614 : WARN  : KNIME-Worker-31 :  : Node : RProp MLP Learner : 3:84:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:20:01,614 : WARN  : KNIME-Worker-31 :  : Node : RProp MLP Learner : 3:84:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:20:01,615 : WARN  : KNIME-Worker-31 :  : Node : RProp MLP Learner : 3:84:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:20:01,615 : WARN  : KNIME-Worker-31 :  : Node : RProp MLP Learner : 3:84:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:20:01,615 : WARN  : KNIME-Worker-31 :  : Node : RProp MLP Learner : 3:84:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:20:01,615 : WARN  : KNIME-Worker-31 :  : Node : RProp MLP Learner : 3:84:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:20:01,616 : WARN  : KNIME-Worker-31 :  : Node : RProp MLP Learner : 3:84:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:20:01,616 : WARN  : KNIME-Worker-31 :  : Node : RProp MLP Learner : 3:84:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:20:01,616 : WARN  : KNIME-Worker-31 :  : Node : RProp MLP Learner : 3:84:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:20:01,617 : WARN  : KNIME-Worker-31 :  : Node : RProp MLP Learner : 3:84:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:20:01,617 : WARN  : KNIME-Worker-31 :  : Node : RProp MLP Learner : 3:84:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:20:01,617 : WARN  : KNIME-Worker-31 :  : Node : RProp MLP Learner : 3:84:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:20:01,617 : WARN  : KNIME-Worker-31 :  : Node : RProp MLP Learner : 3:84:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:20:01,617 : WARN  : KNIME-Worker-31 :  : Node : RProp MLP Learner : 3:84:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:20:01,617 : WARN  : KNIME-Worker-31 :  : Node : RProp MLP Learner : 3:84:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:20:02,935 : ERROR : KNIME-Worker-31 :  : Node : MultiLayerPerceptron Predictor : 3:84:79 : Execute failed: Input DataTable should not contain missing values.
+java.lang.IllegalArgumentException: Input DataTable should not contain missing values.
+	at org.knime.base.node.mine.neural.mlp2.MLPPredictorNodeModel$MLPClassificationFactory.getCells(MLPPredictorNodeModel.java:402)
+	at org.knime.core.data.container.RearrangeColumnsTable.calcNewCellsForRow(RearrangeColumnsTable.java:541)
+	at org.knime.core.data.container.RearrangeColumnsTable.calcNewColsSynchronously(RearrangeColumnsTable.java:462)
+	at org.knime.core.data.container.RearrangeColumnsTable.create(RearrangeColumnsTable.java:380)
+	at org.knime.core.node.ExecutionContext.createColumnRearrangeTable(ExecutionContext.java:385)
+	at org.knime.base.node.mine.neural.mlp2.MLPPredictorNodeModel.execute(MLPPredictorNodeModel.java:231)
+	at org.knime.core.node.NodeModel.executeModel(NodeModel.java:567)
+	at org.knime.core.node.Node.invokeFullyNodeModelExecute(Node.java:1192)
+	at org.knime.core.node.Node.execute(Node.java:979)
+	at org.knime.core.node.workflow.NativeNodeContainer.performExecuteNode(NativeNodeContainer.java:559)
+	at org.knime.core.node.exec.LocalNodeExecutionJob.mainExecute(LocalNodeExecutionJob.java:95)
+	at org.knime.core.node.workflow.NodeExecutionJob.internalRun(NodeExecutionJob.java:179)
+	at org.knime.core.node.workflow.NodeExecutionJob.run(NodeExecutionJob.java:110)
+	at org.knime.core.util.ThreadUtils$RunnableWithContextImpl.runWithContext(ThreadUtils.java:328)
+	at org.knime.core.util.ThreadUtils$RunnableWithContext.run(ThreadUtils.java:204)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at org.knime.core.util.ThreadPool$MyFuture.run(ThreadPool.java:123)
+	at org.knime.core.util.ThreadPool$Worker.run(ThreadPool.java:246)
+2019-11-08 10:20:29,489 : ERROR : KNIME-Worker-30 :  : Node : MultiLayerPerceptron Predictor : 3:84:79 : Execute failed: Input DataTable should not contain missing values.
+java.lang.IllegalArgumentException: Input DataTable should not contain missing values.
+	at org.knime.base.node.mine.neural.mlp2.MLPPredictorNodeModel$MLPClassificationFactory.getCells(MLPPredictorNodeModel.java:402)
+	at org.knime.core.data.container.RearrangeColumnsTable.calcNewCellsForRow(RearrangeColumnsTable.java:541)
+	at org.knime.core.data.container.RearrangeColumnsTable.calcNewColsSynchronously(RearrangeColumnsTable.java:462)
+	at org.knime.core.data.container.RearrangeColumnsTable.create(RearrangeColumnsTable.java:380)
+	at org.knime.core.node.ExecutionContext.createColumnRearrangeTable(ExecutionContext.java:385)
+	at org.knime.base.node.mine.neural.mlp2.MLPPredictorNodeModel.execute(MLPPredictorNodeModel.java:231)
+	at org.knime.core.node.NodeModel.executeModel(NodeModel.java:567)
+	at org.knime.core.node.Node.invokeFullyNodeModelExecute(Node.java:1192)
+	at org.knime.core.node.Node.execute(Node.java:979)
+	at org.knime.core.node.workflow.NativeNodeContainer.performExecuteNode(NativeNodeContainer.java:559)
+	at org.knime.core.node.exec.LocalNodeExecutionJob.mainExecute(LocalNodeExecutionJob.java:95)
+	at org.knime.core.node.workflow.NodeExecutionJob.internalRun(NodeExecutionJob.java:179)
+	at org.knime.core.node.workflow.NodeExecutionJob.run(NodeExecutionJob.java:110)
+	at org.knime.core.util.ThreadUtils$RunnableWithContextImpl.runWithContext(ThreadUtils.java:328)
+	at org.knime.core.util.ThreadUtils$RunnableWithContext.run(ThreadUtils.java:204)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at org.knime.core.util.ThreadPool$MyFuture.run(ThreadPool.java:123)
+	at org.knime.core.util.ThreadPool$Worker.run(ThreadPool.java:246)
+2019-11-08 10:22:26,263 : WARN  : KNIME-Worker-34 :  : Node : RProp MLP Learner : 3:84:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:22:26,266 : WARN  : KNIME-Worker-34 :  : Node : RProp MLP Learner : 3:84:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:22:26,266 : WARN  : KNIME-Worker-34 :  : Node : RProp MLP Learner : 3:84:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:22:26,269 : WARN  : KNIME-Worker-34 :  : Node : RProp MLP Learner : 3:84:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:22:26,270 : WARN  : KNIME-Worker-34 :  : Node : RProp MLP Learner : 3:84:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:22:26,270 : WARN  : KNIME-Worker-34 :  : Node : RProp MLP Learner : 3:84:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:22:26,272 : WARN  : KNIME-Worker-34 :  : Node : RProp MLP Learner : 3:84:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:22:26,272 : WARN  : KNIME-Worker-34 :  : Node : RProp MLP Learner : 3:84:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:22:26,272 : WARN  : KNIME-Worker-34 :  : Node : RProp MLP Learner : 3:84:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:22:26,273 : WARN  : KNIME-Worker-34 :  : Node : RProp MLP Learner : 3:84:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:22:26,273 : WARN  : KNIME-Worker-34 :  : Node : RProp MLP Learner : 3:84:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:22:26,274 : WARN  : KNIME-Worker-34 :  : Node : RProp MLP Learner : 3:84:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:22:26,274 : WARN  : KNIME-Worker-34 :  : Node : RProp MLP Learner : 3:84:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:22:26,274 : WARN  : KNIME-Worker-34 :  : Node : RProp MLP Learner : 3:84:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:22:26,275 : WARN  : KNIME-Worker-34 :  : Node : RProp MLP Learner : 3:84:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:22:27,649 : ERROR : KNIME-Worker-37 :  : Node : MultiLayerPerceptron Predictor : 3:84:79 : Execute failed: Input DataTable should not contain missing values.
+java.lang.IllegalArgumentException: Input DataTable should not contain missing values.
+	at org.knime.base.node.mine.neural.mlp2.MLPPredictorNodeModel$MLPClassificationFactory.getCells(MLPPredictorNodeModel.java:402)
+	at org.knime.core.data.container.RearrangeColumnsTable.calcNewCellsForRow(RearrangeColumnsTable.java:541)
+	at org.knime.core.data.container.RearrangeColumnsTable.calcNewColsSynchronously(RearrangeColumnsTable.java:462)
+	at org.knime.core.data.container.RearrangeColumnsTable.create(RearrangeColumnsTable.java:380)
+	at org.knime.core.node.ExecutionContext.createColumnRearrangeTable(ExecutionContext.java:385)
+	at org.knime.base.node.mine.neural.mlp2.MLPPredictorNodeModel.execute(MLPPredictorNodeModel.java:231)
+	at org.knime.core.node.NodeModel.executeModel(NodeModel.java:567)
+	at org.knime.core.node.Node.invokeFullyNodeModelExecute(Node.java:1192)
+	at org.knime.core.node.Node.execute(Node.java:979)
+	at org.knime.core.node.workflow.NativeNodeContainer.performExecuteNode(NativeNodeContainer.java:559)
+	at org.knime.core.node.exec.LocalNodeExecutionJob.mainExecute(LocalNodeExecutionJob.java:95)
+	at org.knime.core.node.workflow.NodeExecutionJob.internalRun(NodeExecutionJob.java:179)
+	at org.knime.core.node.workflow.NodeExecutionJob.run(NodeExecutionJob.java:110)
+	at org.knime.core.util.ThreadUtils$RunnableWithContextImpl.runWithContext(ThreadUtils.java:328)
+	at org.knime.core.util.ThreadUtils$RunnableWithContext.run(ThreadUtils.java:204)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at org.knime.core.util.ThreadPool$MyFuture.run(ThreadPool.java:123)
+	at org.knime.core.util.ThreadPool$Worker.run(ThreadPool.java:246)
+2019-11-08 10:23:32,175 : WARN  : KNIME-Worker-36 :  : Node : RProp MLP Learner : 3:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:23:32,177 : WARN  : KNIME-Worker-36 :  : Node : RProp MLP Learner : 3:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:23:32,178 : WARN  : KNIME-Worker-36 :  : Node : RProp MLP Learner : 3:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:23:32,178 : WARN  : KNIME-Worker-36 :  : Node : RProp MLP Learner : 3:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:23:32,181 : WARN  : KNIME-Worker-36 :  : Node : RProp MLP Learner : 3:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:23:32,181 : WARN  : KNIME-Worker-36 :  : Node : RProp MLP Learner : 3:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:23:32,182 : WARN  : KNIME-Worker-36 :  : Node : RProp MLP Learner : 3:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:23:32,183 : WARN  : KNIME-Worker-36 :  : Node : RProp MLP Learner : 3:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:23:32,183 : WARN  : KNIME-Worker-36 :  : Node : RProp MLP Learner : 3:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:23:32,184 : WARN  : KNIME-Worker-36 :  : Node : RProp MLP Learner : 3:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:23:32,185 : WARN  : KNIME-Worker-36 :  : Node : RProp MLP Learner : 3:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:23:32,185 : WARN  : KNIME-Worker-36 :  : Node : RProp MLP Learner : 3:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:23:32,185 : WARN  : KNIME-Worker-36 :  : Node : RProp MLP Learner : 3:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:23:32,185 : WARN  : KNIME-Worker-36 :  : Node : RProp MLP Learner : 3:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:23:32,185 : WARN  : KNIME-Worker-36 :  : Node : RProp MLP Learner : 3:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:23:33,729 : ERROR : KNIME-Worker-34 :  : Node : MultiLayerPerceptron Predictor : 3:79 : Execute failed: Input DataTable should not contain missing values.
+java.lang.IllegalArgumentException: Input DataTable should not contain missing values.
+	at org.knime.base.node.mine.neural.mlp2.MLPPredictorNodeModel$MLPClassificationFactory.getCells(MLPPredictorNodeModel.java:402)
+	at org.knime.core.data.container.RearrangeColumnsTable.calcNewCellsForRow(RearrangeColumnsTable.java:541)
+	at org.knime.core.data.container.RearrangeColumnsTable.calcNewColsSynchronously(RearrangeColumnsTable.java:462)
+	at org.knime.core.data.container.RearrangeColumnsTable.create(RearrangeColumnsTable.java:380)
+	at org.knime.core.node.ExecutionContext.createColumnRearrangeTable(ExecutionContext.java:385)
+	at org.knime.base.node.mine.neural.mlp2.MLPPredictorNodeModel.execute(MLPPredictorNodeModel.java:231)
+	at org.knime.core.node.NodeModel.executeModel(NodeModel.java:567)
+	at org.knime.core.node.Node.invokeFullyNodeModelExecute(Node.java:1192)
+	at org.knime.core.node.Node.execute(Node.java:979)
+	at org.knime.core.node.workflow.NativeNodeContainer.performExecuteNode(NativeNodeContainer.java:559)
+	at org.knime.core.node.exec.LocalNodeExecutionJob.mainExecute(LocalNodeExecutionJob.java:95)
+	at org.knime.core.node.workflow.NodeExecutionJob.internalRun(NodeExecutionJob.java:179)
+	at org.knime.core.node.workflow.NodeExecutionJob.run(NodeExecutionJob.java:110)
+	at org.knime.core.util.ThreadUtils$RunnableWithContextImpl.runWithContext(ThreadUtils.java:328)
+	at org.knime.core.util.ThreadUtils$RunnableWithContext.run(ThreadUtils.java:204)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at org.knime.core.util.ThreadPool$MyFuture.run(ThreadPool.java:123)
+	at org.knime.core.util.ThreadPool$Worker.run(ThreadPool.java:246)
+2019-11-08 10:23:43,309 : WARN  : KNIME-Worker-35 :  : Node : RProp MLP Learner : 3:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:23:43,309 : WARN  : KNIME-Worker-35 :  : Node : RProp MLP Learner : 3:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:23:43,310 : WARN  : KNIME-Worker-35 :  : Node : RProp MLP Learner : 3:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:23:43,310 : WARN  : KNIME-Worker-35 :  : Node : RProp MLP Learner : 3:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:23:43,310 : WARN  : KNIME-Worker-35 :  : Node : RProp MLP Learner : 3:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:23:43,310 : WARN  : KNIME-Worker-35 :  : Node : RProp MLP Learner : 3:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:23:43,310 : WARN  : KNIME-Worker-35 :  : Node : RProp MLP Learner : 3:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:23:43,310 : WARN  : KNIME-Worker-35 :  : Node : RProp MLP Learner : 3:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:23:43,311 : WARN  : KNIME-Worker-35 :  : Node : RProp MLP Learner : 3:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:23:43,311 : WARN  : KNIME-Worker-35 :  : Node : RProp MLP Learner : 3:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:23:43,311 : WARN  : KNIME-Worker-35 :  : Node : RProp MLP Learner : 3:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:23:43,311 : WARN  : KNIME-Worker-35 :  : Node : RProp MLP Learner : 3:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:23:43,311 : WARN  : KNIME-Worker-35 :  : Node : RProp MLP Learner : 3:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:23:43,311 : WARN  : KNIME-Worker-35 :  : Node : RProp MLP Learner : 3:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:23:43,312 : WARN  : KNIME-Worker-35 :  : Node : RProp MLP Learner : 3:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:23:43,503 : ERROR : KNIME-Worker-37 :  : Node : MultiLayerPerceptron Predictor : 3:79 : Execute failed: Input DataTable should not contain missing values.
+java.lang.IllegalArgumentException: Input DataTable should not contain missing values.
+	at org.knime.base.node.mine.neural.mlp2.MLPPredictorNodeModel$MLPClassificationFactory.getCells(MLPPredictorNodeModel.java:402)
+	at org.knime.core.data.container.RearrangeColumnsTable.calcNewCellsForRow(RearrangeColumnsTable.java:541)
+	at org.knime.core.data.container.RearrangeColumnsTable.calcNewColsSynchronously(RearrangeColumnsTable.java:462)
+	at org.knime.core.data.container.RearrangeColumnsTable.create(RearrangeColumnsTable.java:380)
+	at org.knime.core.node.ExecutionContext.createColumnRearrangeTable(ExecutionContext.java:385)
+	at org.knime.base.node.mine.neural.mlp2.MLPPredictorNodeModel.execute(MLPPredictorNodeModel.java:231)
+	at org.knime.core.node.NodeModel.executeModel(NodeModel.java:567)
+	at org.knime.core.node.Node.invokeFullyNodeModelExecute(Node.java:1192)
+	at org.knime.core.node.Node.execute(Node.java:979)
+	at org.knime.core.node.workflow.NativeNodeContainer.performExecuteNode(NativeNodeContainer.java:559)
+	at org.knime.core.node.exec.LocalNodeExecutionJob.mainExecute(LocalNodeExecutionJob.java:95)
+	at org.knime.core.node.workflow.NodeExecutionJob.internalRun(NodeExecutionJob.java:179)
+	at org.knime.core.node.workflow.NodeExecutionJob.run(NodeExecutionJob.java:110)
+	at org.knime.core.util.ThreadUtils$RunnableWithContextImpl.runWithContext(ThreadUtils.java:328)
+	at org.knime.core.util.ThreadUtils$RunnableWithContext.run(ThreadUtils.java:204)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at org.knime.core.util.ThreadPool$MyFuture.run(ThreadPool.java:123)
+	at org.knime.core.util.ThreadPool$Worker.run(ThreadPool.java:246)
+2019-11-08 10:23:43,968 : ERROR : KNIME-Worker-37 :  : Node : MultiLayerPerceptron Predictor : 3:79 : Execute failed: Input DataTable should not contain missing values.
+java.lang.IllegalArgumentException: Input DataTable should not contain missing values.
+	at org.knime.base.node.mine.neural.mlp2.MLPPredictorNodeModel$MLPClassificationFactory.getCells(MLPPredictorNodeModel.java:402)
+	at org.knime.core.data.container.RearrangeColumnsTable.calcNewCellsForRow(RearrangeColumnsTable.java:541)
+	at org.knime.core.data.container.RearrangeColumnsTable.calcNewColsSynchronously(RearrangeColumnsTable.java:462)
+	at org.knime.core.data.container.RearrangeColumnsTable.create(RearrangeColumnsTable.java:380)
+	at org.knime.core.node.ExecutionContext.createColumnRearrangeTable(ExecutionContext.java:385)
+	at org.knime.base.node.mine.neural.mlp2.MLPPredictorNodeModel.execute(MLPPredictorNodeModel.java:231)
+	at org.knime.core.node.NodeModel.executeModel(NodeModel.java:567)
+	at org.knime.core.node.Node.invokeFullyNodeModelExecute(Node.java:1192)
+	at org.knime.core.node.Node.execute(Node.java:979)
+	at org.knime.core.node.workflow.NativeNodeContainer.performExecuteNode(NativeNodeContainer.java:559)
+	at org.knime.core.node.exec.LocalNodeExecutionJob.mainExecute(LocalNodeExecutionJob.java:95)
+	at org.knime.core.node.workflow.NodeExecutionJob.internalRun(NodeExecutionJob.java:179)
+	at org.knime.core.node.workflow.NodeExecutionJob.run(NodeExecutionJob.java:110)
+	at org.knime.core.util.ThreadUtils$RunnableWithContextImpl.runWithContext(ThreadUtils.java:328)
+	at org.knime.core.util.ThreadUtils$RunnableWithContext.run(ThreadUtils.java:204)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at org.knime.core.util.ThreadPool$MyFuture.run(ThreadPool.java:123)
+	at org.knime.core.util.ThreadPool$Worker.run(ThreadPool.java:246)
+2019-11-08 10:25:08,621 : WARN  : KNIME-Worker-38 :  : Node : RProp MLP Learner : 3:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:25:08,621 : WARN  : KNIME-Worker-38 :  : Node : RProp MLP Learner : 3:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:25:08,622 : WARN  : KNIME-Worker-38 :  : Node : RProp MLP Learner : 3:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:25:08,622 : WARN  : KNIME-Worker-38 :  : Node : RProp MLP Learner : 3:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:25:08,622 : WARN  : KNIME-Worker-38 :  : Node : RProp MLP Learner : 3:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:25:08,622 : WARN  : KNIME-Worker-38 :  : Node : RProp MLP Learner : 3:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:25:08,622 : WARN  : KNIME-Worker-38 :  : Node : RProp MLP Learner : 3:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:25:08,622 : WARN  : KNIME-Worker-38 :  : Node : RProp MLP Learner : 3:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:25:08,622 : WARN  : KNIME-Worker-38 :  : Node : RProp MLP Learner : 3:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:25:08,623 : WARN  : KNIME-Worker-38 :  : Node : RProp MLP Learner : 3:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:25:08,623 : WARN  : KNIME-Worker-38 :  : Node : RProp MLP Learner : 3:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:25:08,623 : WARN  : KNIME-Worker-38 :  : Node : RProp MLP Learner : 3:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:25:08,623 : WARN  : KNIME-Worker-38 :  : Node : RProp MLP Learner : 3:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:25:08,623 : WARN  : KNIME-Worker-38 :  : Node : RProp MLP Learner : 3:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:25:08,623 : WARN  : KNIME-Worker-38 :  : Node : RProp MLP Learner : 3:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:25:08,745 : ERROR : KNIME-Worker-36 :  : Node : MultiLayerPerceptron Predictor : 3:79 : Execute failed: Input DataTable should not contain missing values.
+java.lang.IllegalArgumentException: Input DataTable should not contain missing values.
+	at org.knime.base.node.mine.neural.mlp2.MLPPredictorNodeModel$MLPClassificationFactory.getCells(MLPPredictorNodeModel.java:402)
+	at org.knime.core.data.container.RearrangeColumnsTable.calcNewCellsForRow(RearrangeColumnsTable.java:541)
+	at org.knime.core.data.container.RearrangeColumnsTable.calcNewColsSynchronously(RearrangeColumnsTable.java:462)
+	at org.knime.core.data.container.RearrangeColumnsTable.create(RearrangeColumnsTable.java:380)
+	at org.knime.core.node.ExecutionContext.createColumnRearrangeTable(ExecutionContext.java:385)
+	at org.knime.base.node.mine.neural.mlp2.MLPPredictorNodeModel.execute(MLPPredictorNodeModel.java:231)
+	at org.knime.core.node.NodeModel.executeModel(NodeModel.java:567)
+	at org.knime.core.node.Node.invokeFullyNodeModelExecute(Node.java:1192)
+	at org.knime.core.node.Node.execute(Node.java:979)
+	at org.knime.core.node.workflow.NativeNodeContainer.performExecuteNode(NativeNodeContainer.java:559)
+	at org.knime.core.node.exec.LocalNodeExecutionJob.mainExecute(LocalNodeExecutionJob.java:95)
+	at org.knime.core.node.workflow.NodeExecutionJob.internalRun(NodeExecutionJob.java:179)
+	at org.knime.core.node.workflow.NodeExecutionJob.run(NodeExecutionJob.java:110)
+	at org.knime.core.util.ThreadUtils$RunnableWithContextImpl.runWithContext(ThreadUtils.java:328)
+	at org.knime.core.util.ThreadUtils$RunnableWithContext.run(ThreadUtils.java:204)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at org.knime.core.util.ThreadPool$MyFuture.run(ThreadPool.java:123)
+	at org.knime.core.util.ThreadPool$Worker.run(ThreadPool.java:246)
+2019-11-08 10:25:44,088 : WARN  : KNIME-Worker-34 :  : Node : RProp MLP Learner : 3:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:25:44,089 : WARN  : KNIME-Worker-34 :  : Node : RProp MLP Learner : 3:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:25:44,089 : WARN  : KNIME-Worker-34 :  : Node : RProp MLP Learner : 3:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:25:44,089 : WARN  : KNIME-Worker-34 :  : Node : RProp MLP Learner : 3:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:25:44,089 : WARN  : KNIME-Worker-34 :  : Node : RProp MLP Learner : 3:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:25:44,089 : WARN  : KNIME-Worker-34 :  : Node : RProp MLP Learner : 3:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:25:44,090 : WARN  : KNIME-Worker-34 :  : Node : RProp MLP Learner : 3:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:25:44,090 : WARN  : KNIME-Worker-34 :  : Node : RProp MLP Learner : 3:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:25:44,090 : WARN  : KNIME-Worker-34 :  : Node : RProp MLP Learner : 3:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:25:44,090 : WARN  : KNIME-Worker-34 :  : Node : RProp MLP Learner : 3:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:25:44,090 : WARN  : KNIME-Worker-34 :  : Node : RProp MLP Learner : 3:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:25:44,090 : WARN  : KNIME-Worker-34 :  : Node : RProp MLP Learner : 3:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:25:44,090 : WARN  : KNIME-Worker-34 :  : Node : RProp MLP Learner : 3:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:25:44,091 : WARN  : KNIME-Worker-34 :  : Node : RProp MLP Learner : 3:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:25:44,091 : WARN  : KNIME-Worker-34 :  : Node : RProp MLP Learner : 3:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:25:44,210 : ERROR : KNIME-Worker-36 :  : Node : MultiLayerPerceptron Predictor : 3:79 : Execute failed: Input DataTable should not contain missing values.
+java.lang.IllegalArgumentException: Input DataTable should not contain missing values.
+	at org.knime.base.node.mine.neural.mlp2.MLPPredictorNodeModel$MLPClassificationFactory.getCells(MLPPredictorNodeModel.java:402)
+	at org.knime.core.data.container.RearrangeColumnsTable.calcNewCellsForRow(RearrangeColumnsTable.java:541)
+	at org.knime.core.data.container.RearrangeColumnsTable.calcNewColsSynchronously(RearrangeColumnsTable.java:462)
+	at org.knime.core.data.container.RearrangeColumnsTable.create(RearrangeColumnsTable.java:380)
+	at org.knime.core.node.ExecutionContext.createColumnRearrangeTable(ExecutionContext.java:385)
+	at org.knime.base.node.mine.neural.mlp2.MLPPredictorNodeModel.execute(MLPPredictorNodeModel.java:231)
+	at org.knime.core.node.NodeModel.executeModel(NodeModel.java:567)
+	at org.knime.core.node.Node.invokeFullyNodeModelExecute(Node.java:1192)
+	at org.knime.core.node.Node.execute(Node.java:979)
+	at org.knime.core.node.workflow.NativeNodeContainer.performExecuteNode(NativeNodeContainer.java:559)
+	at org.knime.core.node.exec.LocalNodeExecutionJob.mainExecute(LocalNodeExecutionJob.java:95)
+	at org.knime.core.node.workflow.NodeExecutionJob.internalRun(NodeExecutionJob.java:179)
+	at org.knime.core.node.workflow.NodeExecutionJob.run(NodeExecutionJob.java:110)
+	at org.knime.core.util.ThreadUtils$RunnableWithContextImpl.runWithContext(ThreadUtils.java:328)
+	at org.knime.core.util.ThreadUtils$RunnableWithContext.run(ThreadUtils.java:204)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at org.knime.core.util.ThreadPool$MyFuture.run(ThreadPool.java:123)
+	at org.knime.core.util.ThreadPool$Worker.run(ThreadPool.java:246)
+2019-11-08 10:26:49,961 : WARN  : KNIME-Worker-34 :  : Node : RProp MLP Learner : 3:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:26:49,962 : WARN  : KNIME-Worker-34 :  : Node : RProp MLP Learner : 3:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:26:49,962 : WARN  : KNIME-Worker-34 :  : Node : RProp MLP Learner : 3:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:26:49,962 : WARN  : KNIME-Worker-34 :  : Node : RProp MLP Learner : 3:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:26:49,963 : WARN  : KNIME-Worker-34 :  : Node : RProp MLP Learner : 3:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:26:49,964 : WARN  : KNIME-Worker-34 :  : Node : RProp MLP Learner : 3:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:26:49,966 : WARN  : KNIME-Worker-34 :  : Node : RProp MLP Learner : 3:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:26:49,968 : WARN  : KNIME-Worker-34 :  : Node : RProp MLP Learner : 3:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:26:49,969 : WARN  : KNIME-Worker-34 :  : Node : RProp MLP Learner : 3:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:26:49,970 : WARN  : KNIME-Worker-34 :  : Node : RProp MLP Learner : 3:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:26:49,970 : WARN  : KNIME-Worker-34 :  : Node : RProp MLP Learner : 3:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:26:49,971 : WARN  : KNIME-Worker-34 :  : Node : RProp MLP Learner : 3:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:26:49,972 : WARN  : KNIME-Worker-34 :  : Node : RProp MLP Learner : 3:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:26:49,972 : WARN  : KNIME-Worker-34 :  : Node : RProp MLP Learner : 3:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:26:49,972 : WARN  : KNIME-Worker-34 :  : Node : RProp MLP Learner : 3:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:26:59,042 : ERROR : KNIME-Worker-37 :  : Node : MultiLayerPerceptron Predictor : 3:79 : Execute failed: Input DataTable should not contain missing values.
+java.lang.IllegalArgumentException: Input DataTable should not contain missing values.
+	at org.knime.base.node.mine.neural.mlp2.MLPPredictorNodeModel$MLPClassificationFactory.getCells(MLPPredictorNodeModel.java:402)
+	at org.knime.core.data.container.RearrangeColumnsTable.calcNewCellsForRow(RearrangeColumnsTable.java:541)
+	at org.knime.core.data.container.RearrangeColumnsTable.calcNewColsSynchronously(RearrangeColumnsTable.java:462)
+	at org.knime.core.data.container.RearrangeColumnsTable.create(RearrangeColumnsTable.java:380)
+	at org.knime.core.node.ExecutionContext.createColumnRearrangeTable(ExecutionContext.java:385)
+	at org.knime.base.node.mine.neural.mlp2.MLPPredictorNodeModel.execute(MLPPredictorNodeModel.java:231)
+	at org.knime.core.node.NodeModel.executeModel(NodeModel.java:567)
+	at org.knime.core.node.Node.invokeFullyNodeModelExecute(Node.java:1192)
+	at org.knime.core.node.Node.execute(Node.java:979)
+	at org.knime.core.node.workflow.NativeNodeContainer.performExecuteNode(NativeNodeContainer.java:559)
+	at org.knime.core.node.exec.LocalNodeExecutionJob.mainExecute(LocalNodeExecutionJob.java:95)
+	at org.knime.core.node.workflow.NodeExecutionJob.internalRun(NodeExecutionJob.java:179)
+	at org.knime.core.node.workflow.NodeExecutionJob.run(NodeExecutionJob.java:110)
+	at org.knime.core.util.ThreadUtils$RunnableWithContextImpl.runWithContext(ThreadUtils.java:328)
+	at org.knime.core.util.ThreadUtils$RunnableWithContext.run(ThreadUtils.java:204)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at org.knime.core.util.ThreadPool$MyFuture.run(ThreadPool.java:123)
+	at org.knime.core.util.ThreadPool$Worker.run(ThreadPool.java:246)
+2019-11-08 10:27:50,616 : ERROR : KNIME-Worker-38 :  : Node : MultiLayerPerceptron Predictor : 3:86 : Execute failed: Input DataTable should not contain missing values.
+java.lang.IllegalArgumentException: Input DataTable should not contain missing values.
+	at org.knime.base.node.mine.neural.mlp2.MLPPredictorNodeModel$MLPClassificationFactory.getCells(MLPPredictorNodeModel.java:402)
+	at org.knime.core.data.container.RearrangeColumnsTable.calcNewCellsForRow(RearrangeColumnsTable.java:541)
+	at org.knime.core.data.container.RearrangeColumnsTable.calcNewColsSynchronously(RearrangeColumnsTable.java:462)
+	at org.knime.core.data.container.RearrangeColumnsTable.create(RearrangeColumnsTable.java:380)
+	at org.knime.core.node.ExecutionContext.createColumnRearrangeTable(ExecutionContext.java:385)
+	at org.knime.base.node.mine.neural.mlp2.MLPPredictorNodeModel.execute(MLPPredictorNodeModel.java:231)
+	at org.knime.core.node.NodeModel.executeModel(NodeModel.java:567)
+	at org.knime.core.node.Node.invokeFullyNodeModelExecute(Node.java:1192)
+	at org.knime.core.node.Node.execute(Node.java:979)
+	at org.knime.core.node.workflow.NativeNodeContainer.performExecuteNode(NativeNodeContainer.java:559)
+	at org.knime.core.node.exec.LocalNodeExecutionJob.mainExecute(LocalNodeExecutionJob.java:95)
+	at org.knime.core.node.workflow.NodeExecutionJob.internalRun(NodeExecutionJob.java:179)
+	at org.knime.core.node.workflow.NodeExecutionJob.run(NodeExecutionJob.java:110)
+	at org.knime.core.util.ThreadUtils$RunnableWithContextImpl.runWithContext(ThreadUtils.java:328)
+	at org.knime.core.util.ThreadUtils$RunnableWithContext.run(ThreadUtils.java:204)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at org.knime.core.util.ThreadPool$MyFuture.run(ThreadPool.java:123)
+	at org.knime.core.util.ThreadPool$Worker.run(ThreadPool.java:246)
+2019-11-08 10:40:46,163 : ERROR : KNIME-Worker-42 :  : Node : MultiLayerPerceptron Predictor : 3:86 : Execute failed: Input DataTable should not contain missing values.
+java.lang.IllegalArgumentException: Input DataTable should not contain missing values.
+	at org.knime.base.node.mine.neural.mlp2.MLPPredictorNodeModel$MLPClassificationFactory.getCells(MLPPredictorNodeModel.java:402)
+	at org.knime.core.data.container.RearrangeColumnsTable.calcNewCellsForRow(RearrangeColumnsTable.java:541)
+	at org.knime.core.data.container.RearrangeColumnsTable.calcNewColsSynchronously(RearrangeColumnsTable.java:462)
+	at org.knime.core.data.container.RearrangeColumnsTable.create(RearrangeColumnsTable.java:380)
+	at org.knime.core.node.ExecutionContext.createColumnRearrangeTable(ExecutionContext.java:385)
+	at org.knime.base.node.mine.neural.mlp2.MLPPredictorNodeModel.execute(MLPPredictorNodeModel.java:231)
+	at org.knime.core.node.NodeModel.executeModel(NodeModel.java:567)
+	at org.knime.core.node.Node.invokeFullyNodeModelExecute(Node.java:1192)
+	at org.knime.core.node.Node.execute(Node.java:979)
+	at org.knime.core.node.workflow.NativeNodeContainer.performExecuteNode(NativeNodeContainer.java:559)
+	at org.knime.core.node.exec.LocalNodeExecutionJob.mainExecute(LocalNodeExecutionJob.java:95)
+	at org.knime.core.node.workflow.NodeExecutionJob.internalRun(NodeExecutionJob.java:179)
+	at org.knime.core.node.workflow.NodeExecutionJob.run(NodeExecutionJob.java:110)
+	at org.knime.core.util.ThreadUtils$RunnableWithContextImpl.runWithContext(ThreadUtils.java:328)
+	at org.knime.core.util.ThreadUtils$RunnableWithContext.run(ThreadUtils.java:204)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at org.knime.core.util.ThreadPool$MyFuture.run(ThreadPool.java:123)
+	at org.knime.core.util.ThreadPool$Worker.run(ThreadPool.java:246)
+2019-11-08 10:41:50,136 : WARN  : KNIME-Worker-41 :  : Node : RProp MLP Learner : 3:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:41:50,137 : WARN  : KNIME-Worker-41 :  : Node : RProp MLP Learner : 3:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:41:50,137 : WARN  : KNIME-Worker-41 :  : Node : RProp MLP Learner : 3:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:41:50,138 : WARN  : KNIME-Worker-41 :  : Node : RProp MLP Learner : 3:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:41:50,138 : WARN  : KNIME-Worker-41 :  : Node : RProp MLP Learner : 3:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:41:50,138 : WARN  : KNIME-Worker-41 :  : Node : RProp MLP Learner : 3:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:41:50,138 : WARN  : KNIME-Worker-41 :  : Node : RProp MLP Learner : 3:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:41:50,139 : WARN  : KNIME-Worker-41 :  : Node : RProp MLP Learner : 3:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:41:50,139 : WARN  : KNIME-Worker-41 :  : Node : RProp MLP Learner : 3:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:41:50,139 : WARN  : KNIME-Worker-41 :  : Node : RProp MLP Learner : 3:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:41:50,139 : WARN  : KNIME-Worker-41 :  : Node : RProp MLP Learner : 3:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:41:50,140 : WARN  : KNIME-Worker-41 :  : Node : RProp MLP Learner : 3:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:41:50,140 : WARN  : KNIME-Worker-41 :  : Node : RProp MLP Learner : 3:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:41:50,140 : WARN  : KNIME-Worker-41 :  : Node : RProp MLP Learner : 3:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:41:50,140 : WARN  : KNIME-Worker-41 :  : Node : RProp MLP Learner : 3:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:41:50,938 : ERROR : KNIME-Worker-39 :  : Node : MultiLayerPerceptron Predictor : 3:86 : Execute failed: Input DataTable should not contain missing values.
+java.lang.IllegalArgumentException: Input DataTable should not contain missing values.
+	at org.knime.base.node.mine.neural.mlp2.MLPPredictorNodeModel$MLPClassificationFactory.getCells(MLPPredictorNodeModel.java:402)
+	at org.knime.core.data.container.RearrangeColumnsTable.calcNewCellsForRow(RearrangeColumnsTable.java:541)
+	at org.knime.core.data.container.RearrangeColumnsTable.calcNewColsSynchronously(RearrangeColumnsTable.java:462)
+	at org.knime.core.data.container.RearrangeColumnsTable.create(RearrangeColumnsTable.java:380)
+	at org.knime.core.node.ExecutionContext.createColumnRearrangeTable(ExecutionContext.java:385)
+	at org.knime.base.node.mine.neural.mlp2.MLPPredictorNodeModel.execute(MLPPredictorNodeModel.java:231)
+	at org.knime.core.node.NodeModel.executeModel(NodeModel.java:567)
+	at org.knime.core.node.Node.invokeFullyNodeModelExecute(Node.java:1192)
+	at org.knime.core.node.Node.execute(Node.java:979)
+	at org.knime.core.node.workflow.NativeNodeContainer.performExecuteNode(NativeNodeContainer.java:559)
+	at org.knime.core.node.exec.LocalNodeExecutionJob.mainExecute(LocalNodeExecutionJob.java:95)
+	at org.knime.core.node.workflow.NodeExecutionJob.internalRun(NodeExecutionJob.java:179)
+	at org.knime.core.node.workflow.NodeExecutionJob.run(NodeExecutionJob.java:110)
+	at org.knime.core.util.ThreadUtils$RunnableWithContextImpl.runWithContext(ThreadUtils.java:328)
+	at org.knime.core.util.ThreadUtils$RunnableWithContext.run(ThreadUtils.java:204)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at org.knime.core.util.ThreadPool$MyFuture.run(ThreadPool.java:123)
+	at org.knime.core.util.ThreadPool$Worker.run(ThreadPool.java:246)
+2019-11-08 10:42:28,694 : WARN  : KNIME-Worker-42 :  : Node : RProp MLP Learner : 3:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:42:28,696 : WARN  : KNIME-Worker-42 :  : Node : RProp MLP Learner : 3:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:42:28,700 : WARN  : KNIME-Worker-42 :  : Node : RProp MLP Learner : 3:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:42:28,700 : WARN  : KNIME-Worker-42 :  : Node : RProp MLP Learner : 3:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:42:28,701 : WARN  : KNIME-Worker-42 :  : Node : RProp MLP Learner : 3:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:42:28,702 : WARN  : KNIME-Worker-42 :  : Node : RProp MLP Learner : 3:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:42:28,704 : WARN  : KNIME-Worker-42 :  : Node : RProp MLP Learner : 3:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:42:28,708 : WARN  : KNIME-Worker-42 :  : Node : RProp MLP Learner : 3:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:42:28,709 : WARN  : KNIME-Worker-42 :  : Node : RProp MLP Learner : 3:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:42:28,712 : WARN  : KNIME-Worker-42 :  : Node : RProp MLP Learner : 3:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:42:28,733 : WARN  : KNIME-Worker-42 :  : Node : RProp MLP Learner : 3:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:42:28,733 : WARN  : KNIME-Worker-42 :  : Node : RProp MLP Learner : 3:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:42:28,734 : WARN  : KNIME-Worker-42 :  : Node : RProp MLP Learner : 3:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:42:28,734 : WARN  : KNIME-Worker-42 :  : Node : RProp MLP Learner : 3:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:42:28,734 : WARN  : KNIME-Worker-42 :  : Node : RProp MLP Learner : 3:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:42:42,099 : ERROR : KNIME-Worker-40 :  : Node : MultiLayerPerceptron Predictor : 3:86 : Execute failed: Input DataTable should not contain missing values.
+java.lang.IllegalArgumentException: Input DataTable should not contain missing values.
+	at org.knime.base.node.mine.neural.mlp2.MLPPredictorNodeModel$MLPClassificationFactory.getCells(MLPPredictorNodeModel.java:402)
+	at org.knime.core.data.container.RearrangeColumnsTable.calcNewCellsForRow(RearrangeColumnsTable.java:541)
+	at org.knime.core.data.container.RearrangeColumnsTable.calcNewColsSynchronously(RearrangeColumnsTable.java:462)
+	at org.knime.core.data.container.RearrangeColumnsTable.create(RearrangeColumnsTable.java:380)
+	at org.knime.core.node.ExecutionContext.createColumnRearrangeTable(ExecutionContext.java:385)
+	at org.knime.base.node.mine.neural.mlp2.MLPPredictorNodeModel.execute(MLPPredictorNodeModel.java:231)
+	at org.knime.core.node.NodeModel.executeModel(NodeModel.java:567)
+	at org.knime.core.node.Node.invokeFullyNodeModelExecute(Node.java:1192)
+	at org.knime.core.node.Node.execute(Node.java:979)
+	at org.knime.core.node.workflow.NativeNodeContainer.performExecuteNode(NativeNodeContainer.java:559)
+	at org.knime.core.node.exec.LocalNodeExecutionJob.mainExecute(LocalNodeExecutionJob.java:95)
+	at org.knime.core.node.workflow.NodeExecutionJob.internalRun(NodeExecutionJob.java:179)
+	at org.knime.core.node.workflow.NodeExecutionJob.run(NodeExecutionJob.java:110)
+	at org.knime.core.util.ThreadUtils$RunnableWithContextImpl.runWithContext(ThreadUtils.java:328)
+	at org.knime.core.util.ThreadUtils$RunnableWithContext.run(ThreadUtils.java:204)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at org.knime.core.util.ThreadPool$MyFuture.run(ThreadPool.java:123)
+	at org.knime.core.util.ThreadPool$Worker.run(ThreadPool.java:246)
+2019-11-08 10:43:59,405 : ERROR : KNIME-Worker-40 :  : Node : MultiLayerPerceptron Predictor : 3:86 : Execute failed: Input DataTable should not contain missing values.
+java.lang.IllegalArgumentException: Input DataTable should not contain missing values.
+	at org.knime.base.node.mine.neural.mlp2.MLPPredictorNodeModel$MLPClassificationFactory.getCells(MLPPredictorNodeModel.java:402)
+	at org.knime.core.data.container.RearrangeColumnsTable.calcNewCellsForRow(RearrangeColumnsTable.java:541)
+	at org.knime.core.data.container.RearrangeColumnsTable.calcNewColsSynchronously(RearrangeColumnsTable.java:462)
+	at org.knime.core.data.container.RearrangeColumnsTable.create(RearrangeColumnsTable.java:380)
+	at org.knime.core.node.ExecutionContext.createColumnRearrangeTable(ExecutionContext.java:385)
+	at org.knime.base.node.mine.neural.mlp2.MLPPredictorNodeModel.execute(MLPPredictorNodeModel.java:231)
+	at org.knime.core.node.NodeModel.executeModel(NodeModel.java:567)
+	at org.knime.core.node.Node.invokeFullyNodeModelExecute(Node.java:1192)
+	at org.knime.core.node.Node.execute(Node.java:979)
+	at org.knime.core.node.workflow.NativeNodeContainer.performExecuteNode(NativeNodeContainer.java:559)
+	at org.knime.core.node.exec.LocalNodeExecutionJob.mainExecute(LocalNodeExecutionJob.java:95)
+	at org.knime.core.node.workflow.NodeExecutionJob.internalRun(NodeExecutionJob.java:179)
+	at org.knime.core.node.workflow.NodeExecutionJob.run(NodeExecutionJob.java:110)
+	at org.knime.core.util.ThreadUtils$RunnableWithContextImpl.runWithContext(ThreadUtils.java:328)
+	at org.knime.core.util.ThreadUtils$RunnableWithContext.run(ThreadUtils.java:204)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at org.knime.core.util.ThreadPool$MyFuture.run(ThreadPool.java:123)
+	at org.knime.core.util.ThreadPool$Worker.run(ThreadPool.java:246)
+2019-11-08 10:44:00,231 : ERROR : KNIME-Worker-40 :  : Node : MultiLayerPerceptron Predictor : 3:86 : Execute failed: Input DataTable should not contain missing values.
+java.lang.IllegalArgumentException: Input DataTable should not contain missing values.
+	at org.knime.base.node.mine.neural.mlp2.MLPPredictorNodeModel$MLPClassificationFactory.getCells(MLPPredictorNodeModel.java:402)
+	at org.knime.core.data.container.RearrangeColumnsTable.calcNewCellsForRow(RearrangeColumnsTable.java:541)
+	at org.knime.core.data.container.RearrangeColumnsTable.calcNewColsSynchronously(RearrangeColumnsTable.java:462)
+	at org.knime.core.data.container.RearrangeColumnsTable.create(RearrangeColumnsTable.java:380)
+	at org.knime.core.node.ExecutionContext.createColumnRearrangeTable(ExecutionContext.java:385)
+	at org.knime.base.node.mine.neural.mlp2.MLPPredictorNodeModel.execute(MLPPredictorNodeModel.java:231)
+	at org.knime.core.node.NodeModel.executeModel(NodeModel.java:567)
+	at org.knime.core.node.Node.invokeFullyNodeModelExecute(Node.java:1192)
+	at org.knime.core.node.Node.execute(Node.java:979)
+	at org.knime.core.node.workflow.NativeNodeContainer.performExecuteNode(NativeNodeContainer.java:559)
+	at org.knime.core.node.exec.LocalNodeExecutionJob.mainExecute(LocalNodeExecutionJob.java:95)
+	at org.knime.core.node.workflow.NodeExecutionJob.internalRun(NodeExecutionJob.java:179)
+	at org.knime.core.node.workflow.NodeExecutionJob.run(NodeExecutionJob.java:110)
+	at org.knime.core.util.ThreadUtils$RunnableWithContextImpl.runWithContext(ThreadUtils.java:328)
+	at org.knime.core.util.ThreadUtils$RunnableWithContext.run(ThreadUtils.java:204)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at org.knime.core.util.ThreadPool$MyFuture.run(ThreadPool.java:123)
+	at org.knime.core.util.ThreadPool$Worker.run(ThreadPool.java:246)
+2019-11-08 10:44:38,199 : ERROR : KNIME-Worker-45 :  : Node : MultiLayerPerceptron Predictor : 3:86 : Execute failed: Input DataTable should not contain missing values.
+java.lang.IllegalArgumentException: Input DataTable should not contain missing values.
+	at org.knime.base.node.mine.neural.mlp2.MLPPredictorNodeModel$MLPClassificationFactory.getCells(MLPPredictorNodeModel.java:402)
+	at org.knime.core.data.container.RearrangeColumnsTable.calcNewCellsForRow(RearrangeColumnsTable.java:541)
+	at org.knime.core.data.container.RearrangeColumnsTable.calcNewColsSynchronously(RearrangeColumnsTable.java:462)
+	at org.knime.core.data.container.RearrangeColumnsTable.create(RearrangeColumnsTable.java:380)
+	at org.knime.core.node.ExecutionContext.createColumnRearrangeTable(ExecutionContext.java:385)
+	at org.knime.base.node.mine.neural.mlp2.MLPPredictorNodeModel.execute(MLPPredictorNodeModel.java:231)
+	at org.knime.core.node.NodeModel.executeModel(NodeModel.java:567)
+	at org.knime.core.node.Node.invokeFullyNodeModelExecute(Node.java:1192)
+	at org.knime.core.node.Node.execute(Node.java:979)
+	at org.knime.core.node.workflow.NativeNodeContainer.performExecuteNode(NativeNodeContainer.java:559)
+	at org.knime.core.node.exec.LocalNodeExecutionJob.mainExecute(LocalNodeExecutionJob.java:95)
+	at org.knime.core.node.workflow.NodeExecutionJob.internalRun(NodeExecutionJob.java:179)
+	at org.knime.core.node.workflow.NodeExecutionJob.run(NodeExecutionJob.java:110)
+	at org.knime.core.util.ThreadUtils$RunnableWithContextImpl.runWithContext(ThreadUtils.java:328)
+	at org.knime.core.util.ThreadUtils$RunnableWithContext.run(ThreadUtils.java:204)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at org.knime.core.util.ThreadPool$MyFuture.run(ThreadPool.java:123)
+	at org.knime.core.util.ThreadPool$Worker.run(ThreadPool.java:246)
+2019-11-08 10:45:07,052 : WARN  : KNIME-Worker-40 :  : Node : RProp MLP Learner : 3:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:45:07,052 : WARN  : KNIME-Worker-40 :  : Node : RProp MLP Learner : 3:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:45:07,053 : WARN  : KNIME-Worker-40 :  : Node : RProp MLP Learner : 3:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:45:07,053 : WARN  : KNIME-Worker-40 :  : Node : RProp MLP Learner : 3:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:45:07,053 : WARN  : KNIME-Worker-40 :  : Node : RProp MLP Learner : 3:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:45:07,054 : WARN  : KNIME-Worker-40 :  : Node : RProp MLP Learner : 3:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:45:07,054 : WARN  : KNIME-Worker-40 :  : Node : RProp MLP Learner : 3:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:45:07,054 : WARN  : KNIME-Worker-40 :  : Node : RProp MLP Learner : 3:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:45:07,054 : WARN  : KNIME-Worker-40 :  : Node : RProp MLP Learner : 3:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:45:07,054 : WARN  : KNIME-Worker-40 :  : Node : RProp MLP Learner : 3:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:45:07,055 : WARN  : KNIME-Worker-40 :  : Node : RProp MLP Learner : 3:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:45:07,055 : WARN  : KNIME-Worker-40 :  : Node : RProp MLP Learner : 3:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:45:07,055 : WARN  : KNIME-Worker-40 :  : Node : RProp MLP Learner : 3:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:45:07,055 : WARN  : KNIME-Worker-40 :  : Node : RProp MLP Learner : 3:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:45:07,055 : WARN  : KNIME-Worker-40 :  : Node : RProp MLP Learner : 3:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:45:08,596 : WARN  : KNIME-Worker-40 :  : Node : RProp MLP Learner : 3:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:45:08,599 : WARN  : KNIME-Worker-40 :  : Node : RProp MLP Learner : 3:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:45:08,600 : WARN  : KNIME-Worker-40 :  : Node : RProp MLP Learner : 3:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:45:08,600 : WARN  : KNIME-Worker-40 :  : Node : RProp MLP Learner : 3:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:45:08,600 : WARN  : KNIME-Worker-40 :  : Node : RProp MLP Learner : 3:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:45:08,601 : WARN  : KNIME-Worker-40 :  : Node : RProp MLP Learner : 3:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:45:08,602 : WARN  : KNIME-Worker-40 :  : Node : RProp MLP Learner : 3:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:45:08,602 : WARN  : KNIME-Worker-40 :  : Node : RProp MLP Learner : 3:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:45:08,603 : WARN  : KNIME-Worker-40 :  : Node : RProp MLP Learner : 3:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:45:08,604 : WARN  : KNIME-Worker-40 :  : Node : RProp MLP Learner : 3:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:45:08,604 : WARN  : KNIME-Worker-40 :  : Node : RProp MLP Learner : 3:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:45:08,605 : WARN  : KNIME-Worker-40 :  : Node : RProp MLP Learner : 3:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:45:08,606 : WARN  : KNIME-Worker-40 :  : Node : RProp MLP Learner : 3:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:45:08,607 : WARN  : KNIME-Worker-40 :  : Node : RProp MLP Learner : 3:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:45:08,608 : WARN  : KNIME-Worker-40 :  : Node : RProp MLP Learner : 3:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:45:09,205 : WARN  : KNIME-Worker-39 :  : Node : RProp MLP Learner : 3:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:45:09,206 : WARN  : KNIME-Worker-39 :  : Node : RProp MLP Learner : 3:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:45:09,206 : WARN  : KNIME-Worker-39 :  : Node : RProp MLP Learner : 3:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:45:09,206 : WARN  : KNIME-Worker-39 :  : Node : RProp MLP Learner : 3:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:45:09,206 : WARN  : KNIME-Worker-39 :  : Node : RProp MLP Learner : 3:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:45:09,206 : WARN  : KNIME-Worker-39 :  : Node : RProp MLP Learner : 3:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:45:09,206 : WARN  : KNIME-Worker-39 :  : Node : RProp MLP Learner : 3:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:45:09,207 : WARN  : KNIME-Worker-39 :  : Node : RProp MLP Learner : 3:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:45:09,207 : WARN  : KNIME-Worker-39 :  : Node : RProp MLP Learner : 3:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:45:09,207 : WARN  : KNIME-Worker-39 :  : Node : RProp MLP Learner : 3:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:45:09,207 : WARN  : KNIME-Worker-39 :  : Node : RProp MLP Learner : 3:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:45:09,207 : WARN  : KNIME-Worker-39 :  : Node : RProp MLP Learner : 3:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:45:09,207 : WARN  : KNIME-Worker-39 :  : Node : RProp MLP Learner : 3:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:45:09,207 : WARN  : KNIME-Worker-39 :  : Node : RProp MLP Learner : 3:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:45:09,207 : WARN  : KNIME-Worker-39 :  : Node : RProp MLP Learner : 3:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:45:09,838 : WARN  : KNIME-Worker-44 :  : Node : RProp MLP Learner : 3:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:45:09,838 : WARN  : KNIME-Worker-44 :  : Node : RProp MLP Learner : 3:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:45:09,839 : WARN  : KNIME-Worker-44 :  : Node : RProp MLP Learner : 3:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:45:09,839 : WARN  : KNIME-Worker-44 :  : Node : RProp MLP Learner : 3:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:45:09,839 : WARN  : KNIME-Worker-44 :  : Node : RProp MLP Learner : 3:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:45:09,840 : WARN  : KNIME-Worker-44 :  : Node : RProp MLP Learner : 3:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:45:09,841 : WARN  : KNIME-Worker-44 :  : Node : RProp MLP Learner : 3:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:45:09,841 : WARN  : KNIME-Worker-44 :  : Node : RProp MLP Learner : 3:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:45:09,842 : WARN  : KNIME-Worker-44 :  : Node : RProp MLP Learner : 3:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:45:09,842 : WARN  : KNIME-Worker-44 :  : Node : RProp MLP Learner : 3:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:45:09,843 : WARN  : KNIME-Worker-44 :  : Node : RProp MLP Learner : 3:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:45:09,843 : WARN  : KNIME-Worker-44 :  : Node : RProp MLP Learner : 3:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:45:09,843 : WARN  : KNIME-Worker-44 :  : Node : RProp MLP Learner : 3:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:45:09,843 : WARN  : KNIME-Worker-44 :  : Node : RProp MLP Learner : 3:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:45:09,843 : WARN  : KNIME-Worker-44 :  : Node : RProp MLP Learner : 3:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:45:10,423 : WARN  : KNIME-Worker-45 :  : Node : RProp MLP Learner : 3:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:45:10,424 : WARN  : KNIME-Worker-45 :  : Node : RProp MLP Learner : 3:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:45:10,425 : WARN  : KNIME-Worker-45 :  : Node : RProp MLP Learner : 3:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:45:10,426 : WARN  : KNIME-Worker-45 :  : Node : RProp MLP Learner : 3:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:45:10,427 : WARN  : KNIME-Worker-45 :  : Node : RProp MLP Learner : 3:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:45:10,428 : WARN  : KNIME-Worker-45 :  : Node : RProp MLP Learner : 3:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:45:10,428 : WARN  : KNIME-Worker-45 :  : Node : RProp MLP Learner : 3:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:45:10,429 : WARN  : KNIME-Worker-45 :  : Node : RProp MLP Learner : 3:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:45:10,429 : WARN  : KNIME-Worker-45 :  : Node : RProp MLP Learner : 3:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:45:10,430 : WARN  : KNIME-Worker-45 :  : Node : RProp MLP Learner : 3:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:45:10,430 : WARN  : KNIME-Worker-45 :  : Node : RProp MLP Learner : 3:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:45:10,430 : WARN  : KNIME-Worker-45 :  : Node : RProp MLP Learner : 3:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:45:10,431 : WARN  : KNIME-Worker-45 :  : Node : RProp MLP Learner : 3:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:45:10,432 : WARN  : KNIME-Worker-45 :  : Node : RProp MLP Learner : 3:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:45:10,432 : WARN  : KNIME-Worker-45 :  : Node : RProp MLP Learner : 3:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:45:11,034 : WARN  : KNIME-Worker-39 :  : Node : RProp MLP Learner : 3:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:45:11,034 : WARN  : KNIME-Worker-39 :  : Node : RProp MLP Learner : 3:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:45:11,035 : WARN  : KNIME-Worker-39 :  : Node : RProp MLP Learner : 3:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:45:11,035 : WARN  : KNIME-Worker-39 :  : Node : RProp MLP Learner : 3:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:45:11,035 : WARN  : KNIME-Worker-39 :  : Node : RProp MLP Learner : 3:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:45:11,035 : WARN  : KNIME-Worker-39 :  : Node : RProp MLP Learner : 3:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:45:11,035 : WARN  : KNIME-Worker-39 :  : Node : RProp MLP Learner : 3:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:45:11,036 : WARN  : KNIME-Worker-39 :  : Node : RProp MLP Learner : 3:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:45:11,036 : WARN  : KNIME-Worker-39 :  : Node : RProp MLP Learner : 3:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:45:11,036 : WARN  : KNIME-Worker-39 :  : Node : RProp MLP Learner : 3:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:45:11,036 : WARN  : KNIME-Worker-39 :  : Node : RProp MLP Learner : 3:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:45:11,036 : WARN  : KNIME-Worker-39 :  : Node : RProp MLP Learner : 3:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:45:11,036 : WARN  : KNIME-Worker-39 :  : Node : RProp MLP Learner : 3:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:45:11,036 : WARN  : KNIME-Worker-39 :  : Node : RProp MLP Learner : 3:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:45:11,036 : WARN  : KNIME-Worker-39 :  : Node : RProp MLP Learner : 3:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:45:11,664 : WARN  : KNIME-Worker-39 :  : Node : RProp MLP Learner : 3:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:45:11,665 : WARN  : KNIME-Worker-39 :  : Node : RProp MLP Learner : 3:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:45:11,665 : WARN  : KNIME-Worker-39 :  : Node : RProp MLP Learner : 3:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:45:11,665 : WARN  : KNIME-Worker-39 :  : Node : RProp MLP Learner : 3:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:45:11,665 : WARN  : KNIME-Worker-39 :  : Node : RProp MLP Learner : 3:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:45:11,666 : WARN  : KNIME-Worker-39 :  : Node : RProp MLP Learner : 3:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:45:11,666 : WARN  : KNIME-Worker-39 :  : Node : RProp MLP Learner : 3:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:45:11,666 : WARN  : KNIME-Worker-39 :  : Node : RProp MLP Learner : 3:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:45:11,666 : WARN  : KNIME-Worker-39 :  : Node : RProp MLP Learner : 3:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:45:11,667 : WARN  : KNIME-Worker-39 :  : Node : RProp MLP Learner : 3:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:45:11,667 : WARN  : KNIME-Worker-39 :  : Node : RProp MLP Learner : 3:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:45:11,667 : WARN  : KNIME-Worker-39 :  : Node : RProp MLP Learner : 3:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:45:11,667 : WARN  : KNIME-Worker-39 :  : Node : RProp MLP Learner : 3:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:45:11,668 : WARN  : KNIME-Worker-39 :  : Node : RProp MLP Learner : 3:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:45:11,668 : WARN  : KNIME-Worker-39 :  : Node : RProp MLP Learner : 3:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:45:12,313 : WARN  : KNIME-Worker-44 :  : Node : RProp MLP Learner : 3:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:45:12,317 : WARN  : KNIME-Worker-44 :  : Node : RProp MLP Learner : 3:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:45:12,318 : WARN  : KNIME-Worker-44 :  : Node : RProp MLP Learner : 3:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:45:12,319 : WARN  : KNIME-Worker-44 :  : Node : RProp MLP Learner : 3:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:45:12,319 : WARN  : KNIME-Worker-44 :  : Node : RProp MLP Learner : 3:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:45:12,319 : WARN  : KNIME-Worker-44 :  : Node : RProp MLP Learner : 3:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:45:12,320 : WARN  : KNIME-Worker-44 :  : Node : RProp MLP Learner : 3:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:45:12,320 : WARN  : KNIME-Worker-44 :  : Node : RProp MLP Learner : 3:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:45:12,321 : WARN  : KNIME-Worker-44 :  : Node : RProp MLP Learner : 3:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:45:12,322 : WARN  : KNIME-Worker-44 :  : Node : RProp MLP Learner : 3:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:45:12,322 : WARN  : KNIME-Worker-44 :  : Node : RProp MLP Learner : 3:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:45:12,322 : WARN  : KNIME-Worker-44 :  : Node : RProp MLP Learner : 3:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:45:12,322 : WARN  : KNIME-Worker-44 :  : Node : RProp MLP Learner : 3:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:45:12,322 : WARN  : KNIME-Worker-44 :  : Node : RProp MLP Learner : 3:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:45:12,322 : WARN  : KNIME-Worker-44 :  : Node : RProp MLP Learner : 3:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:45:12,887 : WARN  : KNIME-Worker-39 :  : Node : RProp MLP Learner : 3:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:45:12,888 : WARN  : KNIME-Worker-39 :  : Node : RProp MLP Learner : 3:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:45:12,889 : WARN  : KNIME-Worker-39 :  : Node : RProp MLP Learner : 3:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:45:12,889 : WARN  : KNIME-Worker-39 :  : Node : RProp MLP Learner : 3:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:45:12,889 : WARN  : KNIME-Worker-39 :  : Node : RProp MLP Learner : 3:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:45:12,889 : WARN  : KNIME-Worker-39 :  : Node : RProp MLP Learner : 3:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:45:12,889 : WARN  : KNIME-Worker-39 :  : Node : RProp MLP Learner : 3:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:45:12,889 : WARN  : KNIME-Worker-39 :  : Node : RProp MLP Learner : 3:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:45:12,889 : WARN  : KNIME-Worker-39 :  : Node : RProp MLP Learner : 3:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:45:12,889 : WARN  : KNIME-Worker-39 :  : Node : RProp MLP Learner : 3:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:45:12,889 : WARN  : KNIME-Worker-39 :  : Node : RProp MLP Learner : 3:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:45:12,889 : WARN  : KNIME-Worker-39 :  : Node : RProp MLP Learner : 3:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:45:12,889 : WARN  : KNIME-Worker-39 :  : Node : RProp MLP Learner : 3:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:45:12,889 : WARN  : KNIME-Worker-39 :  : Node : RProp MLP Learner : 3:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:45:12,890 : WARN  : KNIME-Worker-39 :  : Node : RProp MLP Learner : 3:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:45:13,467 : WARN  : KNIME-Worker-44 :  : Node : RProp MLP Learner : 3:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:45:13,468 : WARN  : KNIME-Worker-44 :  : Node : RProp MLP Learner : 3:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:45:13,468 : WARN  : KNIME-Worker-44 :  : Node : RProp MLP Learner : 3:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:45:13,468 : WARN  : KNIME-Worker-44 :  : Node : RProp MLP Learner : 3:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:45:13,468 : WARN  : KNIME-Worker-44 :  : Node : RProp MLP Learner : 3:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:45:13,468 : WARN  : KNIME-Worker-44 :  : Node : RProp MLP Learner : 3:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:45:13,468 : WARN  : KNIME-Worker-44 :  : Node : RProp MLP Learner : 3:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:45:13,468 : WARN  : KNIME-Worker-44 :  : Node : RProp MLP Learner : 3:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:45:13,468 : WARN  : KNIME-Worker-44 :  : Node : RProp MLP Learner : 3:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:45:13,469 : WARN  : KNIME-Worker-44 :  : Node : RProp MLP Learner : 3:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:45:13,469 : WARN  : KNIME-Worker-44 :  : Node : RProp MLP Learner : 3:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:45:13,469 : WARN  : KNIME-Worker-44 :  : Node : RProp MLP Learner : 3:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:45:13,469 : WARN  : KNIME-Worker-44 :  : Node : RProp MLP Learner : 3:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:45:13,469 : WARN  : KNIME-Worker-44 :  : Node : RProp MLP Learner : 3:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:45:13,469 : WARN  : KNIME-Worker-44 :  : Node : RProp MLP Learner : 3:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:45:13,512 : WARN  : KNIME-Worker-39 :  : Node : Scorer : 3:70 : There were missing values in the reference or in the prediction class columns.
+2019-11-08 10:45:32,026 : WARN  : main :  : Node : RProp MLP Learner : 3:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:45:32,026 : WARN  : main :  : Node : RProp MLP Learner : 3:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:45:32,027 : WARN  : main :  : Node : RProp MLP Learner : 3:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:45:32,027 : WARN  : main :  : Node : RProp MLP Learner : 3:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:45:32,027 : WARN  : main :  : Node : RProp MLP Learner : 3:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:45:32,027 : WARN  : main :  : Node : RProp MLP Learner : 3:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:45:32,027 : WARN  : main :  : Node : RProp MLP Learner : 3:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:45:32,027 : WARN  : main :  : Node : RProp MLP Learner : 3:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:45:32,028 : WARN  : main :  : Node : RProp MLP Learner : 3:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:45:32,028 : WARN  : main :  : Node : RProp MLP Learner : 3:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:45:32,028 : WARN  : main :  : Node : RProp MLP Learner : 3:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:45:32,028 : WARN  : main :  : Node : RProp MLP Learner : 3:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:45:32,028 : WARN  : main :  : Node : RProp MLP Learner : 3:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:45:32,029 : WARN  : main :  : Node : RProp MLP Learner : 3:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:45:32,030 : WARN  : main :  : Node : RProp MLP Learner : 3:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:46:20,051 : WARN  : main :  : Node : Random Forest Learner : 3:88 : No configuration available
+2019-11-08 10:48:02,278 : WARN  : KNIME-Worker-51 :  : Node : RProp MLP Learner : 3:87:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:48:02,278 : WARN  : KNIME-Worker-51 :  : Node : RProp MLP Learner : 3:87:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:48:02,279 : WARN  : KNIME-Worker-51 :  : Node : RProp MLP Learner : 3:87:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:48:02,279 : WARN  : KNIME-Worker-51 :  : Node : RProp MLP Learner : 3:87:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:48:02,279 : WARN  : KNIME-Worker-51 :  : Node : RProp MLP Learner : 3:87:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:48:02,279 : WARN  : KNIME-Worker-51 :  : Node : RProp MLP Learner : 3:87:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:48:02,279 : WARN  : KNIME-Worker-51 :  : Node : RProp MLP Learner : 3:87:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:48:02,279 : WARN  : KNIME-Worker-51 :  : Node : RProp MLP Learner : 3:87:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:48:02,280 : WARN  : KNIME-Worker-51 :  : Node : RProp MLP Learner : 3:87:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:48:02,280 : WARN  : KNIME-Worker-51 :  : Node : RProp MLP Learner : 3:87:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:48:02,280 : WARN  : KNIME-Worker-51 :  : Node : RProp MLP Learner : 3:87:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:48:02,280 : WARN  : KNIME-Worker-51 :  : Node : RProp MLP Learner : 3:87:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:48:02,280 : WARN  : KNIME-Worker-51 :  : Node : RProp MLP Learner : 3:87:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:48:02,280 : WARN  : KNIME-Worker-51 :  : Node : RProp MLP Learner : 3:87:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:48:02,281 : WARN  : KNIME-Worker-51 :  : Node : RProp MLP Learner : 3:87:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:48:04,166 : WARN  : KNIME-Worker-49 :  : Node : RProp MLP Learner : 3:87:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:48:04,168 : WARN  : KNIME-Worker-49 :  : Node : RProp MLP Learner : 3:87:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:48:04,168 : WARN  : KNIME-Worker-49 :  : Node : RProp MLP Learner : 3:87:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:48:04,168 : WARN  : KNIME-Worker-49 :  : Node : RProp MLP Learner : 3:87:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:48:04,168 : WARN  : KNIME-Worker-49 :  : Node : RProp MLP Learner : 3:87:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:48:04,168 : WARN  : KNIME-Worker-49 :  : Node : RProp MLP Learner : 3:87:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:48:04,168 : WARN  : KNIME-Worker-49 :  : Node : RProp MLP Learner : 3:87:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:48:04,168 : WARN  : KNIME-Worker-49 :  : Node : RProp MLP Learner : 3:87:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:48:04,168 : WARN  : KNIME-Worker-49 :  : Node : RProp MLP Learner : 3:87:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:48:04,168 : WARN  : KNIME-Worker-49 :  : Node : RProp MLP Learner : 3:87:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:48:04,168 : WARN  : KNIME-Worker-49 :  : Node : RProp MLP Learner : 3:87:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:48:04,168 : WARN  : KNIME-Worker-49 :  : Node : RProp MLP Learner : 3:87:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:48:04,168 : WARN  : KNIME-Worker-49 :  : Node : RProp MLP Learner : 3:87:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:48:04,168 : WARN  : KNIME-Worker-49 :  : Node : RProp MLP Learner : 3:87:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:48:04,169 : WARN  : KNIME-Worker-49 :  : Node : RProp MLP Learner : 3:87:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:48:05,616 : WARN  : KNIME-Worker-52 :  : Node : RProp MLP Learner : 3:87:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:48:05,617 : WARN  : KNIME-Worker-52 :  : Node : RProp MLP Learner : 3:87:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:48:05,617 : WARN  : KNIME-Worker-52 :  : Node : RProp MLP Learner : 3:87:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:48:05,617 : WARN  : KNIME-Worker-52 :  : Node : RProp MLP Learner : 3:87:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:48:05,618 : WARN  : KNIME-Worker-52 :  : Node : RProp MLP Learner : 3:87:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:48:05,618 : WARN  : KNIME-Worker-52 :  : Node : RProp MLP Learner : 3:87:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:48:05,618 : WARN  : KNIME-Worker-52 :  : Node : RProp MLP Learner : 3:87:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:48:05,618 : WARN  : KNIME-Worker-52 :  : Node : RProp MLP Learner : 3:87:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:48:05,618 : WARN  : KNIME-Worker-52 :  : Node : RProp MLP Learner : 3:87:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:48:05,618 : WARN  : KNIME-Worker-52 :  : Node : RProp MLP Learner : 3:87:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:48:05,619 : WARN  : KNIME-Worker-52 :  : Node : RProp MLP Learner : 3:87:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:48:05,619 : WARN  : KNIME-Worker-52 :  : Node : RProp MLP Learner : 3:87:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:48:05,619 : WARN  : KNIME-Worker-52 :  : Node : RProp MLP Learner : 3:87:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:48:05,619 : WARN  : KNIME-Worker-52 :  : Node : RProp MLP Learner : 3:87:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:48:05,619 : WARN  : KNIME-Worker-52 :  : Node : RProp MLP Learner : 3:87:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:48:06,399 : WARN  : KNIME-Worker-50 :  : Node : RProp MLP Learner : 3:87:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:48:06,400 : WARN  : KNIME-Worker-50 :  : Node : RProp MLP Learner : 3:87:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:48:06,400 : WARN  : KNIME-Worker-50 :  : Node : RProp MLP Learner : 3:87:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:48:06,400 : WARN  : KNIME-Worker-50 :  : Node : RProp MLP Learner : 3:87:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:48:06,400 : WARN  : KNIME-Worker-50 :  : Node : RProp MLP Learner : 3:87:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:48:06,400 : WARN  : KNIME-Worker-50 :  : Node : RProp MLP Learner : 3:87:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:48:06,400 : WARN  : KNIME-Worker-50 :  : Node : RProp MLP Learner : 3:87:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:48:06,400 : WARN  : KNIME-Worker-50 :  : Node : RProp MLP Learner : 3:87:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:48:06,401 : WARN  : KNIME-Worker-50 :  : Node : RProp MLP Learner : 3:87:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:48:06,401 : WARN  : KNIME-Worker-50 :  : Node : RProp MLP Learner : 3:87:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:48:06,401 : WARN  : KNIME-Worker-50 :  : Node : RProp MLP Learner : 3:87:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:48:06,401 : WARN  : KNIME-Worker-50 :  : Node : RProp MLP Learner : 3:87:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:48:06,401 : WARN  : KNIME-Worker-50 :  : Node : RProp MLP Learner : 3:87:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:48:06,402 : WARN  : KNIME-Worker-50 :  : Node : RProp MLP Learner : 3:87:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:48:06,402 : WARN  : KNIME-Worker-50 :  : Node : RProp MLP Learner : 3:87:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:48:07,847 : WARN  : KNIME-Worker-48 :  : Node : RProp MLP Learner : 3:87:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:48:07,847 : WARN  : KNIME-Worker-48 :  : Node : RProp MLP Learner : 3:87:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:48:07,848 : WARN  : KNIME-Worker-48 :  : Node : RProp MLP Learner : 3:87:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:48:07,848 : WARN  : KNIME-Worker-48 :  : Node : RProp MLP Learner : 3:87:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:48:07,848 : WARN  : KNIME-Worker-48 :  : Node : RProp MLP Learner : 3:87:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:48:07,848 : WARN  : KNIME-Worker-48 :  : Node : RProp MLP Learner : 3:87:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:48:07,848 : WARN  : KNIME-Worker-48 :  : Node : RProp MLP Learner : 3:87:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:48:07,848 : WARN  : KNIME-Worker-48 :  : Node : RProp MLP Learner : 3:87:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:48:07,848 : WARN  : KNIME-Worker-48 :  : Node : RProp MLP Learner : 3:87:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:48:07,848 : WARN  : KNIME-Worker-48 :  : Node : RProp MLP Learner : 3:87:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:48:07,848 : WARN  : KNIME-Worker-48 :  : Node : RProp MLP Learner : 3:87:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:48:07,848 : WARN  : KNIME-Worker-48 :  : Node : RProp MLP Learner : 3:87:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:48:07,849 : WARN  : KNIME-Worker-48 :  : Node : RProp MLP Learner : 3:87:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:48:07,849 : WARN  : KNIME-Worker-48 :  : Node : RProp MLP Learner : 3:87:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:48:07,849 : WARN  : KNIME-Worker-48 :  : Node : RProp MLP Learner : 3:87:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:48:08,556 : WARN  : KNIME-Worker-52 :  : Node : RProp MLP Learner : 3:87:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:48:08,557 : WARN  : KNIME-Worker-52 :  : Node : RProp MLP Learner : 3:87:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:48:08,557 : WARN  : KNIME-Worker-52 :  : Node : RProp MLP Learner : 3:87:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:48:08,557 : WARN  : KNIME-Worker-52 :  : Node : RProp MLP Learner : 3:87:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:48:08,557 : WARN  : KNIME-Worker-52 :  : Node : RProp MLP Learner : 3:87:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:48:08,557 : WARN  : KNIME-Worker-52 :  : Node : RProp MLP Learner : 3:87:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:48:08,557 : WARN  : KNIME-Worker-52 :  : Node : RProp MLP Learner : 3:87:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:48:08,557 : WARN  : KNIME-Worker-52 :  : Node : RProp MLP Learner : 3:87:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:48:08,558 : WARN  : KNIME-Worker-52 :  : Node : RProp MLP Learner : 3:87:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:48:08,558 : WARN  : KNIME-Worker-52 :  : Node : RProp MLP Learner : 3:87:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:48:08,558 : WARN  : KNIME-Worker-52 :  : Node : RProp MLP Learner : 3:87:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:48:08,558 : WARN  : KNIME-Worker-52 :  : Node : RProp MLP Learner : 3:87:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:48:08,558 : WARN  : KNIME-Worker-52 :  : Node : RProp MLP Learner : 3:87:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:48:08,558 : WARN  : KNIME-Worker-52 :  : Node : RProp MLP Learner : 3:87:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:48:08,558 : WARN  : KNIME-Worker-52 :  : Node : RProp MLP Learner : 3:87:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:48:09,295 : WARN  : KNIME-Worker-48 :  : Node : RProp MLP Learner : 3:87:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:48:09,295 : WARN  : KNIME-Worker-48 :  : Node : RProp MLP Learner : 3:87:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:48:09,296 : WARN  : KNIME-Worker-48 :  : Node : RProp MLP Learner : 3:87:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:48:09,296 : WARN  : KNIME-Worker-48 :  : Node : RProp MLP Learner : 3:87:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:48:09,296 : WARN  : KNIME-Worker-48 :  : Node : RProp MLP Learner : 3:87:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:48:09,296 : WARN  : KNIME-Worker-48 :  : Node : RProp MLP Learner : 3:87:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:48:09,296 : WARN  : KNIME-Worker-48 :  : Node : RProp MLP Learner : 3:87:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:48:09,296 : WARN  : KNIME-Worker-48 :  : Node : RProp MLP Learner : 3:87:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:48:09,296 : WARN  : KNIME-Worker-48 :  : Node : RProp MLP Learner : 3:87:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:48:09,296 : WARN  : KNIME-Worker-48 :  : Node : RProp MLP Learner : 3:87:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:48:09,296 : WARN  : KNIME-Worker-48 :  : Node : RProp MLP Learner : 3:87:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:48:09,296 : WARN  : KNIME-Worker-48 :  : Node : RProp MLP Learner : 3:87:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:48:09,296 : WARN  : KNIME-Worker-48 :  : Node : RProp MLP Learner : 3:87:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:48:09,296 : WARN  : KNIME-Worker-48 :  : Node : RProp MLP Learner : 3:87:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:48:09,296 : WARN  : KNIME-Worker-48 :  : Node : RProp MLP Learner : 3:87:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:48:10,045 : WARN  : KNIME-Worker-53 :  : Node : RProp MLP Learner : 3:87:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:48:10,045 : WARN  : KNIME-Worker-53 :  : Node : RProp MLP Learner : 3:87:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:48:10,045 : WARN  : KNIME-Worker-53 :  : Node : RProp MLP Learner : 3:87:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:48:10,045 : WARN  : KNIME-Worker-53 :  : Node : RProp MLP Learner : 3:87:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:48:10,045 : WARN  : KNIME-Worker-53 :  : Node : RProp MLP Learner : 3:87:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:48:10,045 : WARN  : KNIME-Worker-53 :  : Node : RProp MLP Learner : 3:87:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:48:10,045 : WARN  : KNIME-Worker-53 :  : Node : RProp MLP Learner : 3:87:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:48:10,046 : WARN  : KNIME-Worker-53 :  : Node : RProp MLP Learner : 3:87:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:48:10,046 : WARN  : KNIME-Worker-53 :  : Node : RProp MLP Learner : 3:87:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:48:10,046 : WARN  : KNIME-Worker-53 :  : Node : RProp MLP Learner : 3:87:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:48:10,046 : WARN  : KNIME-Worker-53 :  : Node : RProp MLP Learner : 3:87:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:48:10,046 : WARN  : KNIME-Worker-53 :  : Node : RProp MLP Learner : 3:87:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:48:10,046 : WARN  : KNIME-Worker-53 :  : Node : RProp MLP Learner : 3:87:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:48:10,046 : WARN  : KNIME-Worker-53 :  : Node : RProp MLP Learner : 3:87:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:48:10,046 : WARN  : KNIME-Worker-53 :  : Node : RProp MLP Learner : 3:87:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:48:10,677 : WARN  : KNIME-Worker-52 :  : Node : RProp MLP Learner : 3:87:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:48:10,677 : WARN  : KNIME-Worker-52 :  : Node : RProp MLP Learner : 3:87:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:48:10,677 : WARN  : KNIME-Worker-52 :  : Node : RProp MLP Learner : 3:87:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:48:10,678 : WARN  : KNIME-Worker-52 :  : Node : RProp MLP Learner : 3:87:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:48:10,678 : WARN  : KNIME-Worker-52 :  : Node : RProp MLP Learner : 3:87:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:48:10,678 : WARN  : KNIME-Worker-52 :  : Node : RProp MLP Learner : 3:87:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:48:10,678 : WARN  : KNIME-Worker-52 :  : Node : RProp MLP Learner : 3:87:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:48:10,678 : WARN  : KNIME-Worker-52 :  : Node : RProp MLP Learner : 3:87:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:48:10,678 : WARN  : KNIME-Worker-52 :  : Node : RProp MLP Learner : 3:87:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:48:10,679 : WARN  : KNIME-Worker-52 :  : Node : RProp MLP Learner : 3:87:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:48:10,679 : WARN  : KNIME-Worker-52 :  : Node : RProp MLP Learner : 3:87:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:48:10,679 : WARN  : KNIME-Worker-52 :  : Node : RProp MLP Learner : 3:87:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:48:10,679 : WARN  : KNIME-Worker-52 :  : Node : RProp MLP Learner : 3:87:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:48:10,679 : WARN  : KNIME-Worker-52 :  : Node : RProp MLP Learner : 3:87:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:48:10,679 : WARN  : KNIME-Worker-52 :  : Node : RProp MLP Learner : 3:87:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:48:11,366 : WARN  : KNIME-Worker-46 :  : Node : RProp MLP Learner : 3:87:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:48:11,367 : WARN  : KNIME-Worker-46 :  : Node : RProp MLP Learner : 3:87:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:48:11,367 : WARN  : KNIME-Worker-46 :  : Node : RProp MLP Learner : 3:87:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:48:11,367 : WARN  : KNIME-Worker-46 :  : Node : RProp MLP Learner : 3:87:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:48:11,367 : WARN  : KNIME-Worker-46 :  : Node : RProp MLP Learner : 3:87:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:48:11,367 : WARN  : KNIME-Worker-46 :  : Node : RProp MLP Learner : 3:87:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:48:11,368 : WARN  : KNIME-Worker-46 :  : Node : RProp MLP Learner : 3:87:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:48:11,368 : WARN  : KNIME-Worker-46 :  : Node : RProp MLP Learner : 3:87:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:48:11,368 : WARN  : KNIME-Worker-46 :  : Node : RProp MLP Learner : 3:87:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:48:11,368 : WARN  : KNIME-Worker-46 :  : Node : RProp MLP Learner : 3:87:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:48:11,368 : WARN  : KNIME-Worker-46 :  : Node : RProp MLP Learner : 3:87:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:48:11,368 : WARN  : KNIME-Worker-46 :  : Node : RProp MLP Learner : 3:87:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:48:11,368 : WARN  : KNIME-Worker-46 :  : Node : RProp MLP Learner : 3:87:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:48:11,368 : WARN  : KNIME-Worker-46 :  : Node : RProp MLP Learner : 3:87:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:48:11,368 : WARN  : KNIME-Worker-46 :  : Node : RProp MLP Learner : 3:87:78 : Input data not normalized. Please consider using the Normalizer Node first.
+2019-11-08 10:48:11,976 : WARN  : KNIME-Worker-52 :  : Node : Scorer : 3:70 : There were missing values in the reference or in the prediction class columns.
+2019-11-08 11:02:17,400 : ERROR : KNIME-Worker-62 :  : Node : Column Appender : 3:504:538 : Execute failed: Tables can't be joined, non matching row counts: 1 vs. 4
+java.lang.IllegalArgumentException: Tables can't be joined, non matching row counts: 1 vs. 4
+	at org.knime.core.data.container.JoinedTable.create(JoinedTable.java:268)
+	at org.knime.core.node.ExecutionContext.createJoinedTable(ExecutionContext.java:564)
+	at org.knime.base.node.preproc.columnappend.ColumnAppenderNodeModel.execute(ColumnAppenderNodeModel.java:131)
+	at org.knime.core.node.NodeModel.execute(NodeModel.java:733)
+	at org.knime.core.node.NodeModel.executeModel(NodeModel.java:567)
+	at org.knime.core.node.Node.invokeFullyNodeModelExecute(Node.java:1192)
+	at org.knime.core.node.Node.execute(Node.java:979)
+	at org.knime.core.node.workflow.NativeNodeContainer.performExecuteNode(NativeNodeContainer.java:559)
+	at org.knime.core.node.exec.LocalNodeExecutionJob.mainExecute(LocalNodeExecutionJob.java:95)
+	at org.knime.core.node.workflow.NodeExecutionJob.internalRun(NodeExecutionJob.java:179)
+	at org.knime.core.node.workflow.NodeExecutionJob.run(NodeExecutionJob.java:110)
+	at org.knime.core.util.ThreadUtils$RunnableWithContextImpl.runWithContext(ThreadUtils.java:328)
+	at org.knime.core.util.ThreadUtils$RunnableWithContext.run(ThreadUtils.java:204)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at org.knime.core.util.ThreadPool$MyFuture.run(ThreadPool.java:123)
+	at org.knime.core.util.ThreadPool$Worker.run(ThreadPool.java:246)
+2019-11-08 11:11:56,239 : WARN  : main :  : Node : Sorter : 3:529 : No selected columns to sort
+2019-11-08 11:12:47,365 : WARN  : main :  : Node : Row Filter : 3:530 : No row filter specified
+2019-11-08 11:27:53,121 : WARN  : ModalContext :  : Node : Random Forest Learner : 4:44:33 : 13 column(s) were ignored due to missing domain information: ["Status of existing checking account", "Credit history", "Purpose", "Savings account/bonds", ...] -- change the node configuration or use a Domain Calculator node to fix it
+2019-11-08 11:27:55,146 : WARN  : ModalContext :  : Node : GroupBy : 4:17:9 : No aggregation column defined
+2019-11-08 11:27:55,147 : WARN  : ModalContext :  : Node : GroupBy : 4:17:9 : No aggregation column defined
+2019-11-08 11:37:21,279 : WARN  : main :  : WrappedNodeDialog : Java Snippet (simple) : 4:42:528 : failed to apply settings: No such column: Score (at line 1)
+org.knime.core.node.InvalidSettingsException: No such column: Score (at line 1)
+	at org.knime.ext.sun.nodes.script.expression.Expression.compile(Expression.java:582)
+	at org.knime.ext.sun.nodes.script.settings.JavaScriptingPanel.saveSettingsTo(JavaScriptingPanel.java:576)
+	at org.knime.ext.sun.nodes.script.JavaScriptingNodeDialog.saveSettingsTo(JavaScriptingNodeDialog.java:112)
+	at org.knime.core.node.NodeDialogPane.internalSaveSettingsTo(NodeDialogPane.java:485)
+	at org.knime.core.node.NodeDialogPane$5.run(NodeDialogPane.java:722)
+	at org.knime.core.node.util.ViewUtils$3.run(ViewUtils.java:353)
+	at org.knime.core.node.util.ViewUtils$2.run(ViewUtils.java:155)
+	at java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:311)
+	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:758)
+	at java.awt.EventQueue.access$500(EventQueue.java:97)
+	at java.awt.EventQueue$3.run(EventQueue.java:709)
+	at java.awt.EventQueue$3.run(EventQueue.java:703)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:74)
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:728)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:205)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:116)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:105)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:93)
+	at java.awt.EventDispatchThread.run(EventDispatchThread.java:82)
+2019-11-08 11:37:27,076 : WARN  : main :  : WrappedNodeDialog : Java Snippet (simple) : 4:42:528 : failed to apply settings: No such column: Score (at line 1)
+org.knime.core.node.InvalidSettingsException: No such column: Score (at line 1)
+	at org.knime.ext.sun.nodes.script.expression.Expression.compile(Expression.java:582)
+	at org.knime.ext.sun.nodes.script.settings.JavaScriptingPanel.saveSettingsTo(JavaScriptingPanel.java:576)
+	at org.knime.ext.sun.nodes.script.JavaScriptingNodeDialog.saveSettingsTo(JavaScriptingNodeDialog.java:112)
+	at org.knime.core.node.NodeDialogPane.internalSaveSettingsTo(NodeDialogPane.java:485)
+	at org.knime.core.node.NodeDialogPane$5.run(NodeDialogPane.java:722)
+	at org.knime.core.node.util.ViewUtils$3.run(ViewUtils.java:353)
+	at org.knime.core.node.util.ViewUtils$2.run(ViewUtils.java:155)
+	at java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:311)
+	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:758)
+	at java.awt.EventQueue.access$500(EventQueue.java:97)
+	at java.awt.EventQueue$3.run(EventQueue.java:709)
+	at java.awt.EventQueue$3.run(EventQueue.java:703)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:74)
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:728)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:205)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:116)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:105)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:93)
+	at java.awt.EventDispatchThread.run(EventDispatchThread.java:82)
+2019-11-08 11:37:54,805 : WARN  : main :  : Node : Java Snippet (simple) : 4:42:528 : No such column: Approval (at line 1)
+2019-11-08 11:37:58,120 : WARN  : main :  : Node : ROC Curve (local) : 4:42:33 : Class column 'Approval ' does not exist
+2019-11-08 11:38:17,761 : WARN  : main :  : WrappedNodeDialog : Java Snippet (simple) : 4:42:528 : failed to apply settings: Column name must not be empty
+org.knime.core.node.InvalidSettingsException: Column name must not be empty
+	at org.knime.ext.sun.nodes.script.settings.JavaScriptingSettings.loadSettingsInModel(JavaScriptingSettings.java:174)
+	at org.knime.ext.sun.nodes.script.JavaScriptingNodeModel.validateSettings(JavaScriptingNodeModel.java:107)
+	at org.knime.core.node.Node.validateModelSettings(Node.java:642)
+	at org.knime.core.node.workflow.NativeNodeContainer.performValidateSettings(NativeNodeContainer.java:921)
+	at org.knime.core.node.workflow.SingleNodeContainer.validateSettings(SingleNodeContainer.java:888)
+	at org.knime.core.node.workflow.WorkflowManager.loadNodeSettings(WorkflowManager.java:1757)
+	at org.knime.core.node.workflow.NodeContainer.applySettingsFromDialog(NodeContainer.java:1002)
+	at org.knime.core.ui.wrapper.NodeContainerWrapper.applySettingsFromDialog(NodeContainerWrapper.java:262)
+	at org.knime.workbench.ui.wrapper.WrappedNodeDialog.doApply(WrappedNodeDialog.java:623)
+	at org.knime.workbench.ui.wrapper.WrappedNodeDialog.doOK(WrappedNodeDialog.java:538)
+	at org.knime.workbench.ui.wrapper.WrappedNodeDialog.access$8(WrappedNodeDialog.java:536)
+	at org.knime.workbench.ui.wrapper.WrappedNodeDialog$5.widgetSelected(WrappedNodeDialog.java:474)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:249)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:86)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4428)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1079)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4238)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3817)
+	at org.eclipse.jface.window.Window.runEventLoop(Window.java:818)
+	at org.eclipse.jface.window.Window.open(Window.java:794)
+	at org.knime.workbench.ui.wrapper.WrappedNodeDialog.open(WrappedNodeDialog.java:181)
+	at org.knime.workbench.editor2.editparts.NodeContainerEditPart.openNodeDialog(NodeContainerEditPart.java:872)
+	at org.knime.workbench.editor2.editparts.NodeContainerEditPart.openDialog(NodeContainerEditPart.java:780)
+	at org.knime.workbench.editor2.editparts.NodeContainerEditPart.performRequest(NodeContainerEditPart.java:351)
+	at org.eclipse.gef.tools.SelectEditPartTracker.performOpen(SelectEditPartTracker.java:194)
+	at org.eclipse.gef.tools.SelectEditPartTracker.handleDoubleClick(SelectEditPartTracker.java:137)
+	at org.knime.workbench.editor2.WorkflowSelectionDragEditPartsTracker.handleDoubleClick(WorkflowSelectionDragEditPartsTracker.java:126)
+	at org.eclipse.gef.tools.AbstractTool.mouseDoubleClick(AbstractTool.java:1069)
+	at org.eclipse.gef.tools.SelectionTool.mouseDoubleClick(SelectionTool.java:527)
+	at org.eclipse.gef.EditDomain.mouseDoubleClick(EditDomain.java:231)
+	at org.eclipse.gef.ui.parts.DomainEventDispatcher.dispatchMouseDoubleClicked(DomainEventDispatcher.java:291)
+	at org.eclipse.draw2d.LightweightSystem$EventHandler.mouseDoubleClick(LightweightSystem.java:518)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:197)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:86)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4428)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1079)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4238)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3817)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1150)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1039)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:153)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:680)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:594)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:148)
+	at org.knime.product.rcp.KNIMEApplication.start(KNIMEApplication.java:149)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:388)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:243)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:653)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:590)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1499)
+2019-11-08 11:39:06,261 : WARN  : KNIME-Worker-70 :  : Node : Java Snippet (simple) : 4:42:528 : No such column: Approval (at line 1)
+2019-11-08 11:39:06,262 : WARN  : KNIME-Worker-70 :  : Node : ROC Curve (local) : 4:42:33 : Class column 'Approval ' does not exist
+2019-11-08 11:39:06,275 : WARN  : KNIME-Worker-70 :  : Node : GroupBy : 4:17:9 : No aggregation column defined
+2019-11-08 11:39:06,276 : WARN  : KNIME-Worker-70 :  : Node : GroupBy : 4:17:9 : No aggregation column defined
+2019-11-08 11:39:06,295 : WARN  : KNIME-Worker-73 :  : Node : GroupBy : 4:17:9 : No aggregation column defined
+2019-11-08 11:39:06,296 : WARN  : KNIME-Worker-73 :  : Node : GroupBy : 4:17:9 : No aggregation column defined
+2019-11-08 11:39:06,871 : WARN  : KNIME-Worker-77 :  : Node : GroupBy : 4:17:9 : No aggregation column defined
+2019-11-08 11:39:06,872 : WARN  : KNIME-Worker-77 :  : Node : GroupBy : 4:17:9 : No aggregation column defined
+2019-11-08 11:39:06,921 : WARN  : KNIME-Worker-71 :  : Node : GroupBy : 4:17:9 : No aggregation column defined
+2019-11-08 11:39:06,922 : WARN  : KNIME-Worker-71 :  : Node : GroupBy : 4:17:9 : No aggregation column defined
+2019-11-08 11:39:06,973 : WARN  : KNIME-Worker-71 :  : Node : GroupBy : 4:17:9 : No aggregation column defined
+2019-11-08 11:39:06,973 : WARN  : KNIME-Worker-71 :  : Node : GroupBy : 4:17:9 : No aggregation column defined
+2019-11-08 11:39:07,066 : WARN  : KNIME-Worker-73 :  : Node : GroupBy : 4:17:9 : No aggregation column defined
+2019-11-08 11:39:07,066 : WARN  : KNIME-Worker-73 :  : Node : GroupBy : 4:17:9 : No aggregation column defined
+2019-11-08 11:39:07,135 : WARN  : KNIME-Worker-70 :  : Node : GroupBy : 4:17:9 : No aggregation column defined
+2019-11-08 11:39:07,135 : WARN  : KNIME-Worker-70 :  : Node : GroupBy : 4:17:9 : No aggregation column defined
+2019-11-08 11:39:07,169 : WARN  : KNIME-Worker-75 :  : Node : GroupBy : 4:17:9 : No aggregation column defined
+2019-11-08 11:39:07,169 : WARN  : KNIME-Worker-75 :  : Node : GroupBy : 4:17:9 : No aggregation column defined
+2019-11-08 11:39:07,212 : WARN  : KNIME-Worker-74 :  : Node : GroupBy : 4:17:9 : No aggregation column defined
+2019-11-08 11:39:07,213 : WARN  : KNIME-Worker-74 :  : Node : GroupBy : 4:17:9 : No aggregation column defined
+2019-11-08 11:39:07,258 : WARN  : KNIME-Worker-74 :  : Node : GroupBy : 4:17:9 : No aggregation column defined
+2019-11-08 11:39:07,258 : WARN  : KNIME-Worker-74 :  : Node : GroupBy : 4:17:9 : No aggregation column defined
+2019-11-08 11:39:07,323 : WARN  : KNIME-Worker-71 :  : Node : GroupBy : 4:17:9 : No aggregation column defined
+2019-11-08 11:39:07,323 : WARN  : KNIME-Worker-71 :  : Node : GroupBy : 4:17:9 : No aggregation column defined
+2019-11-08 11:39:07,408 : WARN  : KNIME-Worker-71 :  : Node : GroupBy : 4:17:9 : No aggregation column defined
+2019-11-08 11:39:07,408 : WARN  : KNIME-Worker-71 :  : Node : GroupBy : 4:17:9 : No aggregation column defined
+2019-11-08 11:39:07,486 : WARN  : KNIME-Worker-70 :  : Node : GroupBy : 4:17:9 : No aggregation column defined
+2019-11-08 11:39:07,486 : WARN  : KNIME-Worker-70 :  : Node : GroupBy : 4:17:9 : No aggregation column defined
+2019-11-08 11:39:07,518 : WARN  : KNIME-Worker-70 :  : Node : GroupBy : 4:17:9 : No aggregation column defined
+2019-11-08 11:39:07,518 : WARN  : KNIME-Worker-70 :  : Node : GroupBy : 4:17:9 : No aggregation column defined
+2019-11-08 11:39:13,303 : WARN  : KNIME-Worker-78 :  : Node : Java Snippet (simple) : 4:42:528 : No such column: Approval (at line 1)
+2019-11-08 11:39:13,304 : WARN  : KNIME-Worker-78 :  : Node : ROC Curve (local) : 4:42:33 : Class column 'Approval ' does not exist
+2019-11-08 11:39:13,325 : WARN  : KNIME-Worker-77 :  : Node : Java Snippet (simple) : 4:42:528 : No such column: Approval (at line 1)
+2019-11-08 11:39:13,325 : WARN  : KNIME-Worker-77 :  : Node : ROC Curve (local) : 4:42:33 : Class column 'Approval ' does not exist
+2019-11-08 11:39:14,753 : WARN  : KNIME-Worker-71 :  : Node : Java Snippet (simple) : 4:42:528 : No such column: Approval (at line 1)
+2019-11-08 11:39:14,754 : WARN  : KNIME-Worker-71 :  : Node : ROC Curve (local) : 4:42:33 : Class column 'Approval ' does not exist
+2019-11-08 11:39:14,767 : WARN  : KNIME-Worker-78 :  : Node : Scorer : 4:42:26 : There were missing values in the reference or in the prediction class columns.
+2019-11-08 11:39:27,547 : WARN  : main :  : Node : Value Counter : 4:42:504:536 : Column 'Approval' does not exist
+2019-11-08 11:39:33,063 : WARN  : main :  : WrappedNodeDialog : ROC Curve (local) : 4:42:33 : failed to apply settings: No class probability column(s) selected
+org.knime.core.node.InvalidSettingsException: No class probability column(s) selected
+	at org.knime.base.node.viz.roc.ROCNodeModel.validateSettings(ROCNodeModel.java:277)
+	at org.knime.core.node.Node.validateModelSettings(Node.java:642)
+	at org.knime.core.node.workflow.NativeNodeContainer.performValidateSettings(NativeNodeContainer.java:921)
+	at org.knime.core.node.workflow.SingleNodeContainer.validateSettings(SingleNodeContainer.java:888)
+	at org.knime.core.node.workflow.WorkflowManager.loadNodeSettings(WorkflowManager.java:1757)
+	at org.knime.core.node.workflow.NodeContainer.applySettingsFromDialog(NodeContainer.java:1002)
+	at org.knime.core.ui.wrapper.NodeContainerWrapper.applySettingsFromDialog(NodeContainerWrapper.java:262)
+	at org.knime.workbench.ui.wrapper.WrappedNodeDialog.doApply(WrappedNodeDialog.java:623)
+	at org.knime.workbench.ui.wrapper.WrappedNodeDialog.doOK(WrappedNodeDialog.java:538)
+	at org.knime.workbench.ui.wrapper.WrappedNodeDialog.access$8(WrappedNodeDialog.java:536)
+	at org.knime.workbench.ui.wrapper.WrappedNodeDialog$5.widgetSelected(WrappedNodeDialog.java:474)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:249)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:86)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4428)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1079)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4238)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3817)
+	at org.eclipse.jface.window.Window.runEventLoop(Window.java:818)
+	at org.eclipse.jface.window.Window.open(Window.java:794)
+	at org.knime.workbench.ui.wrapper.WrappedNodeDialog.open(WrappedNodeDialog.java:181)
+	at org.knime.workbench.editor2.editparts.NodeContainerEditPart.openNodeDialog(NodeContainerEditPart.java:872)
+	at org.knime.workbench.editor2.editparts.NodeContainerEditPart.openDialog(NodeContainerEditPart.java:780)
+	at org.knime.workbench.editor2.editparts.NodeContainerEditPart.performRequest(NodeContainerEditPart.java:351)
+	at org.eclipse.gef.tools.SelectEditPartTracker.performOpen(SelectEditPartTracker.java:194)
+	at org.eclipse.gef.tools.SelectEditPartTracker.handleDoubleClick(SelectEditPartTracker.java:137)
+	at org.knime.workbench.editor2.WorkflowSelectionDragEditPartsTracker.handleDoubleClick(WorkflowSelectionDragEditPartsTracker.java:126)
+	at org.eclipse.gef.tools.AbstractTool.mouseDoubleClick(AbstractTool.java:1069)
+	at org.eclipse.gef.tools.SelectionTool.mouseDoubleClick(SelectionTool.java:527)
+	at org.eclipse.gef.EditDomain.mouseDoubleClick(EditDomain.java:231)
+	at org.eclipse.gef.ui.parts.DomainEventDispatcher.dispatchMouseDoubleClicked(DomainEventDispatcher.java:291)
+	at org.eclipse.draw2d.LightweightSystem$EventHandler.mouseDoubleClick(LightweightSystem.java:518)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:197)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:86)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4428)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1079)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4238)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3817)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1150)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1039)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:153)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:680)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:594)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:148)
+	at org.knime.product.rcp.KNIMEApplication.start(KNIMEApplication.java:149)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:388)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:243)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:653)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:590)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1499)
+2019-11-08 11:39:42,669 : WARN  : main :  : Node : Value Counter : 4:42:504:536 : Column 'Approval' does not exist
+2019-11-08 11:40:37,284 : WARN  : main :  : Node : Value Counter : 4:42:504:536 : Column 'Approval' does not exist
+2019-11-08 11:40:39,536 : WARN  : KNIME-Worker-75 :  : Node : Value Counter : 4:42:504:536 : Column 'Approval' does not exist
+2019-11-08 11:40:39,620 : WARN  : KNIME-Worker-73 :  : Node : ROC Curve (local) : 4:42:33 : Table contains missing values.
+2019-11-08 11:40:39,621 : WARN  : KNIME-Worker-73 :  : Node : Value Counter : 4:42:504:536 : Column 'Approval' does not exist
+2019-11-08 11:41:09,506 : WARN  : main :  : WrappedNodeDialog : ROC Curve (local) : 4:42:33 : failed to apply settings: No class probability column(s) selected
+org.knime.core.node.InvalidSettingsException: No class probability column(s) selected
+	at org.knime.base.node.viz.roc.ROCNodeModel.validateSettings(ROCNodeModel.java:277)
+	at org.knime.core.node.Node.validateModelSettings(Node.java:642)
+	at org.knime.core.node.workflow.NativeNodeContainer.performValidateSettings(NativeNodeContainer.java:921)
+	at org.knime.core.node.workflow.SingleNodeContainer.validateSettings(SingleNodeContainer.java:888)
+	at org.knime.core.node.workflow.WorkflowManager.loadNodeSettings(WorkflowManager.java:1757)
+	at org.knime.core.node.workflow.NodeContainer.applySettingsFromDialog(NodeContainer.java:1002)
+	at org.knime.core.ui.wrapper.NodeContainerWrapper.applySettingsFromDialog(NodeContainerWrapper.java:262)
+	at org.knime.workbench.ui.wrapper.WrappedNodeDialog.doApply(WrappedNodeDialog.java:614)
+	at org.knime.workbench.ui.wrapper.WrappedNodeDialog.doOK(WrappedNodeDialog.java:538)
+	at org.knime.workbench.ui.wrapper.WrappedNodeDialog.access$8(WrappedNodeDialog.java:536)
+	at org.knime.workbench.ui.wrapper.WrappedNodeDialog$5.widgetSelected(WrappedNodeDialog.java:474)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:249)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:86)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4428)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1079)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4238)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3817)
+	at org.eclipse.jface.window.Window.runEventLoop(Window.java:818)
+	at org.eclipse.jface.window.Window.open(Window.java:794)
+	at org.knime.workbench.ui.wrapper.WrappedNodeDialog.open(WrappedNodeDialog.java:181)
+	at org.knime.workbench.editor2.editparts.NodeContainerEditPart.openNodeDialog(NodeContainerEditPart.java:872)
+	at org.knime.workbench.editor2.editparts.NodeContainerEditPart.openDialog(NodeContainerEditPart.java:780)
+	at org.knime.workbench.editor2.editparts.NodeContainerEditPart.performRequest(NodeContainerEditPart.java:351)
+	at org.eclipse.gef.tools.SelectEditPartTracker.performOpen(SelectEditPartTracker.java:194)
+	at org.eclipse.gef.tools.SelectEditPartTracker.handleDoubleClick(SelectEditPartTracker.java:137)
+	at org.knime.workbench.editor2.WorkflowSelectionDragEditPartsTracker.handleDoubleClick(WorkflowSelectionDragEditPartsTracker.java:126)
+	at org.eclipse.gef.tools.AbstractTool.mouseDoubleClick(AbstractTool.java:1069)
+	at org.eclipse.gef.tools.SelectionTool.mouseDoubleClick(SelectionTool.java:527)
+	at org.eclipse.gef.EditDomain.mouseDoubleClick(EditDomain.java:231)
+	at org.eclipse.gef.ui.parts.DomainEventDispatcher.dispatchMouseDoubleClicked(DomainEventDispatcher.java:291)
+	at org.eclipse.draw2d.LightweightSystem$EventHandler.mouseDoubleClick(LightweightSystem.java:518)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:197)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:86)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4428)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1079)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4238)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3817)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1150)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1039)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:153)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:680)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:594)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:148)
+	at org.knime.product.rcp.KNIMEApplication.start(KNIMEApplication.java:149)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:388)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:243)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:653)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:590)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1499)
+2019-11-08 11:41:25,301 : WARN  : main :  : Node : Value Counter : 4:42:504:536 : Column 'Approval' does not exist
+2019-11-08 11:41:25,441 : WARN  : main :  : Node : Value Counter : 4:42:504:536 : Column 'Approval' does not exist
+2019-11-08 11:41:35,939 : WARN  : main :  : WrappedNodeDialog : ROC Curve (local) : 4:42:33 : failed to apply settings: No value for the positive class chosen
+org.knime.core.node.InvalidSettingsException: No value for the positive class chosen
+	at org.knime.base.node.viz.roc.ROCNodeModel.validateSettings(ROCNodeModel.java:282)
+	at org.knime.core.node.Node.validateModelSettings(Node.java:642)
+	at org.knime.core.node.workflow.NativeNodeContainer.performValidateSettings(NativeNodeContainer.java:921)
+	at org.knime.core.node.workflow.SingleNodeContainer.validateSettings(SingleNodeContainer.java:888)
+	at org.knime.core.node.workflow.WorkflowManager.loadNodeSettings(WorkflowManager.java:1757)
+	at org.knime.core.node.workflow.NodeContainer.applySettingsFromDialog(NodeContainer.java:1002)
+	at org.knime.core.ui.wrapper.NodeContainerWrapper.applySettingsFromDialog(NodeContainerWrapper.java:262)
+	at org.knime.workbench.ui.wrapper.WrappedNodeDialog.doApply(WrappedNodeDialog.java:623)
+	at org.knime.workbench.ui.wrapper.WrappedNodeDialog.doOK(WrappedNodeDialog.java:538)
+	at org.knime.workbench.ui.wrapper.WrappedNodeDialog.access$8(WrappedNodeDialog.java:536)
+	at org.knime.workbench.ui.wrapper.WrappedNodeDialog$5.widgetSelected(WrappedNodeDialog.java:474)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:249)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:86)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4428)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1079)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4238)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3817)
+	at org.eclipse.jface.window.Window.runEventLoop(Window.java:818)
+	at org.eclipse.jface.window.Window.open(Window.java:794)
+	at org.knime.workbench.ui.wrapper.WrappedNodeDialog.open(WrappedNodeDialog.java:181)
+	at org.knime.workbench.editor2.editparts.NodeContainerEditPart.openNodeDialog(NodeContainerEditPart.java:872)
+	at org.knime.workbench.editor2.editparts.NodeContainerEditPart.openDialog(NodeContainerEditPart.java:780)
+	at org.knime.workbench.editor2.editparts.NodeContainerEditPart.performRequest(NodeContainerEditPart.java:351)
+	at org.eclipse.gef.tools.SelectEditPartTracker.performOpen(SelectEditPartTracker.java:194)
+	at org.eclipse.gef.tools.SelectEditPartTracker.handleDoubleClick(SelectEditPartTracker.java:137)
+	at org.knime.workbench.editor2.WorkflowSelectionDragEditPartsTracker.handleDoubleClick(WorkflowSelectionDragEditPartsTracker.java:126)
+	at org.eclipse.gef.tools.AbstractTool.mouseDoubleClick(AbstractTool.java:1069)
+	at org.eclipse.gef.tools.SelectionTool.mouseDoubleClick(SelectionTool.java:527)
+	at org.eclipse.gef.EditDomain.mouseDoubleClick(EditDomain.java:231)
+	at org.eclipse.gef.ui.parts.DomainEventDispatcher.dispatchMouseDoubleClicked(DomainEventDispatcher.java:291)
+	at org.eclipse.draw2d.LightweightSystem$EventHandler.mouseDoubleClick(LightweightSystem.java:518)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:197)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:86)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4428)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1079)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4238)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3817)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1150)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1039)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:153)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:680)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:594)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:148)
+	at org.knime.product.rcp.KNIMEApplication.start(KNIMEApplication.java:149)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:388)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:243)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:653)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:590)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1499)
+2019-11-08 11:41:46,016 : WARN  : KNIME-Worker-81 :  : Node : Value Counter : 4:42:504:536 : Column 'Approval' does not exist
+2019-11-08 11:41:46,037 : WARN  : KNIME-Worker-83 :  : Node : Value Counter : 4:42:504:536 : Column 'Approval' does not exist
+2019-11-08 11:41:48,777 : WARN  : KNIME-Worker-82 :  : Node : Value Counter : 4:42:504:536 : Column 'Approval' does not exist
+2019-11-08 11:41:48,782 : WARN  : KNIME-Worker-83 :  : Node : Scorer : 4:42:26 : There were missing values in the reference or in the prediction class columns.
+2019-11-08 11:41:48,802 : WARN  : KNIME-Worker-75 :  : Node : Value Counter : 4:42:504:536 : Column 'Approval' does not exist
+2019-11-08 11:41:48,845 : WARN  : KNIME-Worker-73 :  : Node : ROC Curve (local) : 4:42:33 : Table contains missing values.
+2019-11-08 11:41:48,846 : WARN  : KNIME-Worker-73 :  : Node : Value Counter : 4:42:504:536 : Column 'Approval' does not exist
+2019-11-08 11:41:59,165 : WARN  : main :  : Node : Value Counter : 4:42:504:536 : Column 'Approval' does not exist
+2019-11-08 11:42:28,439 : WARN  : KNIME-Worker-80 :  : Node : ROC Curve (local) : 4:42:33 : Table contains missing values.
+2019-11-08 11:42:28,657 : WARN  : KNIME-Worker-81 :  : Node : Column Filter : 4:42:10 : Some columns are not available: Accuracy
+2019-11-08 11:42:28,657 : WARN  : KNIME-Worker-81 :  : Node : Column Filter : 4:42:10 : All columns removed.
+2019-11-08 11:42:28,709 : WARN  : KNIME-Worker-80 :  : Node : Column Filter : 4:42:10 : Some columns are not available: Accuracy
+2019-11-08 11:42:28,710 : WARN  : KNIME-Worker-80 :  : Node : Column Filter : 4:42:10 : All columns removed.
+2019-11-08 11:42:28,742 : WARN  : KNIME-Worker-70 :  : Node : Column Filter : 4:42:10 : Some columns are not available: Accuracy
+2019-11-08 11:42:28,742 : WARN  : KNIME-Worker-70 :  : Node : Column Filter : 4:42:10 : All columns removed.
+2019-11-08 11:42:28,744 : WARN  : KNIME-Worker-79 :  : Node : Row Filter : 4:42:9 : Node created an empty data table.
+2019-11-08 11:42:28,745 : WARN  : KNIME-Worker-79 :  : Node : Column Filter : 4:42:10 : Some columns are not available: Accuracy
+2019-11-08 11:42:28,745 : WARN  : KNIME-Worker-79 :  : Node : Column Filter : 4:42:10 : All columns removed.
+2019-11-08 11:42:28,746 : WARN  : KNIME-Worker-81 :  : Node : Column Filter : 4:42:10 : Some columns are not available: Accuracy
+2019-11-08 11:42:28,746 : WARN  : KNIME-Worker-81 :  : Node : Column Filter : 4:42:10 : All columns removed.
+2019-11-08 11:42:28,748 : WARN  : KNIME-Worker-80 :  : Node : Rule Engine : 4:42:32 : Node created an empty data table.
+2019-11-08 11:42:54,080 : WARN  : main :  : Node : Column Filter : 4:42:10 : Some columns are not available: Accuracy
+2019-11-08 11:42:54,081 : WARN  : main :  : Node : Column Filter : 4:42:10 : All columns removed.
+2019-11-08 11:42:56,741 : WARN  : KNIME-Worker-82 :  : Node : Column Filter : 4:42:10 : Some columns are not available: Accuracy
+2019-11-08 11:42:56,742 : WARN  : KNIME-Worker-82 :  : Node : Column Filter : 4:42:10 : All columns removed.
+2019-11-08 11:42:56,774 : WARN  : KNIME-Worker-77 :  : Node : Column Filter : 4:42:10 : Some columns are not available: Accuracy
+2019-11-08 11:42:56,774 : WARN  : KNIME-Worker-77 :  : Node : Column Filter : 4:42:10 : All columns removed.
+2019-11-08 11:42:56,776 : WARN  : KNIME-Worker-70 :  : Node : Row Filter : 4:42:9 : Node created an empty data table.
+2019-11-08 11:42:56,776 : WARN  : KNIME-Worker-70 :  : Node : Column Filter : 4:42:10 : Some columns are not available: Accuracy
+2019-11-08 11:42:56,777 : WARN  : KNIME-Worker-70 :  : Node : Column Filter : 4:42:10 : All columns removed.
+2019-11-08 11:42:56,778 : WARN  : KNIME-Worker-79 :  : Node : Column Filter : 4:42:10 : Some columns are not available: Accuracy
+2019-11-08 11:42:56,778 : WARN  : KNIME-Worker-79 :  : Node : Column Filter : 4:42:10 : All columns removed.
+2019-11-08 11:42:56,781 : WARN  : KNIME-Worker-81 :  : Node : Rule Engine : 4:42:32 : Node created an empty data table.
+2019-11-08 11:46:16,421 : WARN  : main :  : Node : ROC Curve (local) : 4:43:529 : Sort column 'P (Score=good)prob_DecisionTree ' does not exist
+2019-11-08 11:46:42,164 : WARN  : main :  : Node : ROC Curve (local) : 4:43:529 : Sort column 'P (Score=good)prob_DecisionTree ' does not exist
+2019-11-08 11:46:42,287 : WARN  : main :  : Node : ROC Curve (local) : 4:43:529 : Sort column 'P (Score=good)prob_DecisionTree ' does not exist
+2019-11-08 11:46:59,694 : WARN  : KNIME-Worker-87 :  : Node : Interactive Histogram (local) : 4:50 : 2 columns without a valid domain will be ignored. In order to calculate the domain use the Nominal Values or Domain Calculator node.
+2019-11-08 11:47:21,206 : WARN  : main :  : Node : ROC Curve (local) : 4:44:529 : Sort column 'P (Score=good)prob_DecisionTree ' does not exist
+2019-11-08 11:47:33,038 : WARN  : main :  : Node : ROC Curve (local) : 4:44:529 : Sort column 'P (Score=good)prob_DecisionTree ' does not exist
+2019-11-08 11:47:33,173 : WARN  : main :  : Node : ROC Curve (local) : 4:44:529 : Sort column 'P (Score=good)prob_DecisionTree ' does not exist
+2019-11-08 11:47:33,175 : WARN  : main :  : Node : Interactive Histogram (local) : 4:50 : Column Accuracy contains no valid domain an will be ignored. In order to calculate the domain use the Nominal Values or Domain Calculator node.
+2019-11-08 11:47:57,204 : WARN  : KNIME-Worker-90 :  : Node : Sorter : 4:52 : The input table has changed. Some columns are missing: "Accuracy"
+2019-11-08 11:47:57,234 : WARN  : KNIME-Worker-91 :  : Node : Sorter : 4:52 : The input table has changed. Some columns are missing: "Accuracy"
+2019-11-08 11:48:21,538 : WARN  : KNIME-Worker-93 :  : Node : Sorter : 4:52 : The input table has changed. Some columns are missing: "Accuracy"
+2019-11-08 13:16:57,889 : WARN  : main :  : Node : ROC Curve : 4:42:529 : Class column 'null ' does not exist
+2019-11-08 13:17:28,262 : WARN  : main :  : Node : Interactive Histogram (local) : 4:50 : 3 columns without a valid domain will be ignored. In order to calculate the domain use the Nominal Values or Domain Calculator node.
+2019-11-08 13:17:30,722 : WARN  : KNIME-Worker-101 :  : Node : Interactive Histogram (local) : 4:50 : 2 columns without a valid domain will be ignored. In order to calculate the domain use the Nominal Values or Domain Calculator node.
+2019-11-08 13:18:12,987 : WARN  : main :  : Node : Interactive Histogram (local) : 4:50 : 3 columns without a valid domain will be ignored. In order to calculate the domain use the Nominal Values or Domain Calculator node.
+2019-11-08 13:18:28,398 : WARN  : KNIME-Worker-107 :  : Node : Interactive Histogram (local) : 4:50 : 2 columns without a valid domain will be ignored. In order to calculate the domain use the Nominal Values or Domain Calculator node.
+2019-11-08 13:20:57,757 : WARN  : main :  : Node : Joiner : 4:42:541 : Please define at least one joining column pair.
+2019-11-08 13:21:05,845 : WARN  : main :  : Node : Interactive Histogram (local) : 4:50 : Column Image contains no valid domain an will be ignored. In order to calculate the domain use the Nominal Values or Domain Calculator node.
+2019-11-08 13:21:41,924 : WARN  : main :  : Node : Interactive Histogram (local) : 4:50 : Column Image contains no valid domain an will be ignored. In order to calculate the domain use the Nominal Values or Domain Calculator node.
+2019-11-08 13:21:46,025 : WARN  : main :  : Node : Interactive Histogram (local) : 4:50 : Column Image contains no valid domain an will be ignored. In order to calculate the domain use the Nominal Values or Domain Calculator node.
+2019-11-08 13:22:14,167 : WARN  : main :  : Node : ROC Curve : 4:43:531 : Class column 'null ' does not exist
+2019-11-08 13:23:26,649 : WARN  : main :  : Node : Interactive Histogram (local) : 4:50 : 4 columns without a valid domain will be ignored. In order to calculate the domain use the Nominal Values or Domain Calculator node.
+2019-11-08 13:23:51,752 : WARN  : main :  : Node : Joiner : 4:43:530 : Please define at least one joining column pair.
+2019-11-08 13:23:57,732 : WARN  : main :  : Node : Interactive Histogram (local) : 4:50 : 4 columns without a valid domain will be ignored. In order to calculate the domain use the Nominal Values or Domain Calculator node.
+2019-11-08 13:24:06,694 : WARN  : KNIME-Worker-114 :  : Node : Interactive Histogram (local) : 4:50 : 3 columns without a valid domain will be ignored. In order to calculate the domain use the Nominal Values or Domain Calculator node.
+2019-11-08 13:24:06,947 : WARN  : KNIME-Worker-120 :  : Node : Interactive Histogram (local) : 4:50 : Column Image contains no valid domain an will be ignored. In order to calculate the domain use the Nominal Values or Domain Calculator node.
+2019-11-08 13:24:33,414 : WARN  : main :  : Node : Interactive Histogram (local) : 4:50 : 4 columns without a valid domain will be ignored. In order to calculate the domain use the Nominal Values or Domain Calculator node.
+2019-11-08 13:24:53,460 : WARN  : main :  : Node : Joiner : 4:44:541 : Please define at least one joining column pair.
+2019-11-08 13:24:59,159 : WARN  : main :  : Node : Interactive Histogram (local) : 4:50 : 4 columns without a valid domain will be ignored. In order to calculate the domain use the Nominal Values or Domain Calculator node.
+2019-11-08 13:25:10,536 : WARN  : main :  : Node : Interactive Histogram (local) : 4:50 : 4 columns without a valid domain will be ignored. In order to calculate the domain use the Nominal Values or Domain Calculator node.
+2019-11-08 13:25:20,909 : WARN  : main :  : Node : Interactive Histogram (local) : 4:50 : 4 columns without a valid domain will be ignored. In order to calculate the domain use the Nominal Values or Domain Calculator node.
+2019-11-08 13:25:31,139 : WARN  : KNIME-Worker-116 :  : Node : Interactive Histogram (local) : 4:50 : 3 columns without a valid domain will be ignored. In order to calculate the domain use the Nominal Values or Domain Calculator node.
+2019-11-08 13:25:31,206 : WARN  : KNIME-Worker-121 :  : Node : Interactive Histogram (local) : 4:50 : Column Image contains no valid domain an will be ignored. In order to calculate the domain use the Nominal Values or Domain Calculator node.
+2019-11-08 13:25:46,274 : WARN  : KNIME-Worker-118 :  : Node : Interactive Histogram (local) : 4:50 : Column Image contains no valid domain an will be ignored. In order to calculate the domain use the Nominal Values or Domain Calculator node.
+2019-11-08 13:29:00,483 : WARN  : main :  : Node : Row Filter : 2:59 : No row filter specified
+2019-11-08 13:29:22,235 : WARN  : main :  : Node : Table To Image : 2:60 : Found image column 'Image'.
+2019-11-08 13:29:35,025 : WARN  : KNIME-Worker-4 :  : Node : Table To Image : 2:60 : Found image column 'Image'.
+2019-11-15 08:50:08,696 : ERROR : ModalContext :  : LoadWorkflowRunnable :  :  : Errors during load: Status: DataLoadError: German_credit_scoring 0 loaded with error during data load
+2019-11-15 08:50:08,700 : ERROR : ModalContext :  : LoadWorkflowRunnable :  :  :   Status: DataLoadError: German_credit_scoring 0
+2019-11-15 08:50:08,700 : ERROR : ModalContext :  : LoadWorkflowRunnable :  :  :     Status: DataLoadError: Interactive Histogram (local) 0:50
+2019-11-15 08:50:08,700 : ERROR : ModalContext :  : LoadWorkflowRunnable :  :  :       Status: DataLoadError: Loading model internals failed: Binning column not found
