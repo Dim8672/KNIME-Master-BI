@@ -187,7 +187,7 @@
 <entry key="node-feature-name" type="xstring" value="KNIME JavaScript Views"/>
 <entry key="node-feature-symbolic-name" type="xstring" value="org.knime.features.js.views.feature.group"/>
 <entry key="node-feature-vendor" type="xstring" value="KNIME AG, Zurich, Switzerland"/>
-<entry key="node-feature-version" type="xstring" value="4.0.1.v201908131226"/>
+<entry key="node-feature-version" type="xstring" value="4.0.2.v201909250755"/>
 <config key="factory_settings">
 <entry key="nodeDir" type="xstring" value="org.knime.dynamic.js.base:nodes/:donutChart"/>
 </config>
@@ -207,6 +207,6 @@
 </config>
 <config key="filestores">
 <entry key="file_store_location" type="xstring" isnull="true" value=""/>
-<entry key="file_store_id" type="xstring" value="9ee165e8-f928-48a3-8fc2-585c4e5fd598"/>
+<entry key="file_store_id" type="xstring" value="d9bdbabd-1090-4900-8ba3-0357e2c10c83"/>
 </config>
 </config>

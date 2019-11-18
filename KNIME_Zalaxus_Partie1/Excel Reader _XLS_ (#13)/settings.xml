@@ -6,7 +6,7 @@
 <entry key="memory_policy" type="xstring" value="CacheSmallInMemory"/>
 </config>
 <config key="model">
-<entry key="XLS_LOCATION" type="xstring" value="C:\Users\dimit\knime-workspace\Data\ZalaxusSizeSplit_Simple.xlsx"/>
+<entry key="XLS_LOCATION" type="xstring" value="O:\Master\BI\KNIME\KNIME-Master-BI\Data\ZalaxusSizeSplit_Simple.xlsx"/>
 <entry key="SHEET_NAME" type="xstring" isnull="true" value=""/>
 <entry key="READ_ALL_DATA" type="xboolean" value="true"/>
 <entry key="FIRST_ROW" type="xint" value="1"/>
@@ -30,7 +30,7 @@
 <entry key="REEVALUATE_FORMULAE" type="xboolean" value="false"/>
 <entry key="TIMEOUT_IN_SECONDS" type="xint" value="1"/>
 <entry key="NO_PREVIEW" type="xboolean" value="false"/>
-<entry key="XLS_SettingsForSpecID" type="xstring" value="SettingsID:C:\Users\dimit\knime-workspace\Data\ZalaxusSizeSplit_Simple.xlsx-110101101-111001#XL_EVAL_ERROR#010"/>
+<entry key="XLS_SettingsForSpecID" type="xstring" value="SettingsID:O:\Master\BI\KNIME\KNIME-Master-BI\Data\ZalaxusSizeSplit_Simple.xlsx-110101101-111001#XL_EVAL_ERROR#010"/>
 <config key="XLS_DataTableSpec">
 <entry key="spec_name" type="xstring" value="ZalaxusSizeSplit_Simple.xlsx [Feuil1]"/>
 <entry key="number_columns" type="xint" value="6"/>
@@ -137,12 +137,12 @@
 <entry key="index" type="xint" value="1"/>
 <entry key="port_spec_class" type="xstring" value="org.knime.core.data.DataTableSpec"/>
 <entry key="port_object_class" type="xstring" value="org.knime.core.node.BufferedDataTable"/>
-<entry key="port_object_summary" type="xstring" value="Rows: 126, Cols: 6"/>
+<entry key="port_object_summary" type="xstring" value="Rows: 61, Cols: 6"/>
 <entry key="port_dir_location" type="xstring" value="port_1"/>
 </config>
 </config>
 <config key="filestores">
 <entry key="file_store_location" type="xstring" isnull="true" value=""/>
-<entry key="file_store_id" type="xstring" value="3dad3625-cfea-4510-bbba-62465bb423a8"/>
+<entry key="file_store_id" type="xstring" value="0194fb5d-1385-4ee2-85c6-78f7661d2228"/>
 </config>
 </config>

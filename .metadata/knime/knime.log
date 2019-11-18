@@ -2573,3 +2573,31 @@ org.knime.core.node.InvalidSettingsException: No value for the positive class ch
 2019-11-15 09:44:58,819 : WARN  : main :  : Node : GroupBy : 2:32 : No grouping column included. Aggregate complete table.
 2019-11-15 09:45:00,728 : WARN  : KNIME-Worker-35 :  : Node : GroupBy : 2:32 : No grouping column included. Aggregate complete table.
 2019-11-15 10:02:30,105 : WARN  : main :  : WorkflowEditorDropTargetListener :  :  : No node factory is registered for handling  "/C:/Users/dimit/Downloads/BI1920-Tripadvisor%20reviews.knwf"
+2019-11-18 17:36:32,044 : WARN  : ModalContext :  : Node : Excel Reader (XLS) : 0:1 : The file 'C:\Users\dimit\knime-workspace\Data\zalaxus.xlsx' can't be accessed anymore!
+2019-11-18 17:36:32,049 : WARN  : ModalContext :  : Node : Excel Reader (XLS) : 0:13 : The file 'C:\Users\dimit\knime-workspace\Data\ZalaxusSizeSplit_Simple.xlsx' can't be accessed anymore!
+2019-11-18 17:36:32,469 : WARN  : ModalContext :  : LoadWorkflowRunnable :  :  : Warnings during load: Status: Warning: KNIME_Zalaxus_Partie1 0 loaded with warnings
+2019-11-18 17:36:32,469 : WARN  : ModalContext :  : LoadWorkflowRunnable :  :  :   Status: Warning: KNIME_Zalaxus_Partie1 0
+2019-11-18 17:36:32,469 : WARN  : ModalContext :  : LoadWorkflowRunnable :  :  :     Status: Warning: Excel Writer (XLS) 0:11
+2019-11-18 17:36:32,470 : WARN  : ModalContext :  : LoadWorkflowRunnable :  :  :       Status: Warning: State has changed from IDLE to CONFIGURED
+2019-11-18 17:36:32,470 : WARN  : ModalContext :  : LoadWorkflowRunnable :  :  :     Status: Warning: State has changed from IDLE to CONFIGURED
+2019-11-18 17:37:00,380 : WARN  : main :  : WrappedNodeDialog : Excel Reader (XLS) : 0:1 : failed to apply settings: Loading input file...
+org.knime.core.node.InvalidSettingsException: Loading input file...
+	at org.knime.ext.poi2.node.read3.XLSReaderNodeDialog.saveSettingsTo(XLSReaderNodeDialog.java:1531)
+	at org.knime.core.node.NodeDialogPane.internalSaveSettingsTo(NodeDialogPane.java:485)
+	at org.knime.core.node.NodeDialogPane$5.run(NodeDialogPane.java:722)
+	at org.knime.core.node.util.ViewUtils$3.run(ViewUtils.java:353)
+	at org.knime.core.node.util.ViewUtils$2.run(ViewUtils.java:155)
+	at java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:311)
+	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:758)
+	at java.awt.EventQueue.access$500(EventQueue.java:97)
+	at java.awt.EventQueue$3.run(EventQueue.java:709)
+	at java.awt.EventQueue$3.run(EventQueue.java:703)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:74)
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:728)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:205)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:116)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:105)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:93)
+	at java.awt.EventDispatchThread.run(EventDispatchThread.java:82)

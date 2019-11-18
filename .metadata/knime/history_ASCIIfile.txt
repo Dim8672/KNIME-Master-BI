@@ -1,4 +1,4 @@
-knime://knime.workflow/crx.data
 knime://knime.workflow/data.all
+knime://knime.workflow/crx.data
 knime://knime.workflow/german.data
 file:/C:/Users/dimit/knime-workspace/Data/crx.data.data.txt
