@@ -1,5 +1,5 @@
-O:\Master\BI\KNIME\KNIME-Master-BI\Data\ZalaxusSizeSplit_Simple.xlsx
 O:\Master\BI\KNIME\KNIME-Master-BI\Data\zalaxus.xlsx
+O:\Master\BI\KNIME\KNIME-Master-BI\Data\ZalaxusSizeSplit_Simple.xlsx
 file:/C:/Users/dimit/Dropbox/Master/2ème%20année/1er%20semestre/BI_Informatique%20Décisionnelle/Pratique/Genoud/WineOnlyClass.xls
 file:/C:/Users/dimit/Dropbox/Master/2ème%20année/1er%20semestre/BI_Informatique%20Décisionnelle/Pratique/Genoud/WineClassless.xls
 file:/C:/Users/dimit/Dropbox/Master/2ème%20année/1er%20semestre/BI_Informatique%20Décisionnelle/Pratique/Genoud/PubUtilities.xls

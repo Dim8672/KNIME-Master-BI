@@ -7,7 +7,7 @@
 </config>
 <config key="model">
 <entry key="hideInWizard" type="xboolean" value="false"/>
-<entry key="generateImage" type="xboolean" value="false"/>
+<entry key="generateImage" type="xboolean" value="true"/>
 <entry key="showArea" type="xboolean" value="true"/>
 <entry key="showGrid" type="xboolean" value="true"/>
 <entry key="resizeToWindow" type="xboolean" value="true"/>
@@ -128,9 +128,9 @@
 <config key="ports">
 <config key="port_1">
 <entry key="index" type="xint" value="1"/>
-<entry key="port_spec_class" type="xstring" value="org.knime.core.node.port.inactive.InactiveBranchPortObjectSpec"/>
-<entry key="port_object_class" type="xstring" value="org.knime.core.node.port.inactive.InactiveBranchPortObject"/>
-<entry key="port_object_summary" type="xstring" value="Inactive Port Object"/>
+<entry key="port_spec_class" type="xstring" value="org.knime.core.node.port.image.ImagePortObjectSpec"/>
+<entry key="port_object_class" type="xstring" value="org.knime.core.node.port.image.ImagePortObject"/>
+<entry key="port_object_summary" type="xstring" value="SVG 800 x 600"/>
 <entry key="port_spec_location" type="xstring" value="spec/spec.zip"/>
 <entry key="port_object_location" type="xstring" value="object/portobject.zip"/>
 <entry key="port_dir_location" type="xstring" value="port_1"/>
@@ -145,6 +145,6 @@
 </config>
 <config key="filestores">
 <entry key="file_store_location" type="xstring" isnull="true" value=""/>
-<entry key="file_store_id" type="xstring" value="4735716e-f601-4769-8594-95007c6a5fec"/>
+<entry key="file_store_id" type="xstring" value="d1c5b0fc-2115-4696-8c44-b26c556561bc"/>
 </config>
 </config>

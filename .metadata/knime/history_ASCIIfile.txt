@@ -1,4 +1,7 @@
 knime://knime.workflow/data.all
 knime://knime.workflow/crx.data
+file:/C:/hevs/2016-17/625_2/Examples/crx.data.data
+knime://knime.workflow/data/adult.data
+knime://knime.workflow/housing.data
 knime://knime.workflow/german.data
 file:/C:/Users/dimit/knime-workspace/Data/crx.data.data.txt

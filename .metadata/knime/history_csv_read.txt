@@ -1,2 +1,5 @@
+C:\Users\Dimitri\Downloads\DataForProjetBI (1)\DataForProject\mushrooms\mushrooms.csv
+C:\Users\Dimitri\Dropbox\Master\2ème année\1er semestre\Projet BI\MushroomsDescription.csv
+C:\Users\Dimitri\Dropbox\Master\2ème année\1er semestre\Projet BI\mushrooms.csv
 C:\Users\dimit\knime-workspace\Data TripAdvisor\MPQA-OpinionCorpus-PositiveList.csv
 C:\Users\dimit\knime-workspace\Data TripAdvisor\MPQA-OpinionCorpus-NegativeList.csv

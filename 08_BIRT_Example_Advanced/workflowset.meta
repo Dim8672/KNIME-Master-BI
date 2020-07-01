@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<met:KNIMEMetaInfo xmlns:met="http://www.knime.org/2.9/metainfo">
+  <met:element form="text" name="Author">sfincher</met:element>
+  <met:element form="date" name="Creation Date">16/3/2018/22:48:47 +02:00</met:element>
+  <met:element form="multiline" name="Comments">Advanced Example of Reporting with BIRT
+
+Input data set contains inspection scores for local restaurants. Final report includes: - zip code selection page - tables with scores - score bar chart as images produced in the central loop - box plot of score distribution - bar chart of top and lowest score in each zip code area. All bar charts are placed one for each page. You can see this when exporting the workflow onto pdf or doc format.
+
+URL: Advanced Reporting with BIRT https://www.knime.com/reporting
+TAG: reporting, BIRT</met:element>
+  <met:element form="text" name="Last Uploaded" read-only="true">2018-05-17 10:36:50 +0200</met:element>
+  <met:element form="text" name="Last Edited" read-only="true">2018-05-17 10:35:56 +0200</met:element>
+</met:KNIMEMetaInfo>

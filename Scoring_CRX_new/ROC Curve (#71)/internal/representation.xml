@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <config xmlns="http://www.knime.org/2008/09/XMLConfig" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.knime.org/2008/09/XMLConfig http://www.knime.org/XMLConfig_2008_09.xsd" key="viewRepresentation">
-<entry key="tableID" type="xstring" value="b8d13f02-9601-434e-9c26-27b1b95ca302"/>
+<entry key="tableID" type="xstring" value="91b80eb9-f61d-426d-a5d5-2d7bea8f29d2"/>
 <config key="curveSettings">
 <config key="P (Approval=+)prob_DecisionTree">
 <config key="x_values">
